@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jul  4 14:22:20 2022
+# Process ID: 36975
+# Current directory: /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq
+# Command line: wbtcv -mode batch -source /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/.Xil/Vivado-127851-zhaodi-node32/webtalk/labtool_webtalk.tcl -notrace
+# Log file: /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/webtalk.log
+# Journal file: /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/webtalk.jou
+#-----------------------------------------------------------
+source /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/.Xil/Vivado-127851-zhaodi-node32/webtalk/labtool_webtalk.tcl -notrace

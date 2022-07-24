@@ -1,0 +1,57 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.469137",
+   "Default View_TopLeft":"3001,-185",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port rs232_uart -pg 1 -lvl 9 -x 5690 -y 720 -defaultsOSRD
+preplace port default_300mhz_clk0 -pg 1 -lvl 0 -x -1010 -y 150 -defaultsOSRD
+preplace port ddr4_sdram_c0_0 -pg 1 -lvl 9 -x 5690 -y 280 -defaultsOSRD
+preplace port default_300mhz_clk1 -pg 1 -lvl 0 -x -1010 -y 470 -defaultsOSRD
+preplace inst rv_system -pg 1 -lvl 4 -x 210 -y 250 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x -840 -y 480 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 2 -x -490 -y 520 -defaultsOSRD
+preplace inst ddr4_0 -pg 1 -lvl 7 -x 5013 -y 240 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 7 -x 5013 -y 520 -defaultsOSRD
+preplace inst axi_uartlite_0 -pg 1 -lvl 7 -x 5013 -y 730 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 6 -x 1630 -y 270 -defaultsOSRD
+preplace inst rst_ddr4_0_333M -pg 1 -lvl 8 -x 5473 -y 280 -defaultsOSRD
+preplace inst jtag_axi_0 -pg 1 -lvl 4 -x 210 -y 2718 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 3 -x -190 -y 340 -defaultsOSRD
+preplace inst vio_0 -pg 1 -lvl 2 -x -490 -y 170 -defaultsOSRD
+preplace inst proc_sys_reset_1 -pg 1 -lvl 2 -x -490 -y 720 -defaultsOSRD
+preplace inst xlconstant_7 -pg 1 -lvl 2 -x -490 -y 340 -defaultsOSRD
+preplace inst system_ila_1 -pg 1 -lvl 5 -x 700 -y -60 -defaultsOSRD
+preplace netloc clk_wiz_0_clk_out1 1 1 6 -710 230 N 230 -90 160 360 160 810 530 1840
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 2 5 NJ 560 -80J 170 370 170 800 540 1800
+preplace netloc ddr4_0_c0_ddr4_ui_clk 1 5 3 820 10 N 10 5230
+preplace netloc rst_ddr4_0_333M_peripheral_aresetn 1 5 4 830 20 1820 110 N 110 5660
+preplace netloc axi_uartlite_0_interrupt 1 2 6 -300 520 NJ 520 N 520 N 520 1830 440 5220
+preplace netloc axi_gpio_0_ip2intc_irpt 1 2 6 -290 510 NJ 510 N 510 N 510 1810 430 5230
+preplace netloc ddr4_0_c0_ddr4_ui_clk_sync_rst 1 7 1 5230 260n
+preplace netloc xlconcat_0_dout 1 3 1 -70 270n
+preplace netloc clk_wiz_0_locked 1 1 1 -720 490n
+preplace netloc proc_sys_reset_1_mb_reset 1 2 5 -300 550 NJ 550 NJ 550 N 550 1820
+preplace netloc xlconstant_7_dout 1 2 1 -310 340n
+preplace netloc vio_0_probe_out0 1 1 3 -700 250 -310 250 N
+preplace netloc axi_interconnect_0_M03_AXI 1 6 1 1780 220n
+preplace netloc jtag_axi_0_M_AXI 1 4 2 380 130 N
+preplace netloc ddr4_0_C0_DDR4 1 7 2 N 170 5670
+preplace netloc axi_uartlite_0_UART 1 7 2 N 720 N
+preplace netloc default_300mhz_clk0_1 1 0 7 -990J 110 NJ 110 NJ 110 NJ 110 340 30 N 30 1780
+preplace netloc axi_interconnect_0_M02_AXI 1 6 1 1790 280n
+preplace netloc rv_system_io_mem 1 4 2 330 90 N
+preplace netloc axi_interconnect_0_M00_AXI 1 6 1 N 240
+preplace netloc default_300mhz_clk1_1 1 0 1 -990 470n
+preplace netloc rv_system_io_mmio 1 4 2 350 110 N
+preplace netloc axi_interconnect_0_M01_AXI 1 6 1 1800 260n
+levelinfo -pg 1 -1010 -840 -490 -190 210 700 1630 5013 5473 5690
+pagesize -pg 1 -db -bbox -sgen -1220 -1510 5870 3240
+"
+}
+{
+   "da_axi4_cnt":"5",
+   "da_board_cnt":"9",
+   "da_clkrst_cnt":"6"
+}

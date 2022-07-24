@@ -1,0 +1,722 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jun 20 04:34:21 2022
+# Process ID: 6202
+# Current directory: /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq
+# Command line: vivado
+# Log file: /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/vivado.log
+# Journal file: /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.xpr
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xcu250_0]
+set_property PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+set_property FULL_PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+current_hw_device [get_hw_devices xcu250_0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+create_hw_cfgmem -hw_device [get_hw_devices xcu250_0] -mem_dev [lindex [get_cfgmem_parts {mt25qu01g-spi-x1_x2_x4}] 0]
+close_hw_manager
+open_bd_design {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd}
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xcu250_0]
+set_property PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+set_property FULL_PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+current_hw_device [get_hw_devices xcu250_0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+create_hw_cfgmem -hw_device [get_hw_devices xcu250_0] -mem_dev [lindex [get_cfgmem_parts {mt25qu01g-spi-x1_x2_x4}] 0]
+close_hw_target {localhost:3121/xilinx_tcf/Xilinx/21330409X021A}
+open_hw_target {localhost:3121/xilinx_tcf/Xilinx/21330409X02FA}
+set_property PROGRAM.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xcu250_0_1]
+set_property PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0_1]
+set_property FULL_PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0_1]
+current_hw_device [get_hw_devices xcu250_0_1]
+refresh_hw_device [lindex [get_hw_devices xcu250_0_1] 0]
+close_hw_target {localhost:3121/xilinx_tcf/Xilinx/21330409X02FA}
+open_hw_target {localhost:3121/xilinx_tcf/Xilinx/2133038CC05DA}
+set_property PROGRAM.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xcu250_0_2]
+set_property PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0_2]
+set_property FULL_PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0_2]
+current_hw_device [get_hw_devices xcu250_0_2]
+refresh_hw_device [lindex [get_hw_devices xcu250_0_2] 0]
+close_hw_target {localhost:3121/xilinx_tcf/Xilinx/2133038CC05DA}
+open_hw_target {localhost:3121/xilinx_tcf/Xilinx/21330409X021A}
+set_property PROGRAM.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xcu250_0]
+set_property PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+set_property FULL_PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+current_hw_device [get_hw_devices xcu250_0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+close_hw_target {localhost:3121/xilinx_tcf/Xilinx/21330409X021A}
+open_hw_target {localhost:3121/xilinx_tcf/Xilinx/21330409E017A}
+set_property PROGRAM.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xcu250_0_3]
+set_property PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0_3]
+set_property FULL_PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0_3]
+current_hw_device [get_hw_devices xcu250_0_3]
+refresh_hw_device [lindex [get_hw_devices xcu250_0_3] 0]
+close_hw_target {localhost:3121/xilinx_tcf/Xilinx/21330409E017A}
+open_hw_target {localhost:3121/xilinx_tcf/Xilinx/21330409X021A}
+set_property PROGRAM.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xcu250_0]
+set_property PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+set_property FULL_PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+current_hw_device [get_hw_devices xcu250_0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+close_hw_manager
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:vio:3.0 vio_0
+endgroup
+set_property -dict [list CONFIG.C_EN_PROBE_IN_ACTIVITY {0} CONFIG.C_NUM_PROBE_IN {0}] [get_bd_cells vio_0]
+set_property location {3 301 -446} [get_bd_cells vio_0]
+set_property location {3 306 -1106} [get_bd_cells vio_0]
+save_bd_design
+close_project
+open_project /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxh-pynq/cxh-pynq.xpr
+update_compile_order -fileset sources_1
+open_bd_design {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxh-pynq/cxh-pynq.srcs/sources_1/bd/system_top/system_top.bd}
+close_project
+open_project /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.xpr
+update_compile_order -fileset sources_1
+open_bd_design {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd}
+set_property location {2 77 -1102} [get_bd_cells vio_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_0
+endgroup
+set_property location {4 597 -1131} [get_bd_cells util_vector_logic_0]
+delete_bd_objs [get_bd_nets rst_ddr4_0_333M1_peripheral_aresetn]
+connect_bd_net [get_bd_pins rst_ddr4_0_333M1/peripheral_aresetn] [get_bd_pins util_vector_logic_0/Op1]
+startgroup
+set_property -dict [list CONFIG.C_SIZE {1}] [get_bd_cells util_vector_logic_0]
+endgroup
+connect_bd_net [get_bd_pins vio_0/probe_out0] [get_bd_pins util_vector_logic_0/Op2]
+connect_bd_net [get_bd_pins util_vector_logic_0/Res] [get_bd_pins rv_system/corerstn]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/clk_wiz_0/clk_out1 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins vio_0/clk]
+set_property location {3 575 -1142} [get_bd_cells util_vector_logic_0]
+set_property location {3 577 -1144} [get_bd_cells util_vector_logic_0]
+save_bd_design
+validate_bd_design
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+write_cfgmem  -format mcs -size 128 -interface SPIx4 -loadbit {up 0x01002000 "/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit" } -loaddata {up 0x06000000 "/home/chenxuhao/Desktop/hello.elf" } -force -disablebitswap -file "/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/6-23.mcs"
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xcu250_0]
+set_property PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+set_property FULL_PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+current_hw_device [get_hw_devices xcu250_0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+create_hw_cfgmem -hw_device [get_hw_devices xcu250_0] -mem_dev [lindex [get_cfgmem_parts {mt25qu01g-spi-x1_x2_x4}] 0]
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.FILES [list "/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/6-23.mcs" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.FILES [list "/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/6-23.mcs" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.PRM_FILE {} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+startgroup 
+create_hw_bitstream -hw_device [lindex [get_hw_devices xcu250_0] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices xcu250_0] 0]]; program_hw_devices [lindex [get_hw_devices xcu250_0] 0]; refresh_hw_device [lindex [get_hw_devices xcu250_0] 0];
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+endgroup
+set_property PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+set_property FULL_PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+set_property PROGRAM.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xcu250_0]
+program_hw_devices [get_hw_devices xcu250_0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_0/inst/ila_lib"}]]
+reset_hw_vio_activity [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]
+reset_hw_vio_activity [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]
+boot_hw_device  [lindex [get_hw_devices xcu250_0] 0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+boot_hw_device  [lindex [get_hw_devices xcu250_0] 0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+reset_hw_vio_outputs [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]
+boot_hw_device  [lindex [get_hw_devices xcu250_0] 0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+save_wave_config {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xcu250_0]
+set_property PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+set_property FULL_PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+current_hw_device [get_hw_devices xcu250_0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+create_hw_cfgmem -hw_device [get_hw_devices xcu250_0] -mem_dev [lindex [get_cfgmem_parts {mt25qu01g-spi-x1_x2_x4}] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_0/inst/ila_lib"}]]
+commit_hw_vio [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]
+save_wave_config {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+set_property OUTPUT_VALUE 1 [get_hw_probes system_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {system_top_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes system_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {system_top_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes system_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {system_top_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+boot_hw_device  [lindex [get_hw_devices xcu250_0] 0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+set_property OUTPUT_VALUE 0 [get_hw_probes system_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {system_top_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+save_wave_config {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_manager
+set_property location {3 593 -1149} [get_bd_cells util_vector_logic_0]
+set_property location {2 245 -1136} [get_bd_cells vio_0]
+delete_bd_objs [get_bd_nets proc_sys_reset_0_mb_reset]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {resetn ( FPGA Resetn ) } Manual_Source {Auto}}  [get_bd_pins ddr4_0/sys_rst]
+delete_bd_objs [get_bd_nets resetn_1] [get_bd_nets resetn_inv_0_Res] [get_bd_cells resetn_inv_0]
+delete_bd_objs [get_bd_ports resetn]
+undo
+undo
+undo
+undo
+save_bd_design
+open_run impl_1
+open_bd_design {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd}
+open_bd_design {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd}
+set_property location {4 914 192} [get_bd_cells rv_system]
+set_property location {3 634 230} [get_bd_cells util_vector_logic_0]
+undo
+undo
+open_bd_design {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd}
+set_property location {4 906 -810} [get_bd_cells rv_system]
+set_property location {4 901 -480} [get_bd_cells rv_system]
+set_property location {4 936 100} [get_bd_cells rv_system]
+set_property location {3 591 -456} [get_bd_cells util_vector_logic_0]
+set_property location {2 273 -499} [get_bd_cells vio_0]
+set_property location {2 247 34} [get_bd_cells vio_0]
+set_property location {3 576 35} [get_bd_cells util_vector_logic_0]
+set_property location {4 898 181} [get_bd_cells rv_system]
+set_property location {4 894 196} [get_bd_cells rv_system]
+set_property location {4 894 171} [get_bd_cells rv_system]
+set_property location {3 577 142} [get_bd_cells util_vector_logic_0]
+set_property location {3 572 152} [get_bd_cells util_vector_logic_0]
+set_property location {3 569 160} [get_bd_cells util_vector_logic_0]
+set_property location {3 568 160} [get_bd_cells util_vector_logic_0]
+set_property location {2 239 162} [get_bd_cells vio_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:c_shift_ram:12.0 c_shift_ram_0
+endgroup
+delete_bd_objs [get_bd_nets util_vector_logic_0_Res]
+connect_bd_net [get_bd_pins util_vector_logic_0/Res] [get_bd_pins c_shift_ram_0/D]
+startgroup
+set_property -dict [list CONFIG.Width.VALUE_SRC USER] [get_bd_cells c_shift_ram_0]
+set_property -dict [list CONFIG.Width {1} CONFIG.Depth {1} CONFIG.DefaultData {0} CONFIG.AsyncInitVal {0} CONFIG.SyncInitVal {0}] [get_bd_cells c_shift_ram_0]
+endgroup
+connect_bd_net [get_bd_pins c_shift_ram_0/Q] [get_bd_pins rv_system/corerstn]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/clk_wiz_0/clk_out1 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins c_shift_ram_0/CLK]
+delete_bd_objs [get_bd_nets c_shift_ram_0_Q] [get_bd_nets util_vector_logic_0_Res] [get_bd_cells c_shift_ram_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:util_ds_buf:2.1 util_ds_buf_0
+endgroup
+delete_bd_objs [get_bd_cells util_ds_buf_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:fifo_generator:13.2 fifo_generator_0
+endgroup
+delete_bd_objs [get_bd_cells fifo_generator_0]
+delete_bd_objs [get_bd_nets rv_system/util_vector_logic_0_Res]
+delete_bd_objs [get_bd_nets rv_system/c_shift_ram_0_Q]
+connect_bd_net [get_bd_pins rv_system/c_shift_ram_0/Q] [get_bd_pins rv_system/NutShell_0/reset]
+delete_bd_objs [get_bd_nets rv_system/c_shift_ram_1_Q]
+connect_bd_net [get_bd_pins rv_system/c_shift_ram_1/Q] [get_bd_pins rv_system/util_vector_logic_0/Op1]
+connect_bd_net [get_bd_pins rv_system/util_vector_logic_0/Res] [get_bd_pins rv_system/c_shift_ram_0/D]
+connect_bd_net [get_bd_pins util_vector_logic_0/Res] [get_bd_pins rv_system/corerstn]
+delete_bd_objs [get_bd_nets rv_system/axi_gpio_0_gpio_io_o] [get_bd_nets rv_system/c_shift_ram_1_Q] [get_bd_cells rv_system/c_shift_ram_1]
+connect_bd_net [get_bd_pins rv_system/corerstn] [get_bd_pins rv_system/util_vector_logic_0/Op1]
+validate_bd_design
+reset_run system_top_ddr4_0_0_synth_1
+reset_run system_top_system_ila_0_0_synth_1
+reset_run synth_1
+save_bd_design
+launch_runs impl_1 -jobs 24
+wait_on_run impl_1
+delete_bd_objs [get_bd_nets util_vector_logic_0_Res]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:c_shift_ram:12.0 c_shift_ram_0
+endgroup
+connect_bd_net [get_bd_pins util_vector_logic_0/Res] [get_bd_pins c_shift_ram_0/D]
+startgroup
+set_property -dict [list CONFIG.Width.VALUE_SRC USER] [get_bd_cells c_shift_ram_0]
+set_property -dict [list CONFIG.Width {1} CONFIG.Depth {1} CONFIG.DefaultData {0} CONFIG.AsyncInitVal {0} CONFIG.SyncInitVal {0}] [get_bd_cells c_shift_ram_0]
+endgroup
+connect_bd_net [get_bd_pins c_shift_ram_0/Q] [get_bd_pins rv_system/corerstn]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:c_shift_ram:12.0 rv_system/c_shift_ram_1
+endgroup
+delete_bd_objs [get_bd_nets rv_system/corerstn_1]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:c_shift_ram:12.0 c_shift_ram_1
+endgroup
+move_bd_cells [get_bd_cells rv_system] [get_bd_cells c_shift_ram_1]
+set_property -dict [list CONFIG.Width.VALUE_SRC USER] [get_bd_cells rv_system/c_shift_ram_1]
+set_property -dict [list CONFIG.Width {1} CONFIG.Depth {1} CONFIG.DefaultData {0} CONFIG.AsyncInitVal {0} CONFIG.SyncInitVal {0}] [get_bd_cells rv_system/c_shift_ram_1]
+connect_bd_net [get_bd_pins rv_system/c_shift_ram_1/Q] [get_bd_pins rv_system/util_vector_logic_0/Op1]
+connect_bd_net [get_bd_pins rv_system/corerstn] [get_bd_pins rv_system/c_shift_ram_1/D]
+set_property location {3.5 805 -271} [get_bd_cells c_shift_ram_0]
+set_property location {5 1090 -209} [get_bd_cells rv_system]
+set_property location {4 779 126} [get_bd_cells c_shift_ram_0]
+set_property location {5 1125 156} [get_bd_cells rv_system]
+set_property location {4 802 145} [get_bd_cells c_shift_ram_0]
+delete_bd_objs [get_bd_cells rv_system/c_shift_ram_2]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/clk_wiz_0/clk_out1 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins c_shift_ram_0/CLK]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/clk_wiz_0/clk_out1 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins rv_system/c_shift_ram_1/CLK]
+endgroup
+save_bd_design
+reset_run impl_1
+launch_runs impl_1 -jobs 24
+wait_on_run impl_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd]
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -jobs 24
+wait_on_run impl_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd]
+refresh_design
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+write_cfgmem  -format mcs -size 128 -interface SPIx4 -loadbit {up 0x01002000 "/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit" } -loaddata {up 0x03000000 "/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/hello.elf" } -force -disablebitswap -file "/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/6-25.mcs"
+open_hw_manager
+connect_hw_server -allow_non_jtag
+close_hw_manager
+open_bd_design {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd}
+delete_bd_objs [get_bd_nets rst_ddr4_0_333M1_peripheral_aresetn] [get_bd_nets axi_gpio_0_gpio_io_o] [get_bd_cells rst_ddr4_0_333M1]
+connect_bd_net [get_bd_pins axi_gpio_0/ip2intc_irpt] [get_bd_pins rst_ddr4_0_333M/dcm_locked]
+undo
+startgroup
+connect_bd_net [get_bd_pins axi_gpio_0/gpio_io_o] [get_bd_pins util_vector_logic_0/Op1]
+connect_bd_net [get_bd_pins axi_gpio_0/gpio_io_o] [get_bd_pins rst_ddr4_0_333M/dcm_locked]
+endgroup
+undo
+connect_bd_net [get_bd_pins axi_gpio_0/ip2intc_irpt] [get_bd_pins util_vector_logic_0/Op1]
+undo
+connect_bd_net [get_bd_pins axi_gpio_0/gpio_io_o] [get_bd_pins util_vector_logic_0/Op1]
+save_bd_design
+reset_run impl_1
+launch_runs impl_1 -jobs 24
+wait_on_run impl_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 proc_sys_reset_1
+endgroup
+connect_bd_net [get_bd_pins ddr4_0/c0_ddr4_ui_clk] [get_bd_pins proc_sys_reset_1/slowest_sync_clk]
+connect_bd_net [get_bd_pins ddr4_0/c0_ddr4_ui_clk_sync_rst] [get_bd_pins proc_sys_reset_1/ext_reset_in]
+connect_bd_net [get_bd_pins proc_sys_reset_1/peripheral_aresetn] [get_bd_pins proc_sys_reset_1/dcm_locked]
+delete_bd_objs [get_bd_nets proc_sys_reset_1_peripheral_aresetn]
+export_ip_user_files -of_objects  [get_files /home/chenxuhao/NutShell_U250/alveo-u250-xdc.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 /home/chenxuhao/NutShell_U250/alveo-u250-xdc.xdc
+reset_run synth_1
+save_bd_design
+launch_runs impl_1 -jobs 24
+wait_on_run impl_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd]
+refresh_design
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+write_cfgmem  -format mcs -size 128 -interface SPIx4 -loadbit {up 0x01002000 "/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit" } -loaddata {up 0x03000000 "/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/hello.elf" } -force -disablebitswap -file "/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/6-25.mcs"
+write_cfgmem  -format mcs -size 128 -interface SPIx1 -loadbit {up 0x01002000 "/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit" } -loaddata {up 0x03000000 "/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/hello.elf" } -force -disablebitswap -file "/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/6-25.mcs"
+write_cfgmem  -format mcs -size 128 -interface SPIx1 -loadbit {up 0x01002000 "/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit" } -loaddata {up 0x07000000 "/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/hello.elf" } -force -disablebitswap -file "/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/6-25.mcs"
+write_cfgmem  -format mcs -size 128 -interface SPIx1 -loadbit {up 0x01002000 "/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit" } -loaddata {up 0x07F00000 "/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/hello.elf" } -force -disablebitswap -file "/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/6-25.mcs"
+open_bd_design {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd}
+delete_bd_objs [get_bd_cells proc_sys_reset_1]
+save_bd_design
+reset_run impl_1
+launch_runs impl_1 -jobs 24
+wait_on_run impl_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 proc_sys_reset_1
+endgroup
+set_property location {8 2411 -87} [get_bd_cells proc_sys_reset_1]
+connect_bd_net [get_bd_pins ddr4_0/c0_ddr4_ui_clk] [get_bd_pins proc_sys_reset_1/slowest_sync_clk]
+connect_bd_net [get_bd_pins ddr4_0/c0_ddr4_ui_clk_sync_rst] [get_bd_pins proc_sys_reset_1/ext_reset_in]
+connect_bd_net [get_bd_pins proc_sys_reset_1/peripheral_aresetn] [get_bd_pins proc_sys_reset_1/dcm_locked]
+delete_bd_objs [get_bd_nets proc_sys_reset_1_peripheral_aresetn]
+delete_bd_objs [get_bd_nets c_shift_ram_0_Q] [get_bd_nets util_vector_logic_0_Res] [get_bd_cells c_shift_ram_0]
+delete_bd_objs [get_bd_nets axi_gpio_0_gpio_io_o] [get_bd_nets vio_0_probe_out0] [get_bd_cells util_vector_logic_0]
+delete_bd_objs [get_bd_cells vio_0]
+connect_bd_net [get_bd_pins proc_sys_reset_1/peripheral_aresetn] [get_bd_pins rv_system/corerstn]
+open_bd_design {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd}
+delete_bd_objs [get_bd_intf_nets ddr4_0_C0_DDR4]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {ddr4_sdram_c0 ( DDR4 SDRAM C0 ) } Manual_Source {Auto}}  [get_bd_intf_pins ddr4_0/C0_DDR4]
+connect_bd_net [get_bd_pins axi_gpio_0/gpio_io_o] [get_bd_pins proc_sys_reset_1/aux_reset_in]
+reset_run synth_1
+save_bd_design
+launch_runs impl_1 -jobs 24
+close_project
+open_project /home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.xpr
+update_compile_order -fileset sources_1
+open_bd_design {/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd}
+write_cfgmem  -format mcs -size 128 -interface SPIx1 -loadbit {up 0x01002000 "/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit" } -loaddata {up 0x07F00000 "/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/hello.elf" } -force -disablebitswap -file "/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/6-25copy.mcs"
+close_project
+open_project /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.xpr
+update_compile_order -fileset sources_1
+open_bd_design {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:vio:3.0 rv_system/vio_0
+endgroup
+move_bd_cells [get_bd_cells /] [get_bd_cells rv_system/vio_0]
+set_property location {4 845 159} [get_bd_cells vio_0]
+set_property location {3 520 120} [get_bd_cells vio_0]
+set_property location {3.5 967 140} [get_bd_cells vio_0]
+set_property location {3 517 88} [get_bd_cells vio_0]
+delete_bd_objs [get_bd_intf_ports ddr4_sdram_c0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_0
+endgroup
+connect_bd_net [get_bd_pins vio_0/probe_out0] [get_bd_pins util_vector_logic_0/Op2]
+delete_bd_objs [get_bd_nets proc_sys_reset_1_peripheral_aresetn]
+connect_bd_net [get_bd_pins proc_sys_reset_1/peripheral_aresetn] [get_bd_pins util_vector_logic_0/Op1]
+connect_bd_net [get_bd_pins util_vector_logic_0/Res] [get_bd_pins rv_system/corerstn]
+startgroup
+set_property -dict [list CONFIG.C_SIZE {1} CONFIG.C_OPERATION {or} CONFIG.LOGO_FILE {data/sym_orgate.png}] [get_bd_cells util_vector_logic_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.C_EN_PROBE_IN_ACTIVITY {0} CONFIG.C_NUM_PROBE_IN {0}] [get_bd_cells vio_0]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/clk_wiz_0/clk_out1 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins vio_0/clk]
+save_bd_design
+launch_runs impl_1 -jobs 24
+wait_on_run impl_1
+delete_bd_objs [get_bd_nets proc_sys_reset_1_peripheral_aresetn]
+delete_bd_objs [get_bd_nets axi_gpio_0_gpio_io_o] [get_bd_cells proc_sys_reset_1]
+delete_bd_objs [get_bd_nets vio_0_probe_out0] [get_bd_nets util_vector_logic_0_Res] [get_bd_cells util_vector_logic_0]
+connect_bd_net [get_bd_pins vio_0/probe_out0] [get_bd_pins rv_system/corerstn]
+add_files -fileset constrs_1 -norecurse /home/chenxuhao/NutShell_U250/alveo-u250-xdc.xdc
+reset_run synth_1
+save_bd_design
+launch_runs impl_1 -jobs 24
+wait_on_run impl_1
+launch_runs impl_1 -jobs 48
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0
+endgroup
+connect_bd_net [get_bd_pins xlconstant_0/dout] [get_bd_pins xlconcat_0/In2]
+save_bd_design
+launch_runs impl_1 -jobs 48
+wait_on_run impl_1
+delete_bd_objs [get_bd_nets xlconstant_0_dout] [get_bd_cells xlconstant_0]
+startgroup
+set_property -dict [list CONFIG.NUM_PORTS {2} CONFIG.dout_width {2}] [get_bd_cells xlconcat_0]
+endgroup
+delete_bd_objs [get_bd_nets xlconcat_0_dout]
+delete_bd_objs [get_bd_nets rv_system/io_meip_1]
+connect_bd_net [get_bd_pins rv_system/io_meip] [get_bd_pins rv_system/NutShell_0/io_meip]
+startgroup
+connect_bd_net [get_bd_pins xlconcat_0/dout] [get_bd_pins rv_system/io_meip]
+endgroup
+set_property location {2 182 174} [get_bd_cells vio_0]
+set_property location {3 542 341} [get_bd_cells xlconcat_0]
+set_property location {3.5 873 314} [get_bd_cells rv_system]
+set_property location {4 845 595} [get_bd_cells jtag_axi_0]
+set_property location {4.5 1267 446} [get_bd_cells axi_interconnect_0]
+set_property location {5.5 1777 451} [get_bd_cells ddr4_0]
+set_property location {6 1815 687} [get_bd_cells axi_gpio_0]
+set_property location {6 1776 871} [get_bd_cells axi_uartlite_0]
+set_property location {6.5 2158 497} [get_bd_cells rst_ddr4_0_333M]
+save_bd_design
+reset_run impl_1
+launch_runs impl_1 -jobs 48
+wait_on_run impl_1
+open_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 48
+wait_on_run impl_1
+write_cfgmem  -format mcs -size 128 -interface SPIx4 -loadbit {up 0x01002000 "/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit" } -force -disablebitswap -file "/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/6-27.mcs"
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xcu250_0]
+set_property PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+set_property FULL_PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+current_hw_device [get_hw_devices xcu250_0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+create_hw_cfgmem -hw_device [get_hw_devices xcu250_0] -mem_dev [lindex [get_cfgmem_parts {mt25qu01g-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+set_property FULL_PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+set_property PROGRAM.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xcu250_0]
+program_hw_devices [get_hw_devices xcu250_0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_0/inst/ila_lib"}]]
+boot_hw_device  [lindex [get_hw_devices xcu250_0] 0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+delete_hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [get_hw_devices xcu250_0 ]]
+set_property PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+set_property FULL_PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+set_property PROGRAM.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xcu250_0]
+program_hw_devices [get_hw_devices xcu250_0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+save_wave_config {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+set_property OUTPUT_VALUE 1 [get_hw_probes system_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {system_top_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes system_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {system_top_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+boot_hw_device  [lindex [get_hw_devices xcu250_0] 0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xcu250_0]
+set_property PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+set_property FULL_PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+current_hw_device [get_hw_devices xcu250_0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_0/inst/ila_lib"}]]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+save_wave_config {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_target {localhost:3121/xilinx_tcf/Xilinx/21330409X021A}
+open_hw_target {localhost:3121/xilinx_tcf/Xilinx/21330409X02FA}
+set_property PROGRAM.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xcu250_0_1]
+set_property PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0_1]
+set_property FULL_PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0_1]
+current_hw_device [get_hw_devices xcu250_0_1]
+refresh_hw_device [lindex [get_hw_devices xcu250_0_1] 0]
+open_bd_design {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd}
+set_property PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0_1]
+set_property FULL_PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0_1]
+set_property PROGRAM.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xcu250_0_1]
+program_hw_devices [get_hw_devices xcu250_0_1]
+refresh_hw_device [lindex [get_hw_devices xcu250_0_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcu250_0_1] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_0/inst/ila_lib"}]]
+boot_hw_device  [lindex [get_hw_devices xcu250_0_1] 0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0_1] 0]
+boot_hw_device  [lindex [get_hw_devices xcu250_0_1] 0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0_1] 0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0_1] 0]
+set_property PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0_1]
+set_property FULL_PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0_1]
+set_property PROGRAM.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xcu250_0_1]
+program_hw_devices [get_hw_devices xcu250_0_1]
+refresh_hw_device [lindex [get_hw_devices xcu250_0_1] 0]
+boot_hw_device  [lindex [get_hw_devices xcu250_0_1] 0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0_1] 0]
+save_wave_config {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_target {localhost:3121/xilinx_tcf/Xilinx/21330409X02FA}
+open_hw_target {localhost:3121/xilinx_tcf/Xilinx/21330409X021A}
+set_property PROGRAM.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xcu250_0]
+set_property PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+set_property FULL_PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+current_hw_device [get_hw_devices xcu250_0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_0/inst/ila_lib"}]]
+save_wave_config {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_target {localhost:3121/xilinx_tcf/Xilinx/21330409X021A}
+open_hw_target {localhost:3121/xilinx_tcf/Xilinx/21330409X02FA}
+set_property PROGRAM.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xcu250_0_1]
+set_property PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0_1]
+set_property FULL_PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0_1]
+current_hw_device [get_hw_devices xcu250_0_1]
+refresh_hw_device [lindex [get_hw_devices xcu250_0_1] 0]
+close_hw_target {localhost:3121/xilinx_tcf/Xilinx/21330409X02FA}
+open_hw_target {localhost:3121/xilinx_tcf/Xilinx/21330409X021A}
+set_property PROGRAM.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xcu250_0]
+set_property PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+set_property FULL_PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+current_hw_device [get_hw_devices xcu250_0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_0/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_0/inst/ila_lib"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_0/inst/ila_lib"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_0/inst/ila_lib"}]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+set_property PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+set_property FULL_PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+set_property PROGRAM.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xcu250_0]
+program_hw_devices [get_hw_devices xcu250_0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+boot_hw_device  [lindex [get_hw_devices xcu250_0] 0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+save_wave_config {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_target {localhost:3121/xilinx_tcf/Xilinx/21330409X021A}
+open_hw_target {localhost:3121/xilinx_tcf/Xilinx/21330409X02FA}
+set_property PROGRAM.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xcu250_0_1]
+set_property PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0_1]
+set_property FULL_PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0_1]
+current_hw_device [get_hw_devices xcu250_0_1]
+refresh_hw_device [lindex [get_hw_devices xcu250_0_1] 0]
+open_bd_design {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd}
+open_bd_design {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd}
+set_property PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0_1]
+set_property FULL_PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0_1]
+set_property PROGRAM.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xcu250_0_1]
+program_hw_devices [get_hw_devices xcu250_0_1]
+refresh_hw_device [lindex [get_hw_devices xcu250_0_1] 0]
+close_hw_target {localhost:3121/xilinx_tcf/Xilinx/21330409X02FA}
+open_hw_target {localhost:3121/xilinx_tcf/Xilinx/21330409X02FA}
+set_property PROGRAM.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xcu250_0_1]
+set_property PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0_1]
+set_property FULL_PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0_1]
+current_hw_device [get_hw_devices xcu250_0_1]
+refresh_hw_device [lindex [get_hw_devices xcu250_0_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcu250_0_1] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_0/inst/ila_lib"}]]
+boot_hw_device  [lindex [get_hw_devices xcu250_0_1] 0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0_1] 0]
+set_property PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0_1]
+set_property FULL_PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0_1]
+set_property PROGRAM.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xcu250_0_1]
+program_hw_devices [get_hw_devices xcu250_0_1]
+refresh_hw_device [lindex [get_hw_devices xcu250_0_1] 0]
+save_wave_config {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_target {localhost:3121/xilinx_tcf/Xilinx/21330409X02FA}
+open_hw_target {localhost:3121/xilinx_tcf/Xilinx/21330409X021A}
+set_property PROGRAM.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xcu250_0]
+set_property PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+set_property FULL_PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+current_hw_device [get_hw_devices xcu250_0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+open_bd_design {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd}
+close_project
+open_project /home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.xpr
+update_compile_order -fileset sources_1
+write_cfgmem  -format mcs -size 128 -interface SPIx1 -loadbit {up 0x01002000 "/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit" } -force -disablebitswap -file "/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/6-30copy.mcs"
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xcu250_0]
+set_property PROBES.FILE {/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+set_property FULL_PROBES.FILE {/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+current_hw_device [get_hw_devices xcu250_0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+create_hw_cfgmem -hw_device [lindex [get_hw_devices xcu250_0] 0] [lindex [get_cfgmem_parts {mt25qu01g-spi-x1_x2_x4}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.FILES [list "/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/6-30copy.mcs" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.PRM_FILE {} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+startgroup 
+create_hw_bitstream -hw_device [lindex [get_hw_devices xcu250_0] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices xcu250_0] 0]]; program_hw_devices [lindex [get_hw_devices xcu250_0] 0]; refresh_hw_device [lindex [get_hw_devices xcu250_0] 0];
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+endgroup
+set_property PROBES.FILE {/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+set_property FULL_PROBES.FILE {/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+set_property PROGRAM.FILE {/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xcu250_0]
+program_hw_devices [get_hw_devices xcu250_0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_0/inst/ila_lib"}]]
+boot_hw_device  [lindex [get_hw_devices xcu250_0] 0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+open_bd_design {/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd}
+set_property location {4 678 -550} [get_bd_cells rv_system]
+set_property location {4 692 -100} [get_bd_cells rv_system]
+set_property PROBES.FILE {/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+set_property FULL_PROBES.FILE {/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+set_property PROGRAM.FILE {/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xcu250_0]
+program_hw_devices [get_hw_devices xcu250_0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+boot_hw_device  [lindex [get_hw_devices xcu250_0] 0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+open_bd_design {/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd}
+open_bd_design {/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd}
+delete_bd_objs [get_bd_nets ddr4_0_c0_ddr4_ui_clk]
+connect_bd_net [get_bd_pins ddr4_0/c0_ddr4_ui_clk] [get_bd_pins rst_ddr4_0_333M/slowest_sync_clk]
+connect_bd_net [get_bd_pins ddr4_0/c0_ddr4_ui_clk] [get_bd_pins rst_ddr4_0_333M1/slowest_sync_clk]
+connect_bd_net [get_bd_pins ddr4_0/c0_ddr4_ui_clk] [get_bd_pins axi_interconnect_0/M00_ACLK]
+connect_bd_net [get_bd_pins ddr4_0/c0_ddr4_ui_clk] [get_bd_pins axi_interconnect_0/M03_ACLK]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Clk {Auto} Manual_Source {Auto}}  [get_bd_pins clk_wiz_0/clk_in1]
+delete_bd_objs [get_bd_nets clk_wiz_0_locked]
+connect_bd_net [get_bd_pins clk_wiz_0/locked] [get_bd_pins proc_sys_reset_0/ext_reset_in]
+startgroup
+set_property -dict [list CONFIG.CLK_IN1_BOARD_INTERFACE {default_300mhz_clk0} CONFIG.PRIM_SOURCE {Differential_clock_capable_pin}] [get_bd_cells clk_wiz_0]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {default_300mhz_clk0 ( 300 MHz System differential clock0 ) } Manual_Source {Auto}}  [get_bd_intf_pins clk_wiz_0/CLK_IN1_D]
+save_bd_design
+save_wave_config {/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_manager
+close_project
+open_project /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.xpr
+update_compile_order -fileset sources_1
+open_bd_design {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd}
+startgroup
+set_property -dict [list CONFIG.CLK_IN1_BOARD_INTERFACE {default_300mhz_clk0} CONFIG.PRIM_SOURCE {Differential_clock_capable_pin}] [get_bd_cells clk_wiz_0]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {default_300mhz_clk0 ( 300 MHz System differential clock0 ) } Manual_Source {Auto}}  [get_bd_intf_pins clk_wiz_0/CLK_IN1_D]
+reset_run system_top_clk_wiz_0_1_synth_1
+reset_run synth_1
+save_bd_design
+launch_runs impl_1 -jobs 48
+wait_on_run impl_1
+delete_bd_objs [get_bd_intf_nets default_300mhz_clk0_0_1]
+delete_bd_objs [get_bd_intf_ports default_300mhz_clk0_0]
+startgroup
+set_property -dict [list CONFIG.CLK_IN1_BOARD_INTERFACE {default_300mhz_clk1}] [get_bd_cells clk_wiz_0]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {default_300mhz_clk1 ( 300 MHz System differential clock1 ) } Manual_Source {Auto}}  [get_bd_intf_pins clk_wiz_0/CLK_IN1_D]
+validate_bd_design
+save_bd_design
+reset_run synth_1
+reset_run system_top_clk_wiz_0_1_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 48
+wait_on_run impl_1
+write_cfgmem  -format mcs -size 128 -interface SPIx4 -loadbit {up 0x01002000 "/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit" } -force -disablebitswap -file "/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/6-30.mcs"
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xcu250_0]
+set_property PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+set_property FULL_PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+current_hw_device [get_hw_devices xcu250_0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_0/inst/ila_lib"}]]
+set_property PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+set_property FULL_PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+set_property PROGRAM.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xcu250_0]
+program_hw_devices [get_hw_devices xcu250_0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+create_hw_cfgmem -hw_device [lindex [get_hw_devices xcu250_0] 0] [lindex [get_cfgmem_parts {mt25qu01g-spi-x1_x2_x4}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.FILES [list "/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/6-30.mcs" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.PRM_FILE {} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+startgroup 
+create_hw_bitstream -hw_device [lindex [get_hw_devices xcu250_0] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices xcu250_0] 0]]; program_hw_devices [lindex [get_hw_devices xcu250_0] 0]; refresh_hw_device [lindex [get_hw_devices xcu250_0] 0];
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+endgroup
+boot_hw_device  [lindex [get_hw_devices xcu250_0] 0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+boot_hw_device  [lindex [get_hw_devices xcu250_0] 0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+save_wave_config {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+set_property OUTPUT_VALUE 1 [get_hw_probes system_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {system_top_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes system_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {system_top_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+save_wave_config {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+save_wave_config {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}

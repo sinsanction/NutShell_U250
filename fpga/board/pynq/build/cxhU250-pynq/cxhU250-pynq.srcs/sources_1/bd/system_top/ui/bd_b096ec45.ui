@@ -1,0 +1,42 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.08018",
+   "Default View_TopLeft":"-152,-56",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port io_frontend -pg 1 -lvl 0 -x -10 -y 70 -defaultsOSRD
+preplace port io_mem -pg 1 -lvl 6 -x 1510 -y 70 -defaultsOSRD
+preplace port io_mmio -pg 1 -lvl 6 -x 1510 -y 90 -defaultsOSRD
+preplace port coreclk -pg 1 -lvl 0 -x -10 -y 150 -defaultsOSRD
+preplace portBus corerstn -pg 1 -lvl 0 -x -10 -y 130 -defaultsOSRD
+preplace portBus io_meip -pg 1 -lvl 0 -x -10 -y 230 -defaultsOSRD
+preplace inst NutShell_0 -pg 1 -lvl 4 -x 1070 -y 140 -defaultsOSRD
+preplace inst axi_protocol_convert_0 -pg 1 -lvl 3 -x 720 -y 110 -defaultsOSRD
+preplace inst axi_protocol_convert_1 -pg 1 -lvl 2 -x 410 -y 90 -defaultsOSRD
+preplace inst c_shift_ram_0 -pg 1 -lvl 2 -x 410 -y 300 -defaultsOSRD
+preplace inst c_shift_ram_1 -pg 1 -lvl 1 -x 130 -y 140 -defaultsOSRD
+preplace inst system_ila_0 -pg 1 -lvl 5 -x 1400 -y 210 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 3 -x 720 -y 300 -defaultsOSRD
+preplace netloc NutShell_0_io_ila_InstrCnt 1 4 1 1250 210n
+preplace netloc NutShell_0_io_ila_WBUpc 1 4 1 1300 110n
+preplace netloc NutShell_0_io_ila_WBUrfData 1 4 1 1260 190n
+preplace netloc NutShell_0_io_ila_WBUrfDest 1 4 1 1270 170n
+preplace netloc NutShell_0_io_ila_WBUrfWen 1 4 1 1280 150n
+preplace netloc NutShell_0_io_ila_WBUvalid 1 4 1 1290 130n
+preplace netloc axi_gpio_0_gpio_io_o 1 0 3 20 210 260 180 560J
+preplace netloc c_shift_ram_0_Q 1 2 1 N 300
+preplace netloc c_shift_ram_1_Q 1 1 1 240 140n
+preplace netloc clk_wiz_0_coreclk 1 0 5 10 220 250 170 570 190 870 10 1310
+preplace netloc io_meip_1 1 0 4 NJ 230 NJ 230 560J 360 890J
+preplace netloc util_vector_logic_0_Res 1 3 1 880J 150n
+preplace netloc NutShell_0_io_mem 1 4 2 NJ 70 NJ
+preplace netloc Conn2 1 0 2 NJ 70 NJ
+preplace netloc axi_protocol_convert_1_M_AXI 1 2 1 N 90
+preplace netloc axi_protocol_convert_0_M_AXI 1 3 1 N 110
+preplace netloc NutShell_0_io_mmio 1 4 2 NJ 90 NJ
+levelinfo -pg 1 -10 130 410 720 1070 1400 1510
+pagesize -pg 1 -db -bbox -sgen -160 0 1620 370
+"
+}
+

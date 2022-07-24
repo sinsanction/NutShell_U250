@@ -1,0 +1,97 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jul  4 08:37:24 2022
+# Process ID: 127851
+# Current directory: /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq
+# Command line: vivado
+# Log file: /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/vivado.log
+# Journal file: /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+current_hw_device [get_hw_devices xcu250_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xcu250_0] 0]
+close_project
+open_project /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.xpr
+open_bd_design {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd}
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xcu250_0]
+set_property PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+set_property FULL_PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+current_hw_device [get_hw_devices xcu250_0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+create_hw_cfgmem -hw_device [get_hw_devices xcu250_0] -mem_dev [lindex [get_cfgmem_parts {mt25qu01g-spi-x1_x2_x4}] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_0/inst/ila_lib"}]]
+open_bd_design {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd}
+set_property OUTPUT_VALUE 1 [get_hw_probes system_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {system_top_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+pwd
+source jtagmv.tcl
+set_property OUTPUT_VALUE 0 [get_hw_probes system_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {system_top_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+source jtagmv.tcl
+delete_hw_axi_txn wr_txn
+source jtagmv.tcl
+set_property OUTPUT_VALUE 1 [get_hw_probes system_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {system_top_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes system_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {system_top_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes system_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {system_top_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes system_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {system_top_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+open_bd_design {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd}
+set_property OUTPUT_VALUE 1 [get_hw_probes system_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {system_top_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+delete_hw_axi_txn wr_txn
+source jtagmv.tcl
+set_property OUTPUT_VALUE 0 [get_hw_probes system_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {system_top_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+refresh_hw_target {localhost:3121/xilinx_tcf/Xilinx/21330409X021A}
+refresh_hw_target {localhost:3121/xilinx_tcf/Xilinx/21330409X021A}
+save_wave_config {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_target {localhost:3121/xilinx_tcf/Xilinx/21330409X021A}
+open_hw_target {localhost:3121/xilinx_tcf/Xilinx/21330409X021A}
+set_property PROGRAM.FILE {/tools/Xilinx/Vivado/2020.2/data/xicom/cfgmem/bitfile/spi_xcu250_pullnone.bit} [get_hw_devices xcu250_0]
+set_property PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+set_property FULL_PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+current_hw_device [get_hw_devices xcu250_0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+set_property PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+set_property FULL_PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+set_property PROGRAM.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xcu250_0]
+program_hw_devices [get_hw_devices xcu250_0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_0/inst/ila_lib"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes system_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {system_top_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+pwd
+ls
+source jtagmv.tcl
+set_property OUTPUT_VALUE 0 [get_hw_probes system_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {system_top_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+source jtagmv.tcl
+source jtagmv.tcl
+set_property OUTPUT_VALUE 1 [get_hw_probes system_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {system_top_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+source jtagmv.tcl
+delete_hw_axi_txn wr_txn
+boot_hw_device  [lindex [get_hw_devices xcu250_0] 0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+set_property OUTPUT_VALUE 0 [get_hw_probes system_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {system_top_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes system_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {system_top_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+source jtagmv.tcl
+set_msg_config
+set_msg_config -id "Labtoolstcl 44-529" -limit 5000
+set_msg_config -id "Labtoolstcl 44-481" -limit 5000
+source jtagmv.tcl
+save_wave_config {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}

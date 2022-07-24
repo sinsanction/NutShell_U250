@@ -1,0 +1,193 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Jun 14 23:19:25 2022
+# Process ID: 124960
+# Current directory: /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq
+# Command line: vivado
+# Log file: /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/vivado.log
+# Journal file: /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+open_project: Time (s): cpu = 00:00:32 ; elapsed = 00:00:15 . Memory (MB): peak = 7654.656 ; gain = 139.523 ; free physical = 196326 ; free virtual = 487819
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtools 27-3366] Cannot support older hw_server version 2019.1
+ERROR: [Common 17-39] 'connect_hw_server' failed due to earlier errors.
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 09:50:49
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-16:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 8928.723 ; gain = 0.035 ; free physical = 174086 ; free virtual = 491261
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/21330409X021A
+set_property PROGRAM.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xcu250_0]
+set_property PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+set_property FULL_PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+current_hw_device [get_hw_devices xcu250_0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+CRITICAL WARNING: [Xicom 50-46] One or more detected MIG version registers have empty values: MIG properties will not be built.
+Parameter Map Version: 0, Error Map Version: 0, Calibration Map Version: 0, Warning Map Version: 0
+INFO: [Labtools 27-2302] Device xcu250 (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-2302] Device xcu250 (JTAG device index = 0) is programmed with a design that has 1 JTAG AXI core(s).
+INFO: [Labtools 27-2302] Device xcu250 (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_0/inst/ila_lib"}]]
+save_wave_config {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_manager
+write_cfgmem  -format mcs -size 128 -interface SPIx4 -loadbit {up 0x01002000 "/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/system_top_wrapper.bit" } -loaddata {up 0x07700000 "/home/chenxuhao/Desktop/hello.elf" } -checksum -force -disablebitswap -file "/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhu250.mcs"
+Command: write_cfgmem -format mcs -size 128 -interface SPIx4 -loadbit {up 0x01002000 "/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/system_top_wrapper.bit" } -loaddata {up 0x07700000 "/home/chenxuhao/Desktop/hello.elf" } -checksum -force -disablebitswap -file /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhu250.mcs
+Creating config memory files...
+Creating bitstream load up from address 0x01002000
+Loading bitfile /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/system_top_wrapper.bit
+ERROR: [Writecfgmem 68-20] SPI_BUSWIDTH property is set to "1" on bitfile /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/system_top_wrapper.bit. This property has to be set to "4" to generate a configuration memory file for the SPIX4 interface. Please ensure that a valid value has been set for the property BITSTREAM.Config.SPI_buswidth and rerun this command.
+0 Infos, 0 Warnings, 0 Critical Warnings and 1 Errors encountered.
+write_cfgmem failed
+write_cfgmem: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 9481.977 ; gain = 150.059 ; free physical = 122940 ; free virtual = 440131
+ERROR: [Common 17-39] 'write_cfgmem' failed due to earlier errors.
+add_files -fileset constrs_1 -norecurse /home/chenxuhao/NutShell_U250/alveo-u250-xdc.xdc
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+[Thu Jun 16 08:20:25 2022] Launched synth_1...
+Run output will be captured here: /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/synth_1/runme.log
+[Thu Jun 16 08:20:25 2022] Launched impl_1...
+Run output will be captured here: /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/runme.log
+write_cfgmem  -format mcs -size 128 -interface SPIx4 -loadbit {up 0x01002000 "/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/system_top_wrapper.bit" } -loaddata {up 0x07000000 "/home/chenxuhao/Desktop/hello.elf" } -checksum -force -disablebitswap -file "/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhu250.mcs"
+Command: write_cfgmem -format mcs -size 128 -interface SPIx4 -loadbit {up 0x01002000 "/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/system_top_wrapper.bit" } -loaddata {up 0x07000000 "/home/chenxuhao/Desktop/hello.elf" } -checksum -force -disablebitswap -file /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhu250.mcs
+Creating config memory files...
+Creating bitstream load up from address 0x01002000
+Loading bitfile /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/system_top_wrapper.bit
+Creating bitstream load up from address 0x07000000
+Loading datafile /home/chenxuhao/Desktop/hello.elf
+Writing file /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhu250.mcs
+Writing log file /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhu250.prm
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX4
+Size               128M
+Start Address      0x00000000
+End Address        0x07FFFFFF
+Checksum           0x1E2976EB
+Fill Value         0xFF
+
+Addr1         Addr2         Date                    File(s)                                                                                    Checksum
+0x01002000    0x02EBA0DB    Jun 16 08:52:24 2022    /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/system_top_wrapper.bit    0x0FFB6A96
+0x07000000    0x070050F7    Jun 14 23:08:31 2022    /home/chenxuhao/Desktop/hello.elf                                                          0x00140E81
+File Checksum Total                                                                                                                            0x100F7917
+0 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_cfgmem completed successfully
+write_cfgmem: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 9489.984 ; gain = 0.000 ; free physical = 122704 ; free virtual = 440053
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 09:50:49
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-16:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/21330409X021A
+set_property PROGRAM.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xcu250_0]
+set_property PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+set_property FULL_PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+current_hw_device [get_hw_devices xcu250_0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+CRITICAL WARNING: [Xicom 50-46] One or more detected MIG version registers have empty values: MIG properties will not be built.
+Parameter Map Version: 0, Error Map Version: 0, Calibration Map Version: 0, Warning Map Version: 0
+INFO: [Labtools 27-2302] Device xcu250 (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-2302] Device xcu250 (JTAG device index = 0) is programmed with a design that has 1 JTAG AXI core(s).
+INFO: [Labtools 27-2302] Device xcu250 (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_0/inst/ila_lib"}]]
+create_hw_cfgmem -hw_device [lindex [get_hw_devices xcu250_0] 0] [lindex [get_cfgmem_parts {mt25qu01g-spi-x1_x2_x4}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+INFO: [Labtools 27-2302] Device xcu250 (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-2302] Device xcu250 (JTAG device index = 0) is programmed with a design that has 1 JTAG AXI core(s).
+INFO: [Labtools 27-2302] Device xcu250 (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+save_wave_config {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 09:50:49
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-16:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/21330409X021A
+set_property PROGRAM.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xcu250_0]
+set_property PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+set_property FULL_PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+current_hw_device [get_hw_devices xcu250_0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+CRITICAL WARNING: [Xicom 50-46] One or more detected MIG version registers have empty values: MIG properties will not be built.
+Parameter Map Version: 0, Error Map Version: 0, Calibration Map Version: 0, Warning Map Version: 0
+INFO: [Labtools 27-2302] Device xcu250 (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-2302] Device xcu250 (JTAG device index = 0) is programmed with a design that has 1 JTAG AXI core(s).
+INFO: [Labtools 27-2302] Device xcu250 (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+create_hw_cfgmem -hw_device [get_hw_devices xcu250_0] -mem_dev [lindex [get_cfgmem_parts {mt25qu01g-spi-x1_x2_x4}] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_0/inst/ila_lib"}]]

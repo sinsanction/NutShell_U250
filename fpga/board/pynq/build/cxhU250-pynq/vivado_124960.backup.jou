@@ -1,0 +1,60 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Jun 14 23:19:25 2022
+# Process ID: 124960
+# Current directory: /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq
+# Command line: vivado
+# Log file: /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/vivado.log
+# Journal file: /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.xpr
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xcu250_0]
+set_property PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+set_property FULL_PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+current_hw_device [get_hw_devices xcu250_0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_0/inst/ila_lib"}]]
+save_wave_config {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_manager
+write_cfgmem  -format mcs -size 128 -interface SPIx4 -loadbit {up 0x01002000 "/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/system_top_wrapper.bit" } -loaddata {up 0x07700000 "/home/chenxuhao/Desktop/hello.elf" } -checksum -force -disablebitswap -file "/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhu250.mcs"
+add_files -fileset constrs_1 -norecurse /home/chenxuhao/NutShell_U250/alveo-u250-xdc.xdc
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+write_cfgmem  -format mcs -size 128 -interface SPIx4 -loadbit {up 0x01002000 "/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/system_top_wrapper.bit" } -loaddata {up 0x07000000 "/home/chenxuhao/Desktop/hello.elf" } -checksum -force -disablebitswap -file "/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhu250.mcs"
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xcu250_0]
+set_property PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+set_property FULL_PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+current_hw_device [get_hw_devices xcu250_0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_0/inst/ila_lib"}]]
+create_hw_cfgmem -hw_device [lindex [get_hw_devices xcu250_0] 0] [lindex [get_cfgmem_parts {mt25qu01g-spi-x1_x2_x4}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcu250_0] 0]]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+save_wave_config {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xcu250_0]
+set_property PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+set_property FULL_PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+current_hw_device [get_hw_devices xcu250_0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+create_hw_cfgmem -hw_device [get_hw_devices xcu250_0] -mem_dev [lindex [get_cfgmem_parts {mt25qu01g-spi-x1_x2_x4}] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_0/inst/ila_lib"}]]

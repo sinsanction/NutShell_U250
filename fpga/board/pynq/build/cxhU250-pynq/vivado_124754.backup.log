@@ -1,0 +1,1322 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Jul  5 05:36:18 2022
+# Process ID: 124754
+# Current directory: /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq
+# Command line: vivado
+# Log file: /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/vivado.log
+# Journal file: /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/chenxuhao/NutShell_U250/fpga/board/PXIe/build/cxh-PXIe/cxh-PXIe.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 7597.234 ; gain = 52.121 ; free physical = 3810 ; free virtual = 512040
+update_compile_order -fileset sources_1
+open_bd_design {/home/chenxuhao/NutShell_U250/fpga/board/PXIe/build/cxh-PXIe/cxh-PXIe.srcs/sources_1/bd/nutshell/nutshell.bd}
+Reading block design file </home/chenxuhao/NutShell_U250/fpga/board/PXIe/build/cxh-PXIe/cxh-PXIe.srcs/sources_1/bd/nutshell/nutshell.bd>...
+Adding component instance block -- xilinx.com:module_ref:NutShell:1.0 - NutShell_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_1
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_2
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - axi_protocol_convert_0
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - axi_protocol_convert_1
+Adding component instance block -- xilinx.com:ip:system_ila:1.1 - system_ila_0
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Successfully read diagram <nutshell> from block design file </home/chenxuhao/NutShell_U250/fpga/board/PXIe/build/cxh-PXIe/cxh-PXIe.srcs/sources_1/bd/nutshell/nutshell.bd>
+close_project
+open_project /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:12 . Memory (MB): peak = 9335.602 ; gain = 0.000 ; free physical = 3590 ; free virtual = 511820
+update_compile_order -fileset sources_1
+open_bd_design {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd}
+Reading block design file </home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd>...
+Adding component instance block -- xilinx.com:module_ref:NutShell:1.0 - NutShell_0
+Adding component instance block -- xilinx.com:ip:c_shift_ram:12.0 - c_shift_ram_0
+Adding component instance block -- xilinx.com:ip:system_ila:1.1 - system_ila_0
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_2
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_3
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_4
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_5
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_6
+Adding component instance block -- xilinx.com:ip:c_shift_ram:12.0 - c_shift_ram_1
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding component instance block -- xilinx.com:ip:ddr4:2.2 - ddr4_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding component instance block -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ddr4_0_333M
+Adding component instance block -- xilinx.com:ip:jtag_axi:1.2 - jtag_axi_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:vio:3.0 - vio_0
+Successfully read diagram <system_top> from block design file </home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd>
+open_bd_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:07 . Memory (MB): peak = 9845.992 ; gain = 0.000 ; free physical = 3497 ; free virtual = 511727
+close_project
+open_project /home/chenxuhao/NutShell_U250/fpga/board/PXIe/build/cxh-PXIe/cxh-PXIe.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 9845.992 ; gain = 0.000 ; free physical = 3361 ; free virtual = 511634
+update_compile_order -fileset sources_1
+open_bd_design {/home/chenxuhao/NutShell_U250/fpga/board/PXIe/build/cxh-PXIe/cxh-PXIe.srcs/sources_1/bd/nutshell/nutshell.bd}
+Reading block design file </home/chenxuhao/NutShell_U250/fpga/board/PXIe/build/cxh-PXIe/cxh-PXIe.srcs/sources_1/bd/nutshell/nutshell.bd>...
+Adding component instance block -- xilinx.com:module_ref:NutShell:1.0 - NutShell_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_1
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_2
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - axi_protocol_convert_0
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - axi_protocol_convert_1
+Adding component instance block -- xilinx.com:ip:system_ila:1.1 - system_ila_0
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Successfully read diagram <nutshell> from block design file </home/chenxuhao/NutShell_U250/fpga/board/PXIe/build/cxh-PXIe/cxh-PXIe.srcs/sources_1/bd/nutshell/nutshell.bd>
+open_bd_design {/home/chenxuhao/NutShell_U250/fpga/board/PXIe/build/cxh-PXIe/cxh-PXIe.srcs/sources_1/bd/zynq_soc/zynq_soc.bd}
+Reading block design file </home/chenxuhao/NutShell_U250/fpga/board/PXIe/build/cxh-PXIe/cxh-PXIe.srcs/sources_1/bd/zynq_soc/zynq_soc.bd>...
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - uncorerst
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_rvcore
+WARNING: [BD 41-1282] Ignoring parameter HAS_BURST
+WARNING: [BD 41-1281] Parameter HAS_BURST is not defined on /hier_rvcore_peripheral/axi_dma_rvcore/M_AXIS_MM2S. Setting parameter on /hier_rvcore_peripheral/axi_dma_rvcore/M_AXIS_MM2S failed
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_rvcore_dma
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_rvcore_mmio
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding component instance block -- xilinx.com:ip:util_ds_buf:2.1 - util_ds_buf_0
+Adding component instance block -- xilinx.com:ip:xdma:4.1 - xdma_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_arm
+WARNING: [BD 41-1282] Ignoring parameter HAS_BURST
+WARNING: [BD 41-1281] Parameter HAS_BURST is not defined on /hier_arm_peripheral/axi_dma_arm/M_AXIS_MM2S. Setting parameter on /hier_arm_peripheral/axi_dma_arm/M_AXIS_MM2S failed
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_1
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - corerst
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_1
+Adding component instance block -- xilinx.com:ip:zynq_ultra_ps_e:3.3 - zynq_ultra_ps_e_0
+Successfully read diagram <zynq_soc> from block design file </home/chenxuhao/NutShell_U250/fpga/board/PXIe/build/cxh-PXIe/cxh-PXIe.srcs/sources_1/bd/zynq_soc/zynq_soc.bd>
+open_bd_design {/home/chenxuhao/NutShell_U250/fpga/board/PXIe/build/cxh-PXIe/cxh-PXIe.srcs/sources_1/bd/nutshell/nutshell.bd}
+open_bd_design {/home/chenxuhao/NutShell_U250/fpga/board/PXIe/build/cxh-PXIe/cxh-PXIe.srcs/sources_1/bd/zynq_soc/zynq_soc.bd}
+open_bd_design {/home/chenxuhao/NutShell_U250/fpga/board/PXIe/build/cxh-PXIe/cxh-PXIe.srcs/sources_1/bd/nutshell/nutshell.bd}
+close_project
+open_project /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 9845.992 ; gain = 0.000 ; free physical = 2498 ; free virtual = 511237
+update_compile_order -fileset sources_1
+open_bd_design {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd}
+Reading block design file </home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd>...
+Adding component instance block -- xilinx.com:module_ref:NutShell:1.0 - NutShell_0
+Adding component instance block -- xilinx.com:ip:c_shift_ram:12.0 - c_shift_ram_0
+Adding component instance block -- xilinx.com:ip:system_ila:1.1 - system_ila_0
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_2
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_3
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_4
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_5
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_6
+Adding component instance block -- xilinx.com:ip:c_shift_ram:12.0 - c_shift_ram_1
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding component instance block -- xilinx.com:ip:ddr4:2.2 - ddr4_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding component instance block -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ddr4_0_333M
+Adding component instance block -- xilinx.com:ip:jtag_axi:1.2 - jtag_axi_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:vio:3.0 - vio_0
+Successfully read diagram <system_top> from block design file </home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd>
+close_project
+open_project /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxh-pynq/cxh-pynq.xpr
+INFO: [Project 1-313] Project file moved from '/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'system_top.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+system_top_xlconcat_0_0
+system_top_util_vector_logic_0_0
+system_top_c_shift_ram_0_0
+system_top_system_ila_0_0
+system_top_processing_system7_0_0
+system_top_uncorerst_0
+system_top_auto_pc_2
+system_top_xbar_0
+system_top_axi_protocol_convert_1_0
+system_top_auto_us_0
+system_top_axi_interconnect_0_0
+system_top_auto_pc_0
+system_top_auto_pc_1
+system_top_c_shift_ram_1_0
+system_top_auto_ds_0
+system_top_auto_cc_1
+system_top_auto_cc_0
+system_top_clk_wiz_0_0
+system_top_axi_interconnect_1_0
+system_top_axi_interconnect_2_0
+system_top_auto_pc_3
+system_top_axi_protocol_convert_0_0
+system_top_auto_cc_2
+system_top_auto_ds_1
+system_top_axi_gpio_0_0
+
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 9952.977 ; gain = 0.000 ; free physical = 2435 ; free virtual = 511222
+open_bd_design {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxh-pynq/cxh-pynq.srcs/sources_1/bd/system_top/system_top.bd}
+Reading block design file </home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxh-pynq/cxh-pynq.srcs/sources_1/bd/system_top/system_top.bd>...
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_1
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_2
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - uncorerst
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:module_ref:NutShell:1.0 - NutShell_0
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - axi_protocol_convert_0
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - axi_protocol_convert_1
+Adding component instance block -- xilinx.com:ip:c_shift_ram:12.0 - c_shift_ram_0
+Adding component instance block -- xilinx.com:ip:c_shift_ram:12.0 - c_shift_ram_1
+Adding component instance block -- xilinx.com:ip:system_ila:1.1 - system_ila_0
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Successfully read diagram <system_top> from block design file </home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxh-pynq/cxh-pynq.srcs/sources_1/bd/system_top/system_top.bd>
+open_bd_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:09 . Memory (MB): peak = 10159.188 ; gain = 16.008 ; free physical = 2346 ; free virtual = 511133
+update_compile_order -fileset sources_1
+close_project
+open_project /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 10270.410 ; gain = 0.000 ; free physical = 2332 ; free virtual = 511119
+update_compile_order -fileset sources_1
+open_bd_design {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd}
+Reading block design file </home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd>...
+Adding component instance block -- xilinx.com:module_ref:NutShell:1.0 - NutShell_0
+Adding component instance block -- xilinx.com:ip:c_shift_ram:12.0 - c_shift_ram_0
+Adding component instance block -- xilinx.com:ip:system_ila:1.1 - system_ila_0
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_2
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_3
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_4
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_5
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_6
+Adding component instance block -- xilinx.com:ip:c_shift_ram:12.0 - c_shift_ram_1
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding component instance block -- xilinx.com:ip:ddr4:2.2 - ddr4_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding component instance block -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ddr4_0_333M
+Adding component instance block -- xilinx.com:ip:jtag_axi:1.2 - jtag_axi_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:vio:3.0 - vio_0
+Successfully read diagram <system_top> from block design file </home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd>
+open_bd_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 10270.410 ; gain = 0.000 ; free physical = 2238 ; free virtual = 511033
+close_project
+open_project /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxh-pynq/cxh-pynq.xpr
+INFO: [Project 1-313] Project file moved from '/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'system_top.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+system_top_xlconcat_0_0
+system_top_util_vector_logic_0_0
+system_top_c_shift_ram_0_0
+system_top_system_ila_0_0
+system_top_processing_system7_0_0
+system_top_uncorerst_0
+system_top_auto_pc_2
+system_top_xbar_0
+system_top_axi_protocol_convert_1_0
+system_top_auto_us_0
+system_top_axi_interconnect_0_0
+system_top_auto_pc_0
+system_top_auto_pc_1
+system_top_c_shift_ram_1_0
+system_top_auto_ds_0
+system_top_auto_cc_1
+system_top_auto_cc_0
+system_top_clk_wiz_0_0
+system_top_axi_interconnect_1_0
+system_top_axi_interconnect_2_0
+system_top_auto_pc_3
+system_top_axi_protocol_convert_0_0
+system_top_auto_cc_2
+system_top_auto_ds_1
+system_top_axi_gpio_0_0
+
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 10270.410 ; gain = 0.000 ; free physical = 2301 ; free virtual = 511096
+update_compile_order -fileset sources_1
+open_bd_design {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxh-pynq/cxh-pynq.srcs/sources_1/bd/system_top/system_top.bd}
+Reading block design file </home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxh-pynq/cxh-pynq.srcs/sources_1/bd/system_top/system_top.bd>...
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_1
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_2
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - uncorerst
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:module_ref:NutShell:1.0 - NutShell_0
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - axi_protocol_convert_0
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - axi_protocol_convert_1
+Adding component instance block -- xilinx.com:ip:c_shift_ram:12.0 - c_shift_ram_0
+Adding component instance block -- xilinx.com:ip:c_shift_ram:12.0 - c_shift_ram_1
+Adding component instance block -- xilinx.com:ip:system_ila:1.1 - system_ila_0
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Successfully read diagram <system_top> from block design file </home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxh-pynq/cxh-pynq.srcs/sources_1/bd/system_top/system_top.bd>
+open_bd_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:07 . Memory (MB): peak = 10391.273 ; gain = 0.000 ; free physical = 2212 ; free virtual = 511007
+close_project
+open_project /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 10391.273 ; gain = 0.000 ; free physical = 2137 ; free virtual = 510933
+open_bd_design {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd}
+Reading block design file </home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd>...
+Adding component instance block -- xilinx.com:module_ref:NutShell:1.0 - NutShell_0
+Adding component instance block -- xilinx.com:ip:c_shift_ram:12.0 - c_shift_ram_0
+Adding component instance block -- xilinx.com:ip:system_ila:1.1 - system_ila_0
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_2
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_3
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_4
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_5
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_6
+Adding component instance block -- xilinx.com:ip:c_shift_ram:12.0 - c_shift_ram_1
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding component instance block -- xilinx.com:ip:ddr4:2.2 - ddr4_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding component instance block -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ddr4_0_333M
+Adding component instance block -- xilinx.com:ip:jtag_axi:1.2 - jtag_axi_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:vio:3.0 - vio_0
+Successfully read diagram <system_top> from block design file </home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd>
+open_bd_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:09 . Memory (MB): peak = 10391.273 ; gain = 0.000 ; free physical = 2062 ; free virtual = 510858
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:system_ila:1.1 rv_system/system_ila_1
+endgroup
+set_property -dict [list CONFIG.C_BRAM_CNT {0.5} CONFIG.C_NUM_OF_PROBES {4} CONFIG.C_MON_TYPE {NATIVE}] [get_bd_cells rv_system/system_ila_1]
+connect_bd_net [get_bd_pins rv_system/NutShell_0/io_mmio_wvalid] [get_bd_pins rv_system/system_ila_1/probe0]
+connect_bd_net [get_bd_pins rv_system/NutShell_0/io_mmio_wready] [get_bd_pins rv_system/system_ila_1/probe1]
+connect_bd_net [get_bd_pins rv_system/NutShell_0/io_mmio_wvalid] [get_bd_pins rv_system/system_ila_1/probe2]
+delete_bd_objs [get_bd_nets rv_system/NutShell_0_io_mmio_wvalid]
+connect_bd_net [get_bd_pins rv_system/NutShell_0/io_mmio_wvalid] [get_bd_pins rv_system/system_ila_1/probe2]
+delete_bd_objs [get_bd_nets rv_system/Net]
+connect_bd_net [get_bd_pins rv_system/NutShell_0/io_mmio_wready] [get_bd_pins rv_system/system_ila_1/probe3]
+connect_bd_net [get_bd_pins rv_system/NutShell_0/io_mmio_rvalid] [get_bd_pins rv_system/NutShell_0/io_mmio_wvalid]
+delete_bd_objs [get_bd_nets rv_system/NutShell_0_io_mmio_wvalid]
+delete_bd_objs [get_bd_nets rv_system/Net]
+connect_bd_net [get_bd_pins rv_system/NutShell_0/io_mmio_awvalid] [get_bd_pins rv_system/system_ila_1/probe0]
+connect_bd_net [get_bd_pins rv_system/NutShell_0/io_mmio_awready] [get_bd_pins rv_system/system_ila_1/probe1]
+connect_bd_net [get_bd_pins rv_system/NutShell_0/io_mmio_wvalid] [get_bd_pins rv_system/system_ila_1/probe2]
+connect_bd_net [get_bd_pins rv_system/NutShell_0/io_mmio_wready] [get_bd_pins rv_system/system_ila_1/probe3]
+startgroup
+set_property -dict [list CONFIG.C_NUM_OF_PROBES {8}] [get_bd_cells rv_system/system_ila_1]
+endgroup
+connect_bd_net [get_bd_pins rv_system/NutShell_0/io_mmio_bvalid] [get_bd_pins rv_system/system_ila_1/probe5]
+delete_bd_objs [get_bd_nets rv_system/Net2]
+connect_bd_net [get_bd_pins rv_system/NutShell_0/io_mmio_bvalid] [get_bd_pins rv_system/system_ila_1/probe4]
+connect_bd_net [get_bd_pins rv_system/NutShell_0/io_mmio_bready] [get_bd_pins rv_system/system_ila_1/probe5]
+connect_bd_net [get_bd_pins rv_system/NutShell_0/io_mmio_arvalid] [get_bd_pins rv_system/system_ila_1/probe6]
+connect_bd_net [get_bd_pins rv_system/NutShell_0/io_mmio_arready] [get_bd_pins rv_system/system_ila_1/probe7]
+startgroup
+set_property -dict [list CONFIG.C_NUM_OF_PROBES {10}] [get_bd_cells rv_system/system_ila_1]
+endgroup
+connect_bd_net [get_bd_pins rv_system/NutShell_0/io_mmio_rvalid] [get_bd_pins rv_system/system_ila_1/probe8]
+connect_bd_net [get_bd_pins rv_system/NutShell_0/io_mmio_rready] [get_bd_pins rv_system/system_ila_1/probe9]
+move_bd_cells [get_bd_cells /] [get_bd_cells rv_system/system_ila_0]
+undo
+INFO: [Common 17-17] undo 'move_bd_cells [get_bd_cells /] [get_bd_cells rv_system/system_ila_0]'
+connect_bd_net [get_bd_pins rv_system/coreclk] [get_bd_pins rv_system/system_ila_1/clk]
+save_bd_design
+WARNING: [BD 41-597] NET <Net> has no source
+WARNING: [BD 41-597] NET <Net1> has no source
+WARNING: [BD 41-597] NET <Net2> has no source
+WARNING: [BD 41-597] NET <Net3> has no source
+WARNING: [BD 41-597] NET <Net4> has no source
+Wrote  : </home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd> 
+Wrote  : </home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/ui/bd_9edf8fa5.ui> 
+connect_bd_net [get_bd_pins rv_system/coreclk] [get_bd_pins rv_system/system_ila_1/probe1]
+connect_bd_net [get_bd_pins rv_system/coreclk] [get_bd_pins rv_system/system_ila_1/probe3]
+connect_bd_net [get_bd_pins rv_system/coreclk] [get_bd_pins rv_system/NutShell_0/io_mmio_bvalid]
+delete_bd_objs [get_bd_nets rv_system/clk_wiz_0_coreclk]
+undo
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_nets rv_system/clk_wiz_0_coreclk]'
+delete_bd_objs [get_bd_nets rv_system/clk_wiz_0_coreclk]
+undo
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_nets rv_system/clk_wiz_0_coreclk]'
+startgroup
+set_property -dict [list CONFIG.C_NUM_OF_PROBES {1}] [get_bd_cells rv_system/system_ila_1]
+delete_bd_objs [get_bd_nets rv_system/NutShell_0_io_mmio_wvalid] [get_bd_nets rv_system/NutShell_0_io_mmio_bready] [get_bd_nets rv_system/NutShell_0_io_mmio_arvalid] [get_bd_nets rv_system/Net3] [get_bd_nets rv_system/Net4] [get_bd_nets rv_system/NutShell_0_io_mmio_rready]
+endgroup
+delete_bd_objs [get_bd_nets rv_system/clk_wiz_0_coreclk]
+undo
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_nets rv_system/clk_wiz_0_coreclk]'
+delete_bd_objs [get_bd_nets rv_system/clk_wiz_0_coreclk]
+connect_bd_net [get_bd_pins clk_wiz_0/locked] [get_bd_pins rv_system/c_shift_ram_1/CLK]
+connect_bd_net [get_bd_pins rv_system/CLK] [get_bd_pins rv_system/c_shift_ram_0/CLK]
+connect_bd_net [get_bd_pins rv_system/CLK] [get_bd_pins rv_system/NutShell_0/clock]
+connect_bd_net [get_bd_pins rv_system/CLK] [get_bd_pins rv_system/system_ila_0/clk]
+connect_bd_net [get_bd_pins rv_system/CLK] [get_bd_pins rv_system/system_ila_1/clk]
+save_bd_design
+Wrote  : </home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd> 
+Wrote  : </home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/ui/bd_9edf8fa5.ui> 
+close_project
+open_project /home/chenxuhao/NutShell_U250/fpga/board/PXIe/build/cxh-PXIe/cxh-PXIe.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 10613.082 ; gain = 0.000 ; free physical = 2231 ; free virtual = 510663
+update_compile_order -fileset sources_1
+open_bd_design {/home/chenxuhao/NutShell_U250/fpga/board/PXIe/build/cxh-PXIe/cxh-PXIe.srcs/sources_1/bd/nutshell/nutshell.bd}
+Reading block design file </home/chenxuhao/NutShell_U250/fpga/board/PXIe/build/cxh-PXIe/cxh-PXIe.srcs/sources_1/bd/nutshell/nutshell.bd>...
+Adding component instance block -- xilinx.com:module_ref:NutShell:1.0 - NutShell_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_1
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_2
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - axi_protocol_convert_0
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - axi_protocol_convert_1
+Adding component instance block -- xilinx.com:ip:system_ila:1.1 - system_ila_0
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Successfully read diagram <nutshell> from block design file </home/chenxuhao/NutShell_U250/fpga/board/PXIe/build/cxh-PXIe/cxh-PXIe.srcs/sources_1/bd/nutshell/nutshell.bd>
+open_bd_design {/home/chenxuhao/NutShell_U250/fpga/board/PXIe/build/cxh-PXIe/cxh-PXIe.srcs/sources_1/bd/zynq_soc/zynq_soc.bd}
+Reading block design file </home/chenxuhao/NutShell_U250/fpga/board/PXIe/build/cxh-PXIe/cxh-PXIe.srcs/sources_1/bd/zynq_soc/zynq_soc.bd>...
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - uncorerst
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_rvcore
+WARNING: [BD 41-1282] Ignoring parameter HAS_BURST
+WARNING: [BD 41-1281] Parameter HAS_BURST is not defined on /hier_rvcore_peripheral/axi_dma_rvcore/M_AXIS_MM2S. Setting parameter on /hier_rvcore_peripheral/axi_dma_rvcore/M_AXIS_MM2S failed
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_rvcore_dma
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_rvcore_mmio
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding component instance block -- xilinx.com:ip:util_ds_buf:2.1 - util_ds_buf_0
+Adding component instance block -- xilinx.com:ip:xdma:4.1 - xdma_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_arm
+WARNING: [BD 41-1282] Ignoring parameter HAS_BURST
+WARNING: [BD 41-1281] Parameter HAS_BURST is not defined on /hier_arm_peripheral/axi_dma_arm/M_AXIS_MM2S. Setting parameter on /hier_arm_peripheral/axi_dma_arm/M_AXIS_MM2S failed
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_1
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - corerst
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_1
+Adding component instance block -- xilinx.com:ip:zynq_ultra_ps_e:3.3 - zynq_ultra_ps_e_0
+Successfully read diagram <zynq_soc> from block design file </home/chenxuhao/NutShell_U250/fpga/board/PXIe/build/cxh-PXIe/cxh-PXIe.srcs/sources_1/bd/zynq_soc/zynq_soc.bd>
+close_project
+open_project /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 10613.082 ; gain = 0.000 ; free physical = 2177 ; free virtual = 510637
+update_compile_order -fileset sources_1
+open_bd_design {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd}
+Reading block design file </home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd>...
+Adding component instance block -- xilinx.com:module_ref:NutShell:1.0 - NutShell_0
+Adding component instance block -- xilinx.com:ip:c_shift_ram:12.0 - c_shift_ram_0
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_2
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_3
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_4
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_5
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_6
+Adding component instance block -- xilinx.com:ip:c_shift_ram:12.0 - c_shift_ram_1
+Adding component instance block -- xilinx.com:ip:system_ila:1.1 - system_ila_1
+Adding component instance block -- xilinx.com:ip:system_ila:1.1 - system_ila_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding component instance block -- xilinx.com:ip:ddr4:2.2 - ddr4_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding component instance block -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ddr4_0_333M
+Adding component instance block -- xilinx.com:ip:jtag_axi:1.2 - jtag_axi_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:vio:3.0 - vio_0
+Successfully read diagram <system_top> from block design file </home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd>
+open_bd_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 10652.457 ; gain = 0.000 ; free physical = 2088 ; free virtual = 510547
+set_property location {4 814 185} [get_bd_cells rv_system]
+set_property location {4 796 482} [get_bd_cells jtag_axi_0]
+set_property location {4 804 328} [get_bd_cells jtag_axi_0]
+set_property location {6 1700 224} [get_bd_cells ddr4_0]
+set_property location {6 1712 429} [get_bd_cells ddr4_0]
+delete_bd_objs [get_bd_nets rv_system/NutShell_0_io_mmio_awvalid]
+startgroup
+set_property -dict [list CONFIG.C_NUM_OF_PROBES {10}] [get_bd_cells rv_system/system_ila_1]
+endgroup
+connect_bd_net [get_bd_pins rv_system/NutShell_0/io_mem_awvalid] [get_bd_pins rv_system/system_ila_1/probe0]
+connect_bd_net [get_bd_pins rv_system/NutShell_0/io_mem_wvalid] [get_bd_pins rv_system/system_ila_1/probe1]
+connect_bd_net [get_bd_pins rv_system/NutShell_0/io_mem_bready] [get_bd_pins rv_system/system_ila_1/probe2]
+connect_bd_net [get_bd_pins rv_system/NutShell_0/io_mem_arvalid] [get_bd_pins rv_system/system_ila_1/probe3]
+connect_bd_net [get_bd_pins rv_system/NutShell_0/io_mem_rready] [get_bd_pins rv_system/system_ila_1/probe4]
+connect_bd_net [get_bd_pins rv_system/NutShell_0/io_mmio_awvalid] [get_bd_pins rv_system/system_ila_1/probe5]
+connect_bd_net [get_bd_pins rv_system/NutShell_0/io_mmio_wvalid] [get_bd_pins rv_system/system_ila_1/probe6]
+connect_bd_net [get_bd_pins rv_system/NutShell_0/io_mmio_bready] [get_bd_pins rv_system/system_ila_1/probe7]
+connect_bd_net [get_bd_pins rv_system/NutShell_0/io_mmio_arvalid] [get_bd_pins rv_system/system_ila_1/probe8]
+connect_bd_net [get_bd_pins rv_system/NutShell_0/io_mmio_rready] [get_bd_pins rv_system/system_ila_1/probe9]
+save_bd_design
+Wrote  : </home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd> 
+Wrote  : </home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/ui/bd_9edf8fa5.ui> 
+reset_run synth_1
+reset_run system_top_xbar_1_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 48
+CRITICAL WARNING: [BD 41-1363] The clock pins '/axi_interconnect_0/S00_ACLK' (interface '/axi_interconnect_0/S00_AXI') and '/rv_system/NutShell_0/clock' (interface '/rv_system/NutShell_0/io_mem') must be connected to the same source 
+CRITICAL WARNING: [BD 41-1363] The clock pins '/axi_interconnect_0/S01_ACLK' (interface '/axi_interconnect_0/S01_AXI') and '/rv_system/NutShell_0/clock' (interface '/rv_system/NutShell_0/io_mmio') must be connected to the same source 
+INFO: [Common 17-365] Interrupt caught but 'launch_runs' cannot be canceled. Please wait for command to finish.
+INFO: [Device 21-403] Loading part xcu250-figd2104-2L-e
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /rv_system/c_shift_ram_1 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /rv_system/c_shift_ram_0 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mem(1)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mem(1)
+WARNING: [BD 41-237] Bus Interface property RUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mem(1)
+WARNING: [BD 41-237] Bus Interface property BUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mem(1)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_interconnect_0/s01_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mmio(1)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_interconnect_0/s01_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mmio(1)
+WARNING: [BD 41-237] Bus Interface property RUSER_WIDTH does not match between /axi_interconnect_0/s01_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mmio(1)
+WARNING: [BD 41-237] Bus Interface property BUSER_WIDTH does not match between /axi_interconnect_0/s01_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mmio(1)
+Wrote  : </home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd> 
+VHDL Output written to : /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/synth/system_top.v
+VHDL Output written to : /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/sim/system_top.v
+VHDL Output written to : /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/hdl/system_top_wrapper.v
+INFO: [BD 41-1171] User-interrupt detected : Generation halted successfully for IP Integrator design /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd
+INFO: [Common 17-681] Processing pending cancel.
+delete_bd_objs [get_bd_nets clk_wiz_0_locked]
+connect_bd_net [get_bd_pins clk_wiz_0/locked] [get_bd_pins proc_sys_reset_0/ext_reset_in]
+delete_bd_objs [get_bd_nets rv_system/CLK_1]
+delete_bd_objs [get_bd_pins rv_system/CLK]
+connect_bd_net [get_bd_pins rv_system/coreclk] [get_bd_pins rv_system/c_shift_ram_1/CLK]
+connect_bd_net [get_bd_pins rv_system/coreclk] [get_bd_pins rv_system/c_shift_ram_0/CLK]
+connect_bd_net [get_bd_pins rv_system/coreclk] [get_bd_pins rv_system/NutShell_0/clock]
+connect_bd_net [get_bd_pins rv_system/coreclk] [get_bd_pins rv_system/system_ila_0/clk]
+connect_bd_net [get_bd_pins rv_system/coreclk] [get_bd_pins rv_system/system_ila_1/clk]
+save_bd_design
+Wrote  : </home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd> 
+Wrote  : </home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/ui/bd_9edf8fa5.ui> 
+launch_runs impl_1 -jobs 48
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /rv_system/c_shift_ram_1 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /rv_system/c_shift_ram_1 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /rv_system/c_shift_ram_0 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /rv_system/c_shift_ram_0 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mem(1)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mem(1)
+WARNING: [BD 41-237] Bus Interface property RUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mem(1)
+WARNING: [BD 41-237] Bus Interface property BUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mem(1)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_interconnect_0/s01_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mmio(1)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_interconnect_0/s01_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mmio(1)
+WARNING: [BD 41-237] Bus Interface property RUSER_WIDTH does not match between /axi_interconnect_0/s01_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mmio(1)
+WARNING: [BD 41-237] Bus Interface property BUSER_WIDTH does not match between /axi_interconnect_0/s01_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mmio(1)
+Wrote  : </home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd> 
+Wrote  : </home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/ui/bd_9edf8fa5.ui> 
+VHDL Output written to : /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/synth/system_top.v
+VHDL Output written to : /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/sim/system_top.v
+VHDL Output written to : /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/hdl/system_top_wrapper.v
+Exporting to file /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_system_ila_1_0/bd_0/hw_handoff/system_top_system_ila_1_0.hwh
+Generated Block Design Tcl file /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_system_ila_1_0/bd_0/hw_handoff/system_top_system_ila_1_0_bd.tcl
+Generated Hardware Definition File /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_system_ila_1_0/bd_0/synth/system_top_system_ila_1_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rv_system/system_ila_1 .
+Exporting to file /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_system_ila_0_0/bd_0/hw_handoff/system_top_system_ila_0_0.hwh
+Generated Block Design Tcl file /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_system_ila_0_0/bd_0/hw_handoff/system_top_system_ila_0_0_bd.tcl
+Generated Hardware Definition File /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_system_ila_0_0/bd_0/synth/system_top_system_ila_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rv_system/system_ila_0 .
+Exporting to file /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_ddr4_0_0/bd_0/hw_handoff/system_top_ddr4_0_0_microblaze_mcs.hwh
+Generated Block Design Tcl file /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_ddr4_0_0/bd_0/hw_handoff/system_top_ddr4_0_0_microblaze_mcs_bd.tcl
+Generated Hardware Definition File /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_ddr4_0_0/bd_0/synth/system_top_ddr4_0_0_microblaze_mcs.hwdef
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_us_0/system_top_auto_us_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_us_1/system_top_auto_us_1_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s01_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_us_2/system_top_auto_us_2_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s02_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_cc_0/system_top_auto_cc_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m00_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_ds_0/system_top_auto_ds_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_pc_0/system_top_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_ds_1/system_top_auto_ds_1_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m02_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_pc_1/system_top_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m02_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_cc_1/system_top_auto_cc_1_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m03_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_ds_2/system_top_auto_ds_2_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m03_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_pc_2/system_top_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m03_couplers/auto_pc .
+Exporting to file /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/hw_handoff/system_top.hwh
+Generated Block Design Tcl file /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/hw_handoff/system_top_bd.tcl
+Generated Hardware Definition File /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/synth/system_top.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_cc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_cc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_ds_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_ds_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_ds_2
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_pc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_pc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_pc_2
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_us_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_us_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_us_2
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_axi_gpio_0_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_axi_uartlite_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_c_shift_ram_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_c_shift_ram_1_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_clk_wiz_0_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_ddr4_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_jtag_axi_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_proc_sys_reset_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_rst_ddr4_0_333M_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_system_ila_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_system_ila_1_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_util_vector_logic_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_vio_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_xbar_1
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_cc_0, cache-ID = 9327452ff92ab4af; cache size = 125.430 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_axi_uartlite_0_0, cache-ID = 977f09b3dd8e1217; cache size = 125.430 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_vio_0_0, cache-ID = 422ee4de924e66da; cache size = 125.430 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_cc_1, cache-ID = 19d834681fff89a5; cache size = 125.430 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_us_2, cache-ID = f5a25bd4f3341902; cache size = 125.430 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_c_shift_ram_0_0, cache-ID = 868645c974172d2a; cache size = 125.430 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_xbar_1, cache-ID = 163d1ad51845e251; cache size = 125.430 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_ds_0, cache-ID = 32671fc0b1d8feef; cache size = 125.430 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_axi_gpio_0_1, cache-ID = 883a85483beedb7d; cache size = 125.430 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_util_vector_logic_0_0, cache-ID = 465a44c2e6c4c570; cache size = 125.430 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_ds_1, cache-ID = 32671fc0b1d8feef; cache size = 125.430 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_proc_sys_reset_0_0, cache-ID = 0b0e2875b98bc891; cache size = 125.430 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_ds_2, cache-ID = dd1dbb0c379b91c8; cache size = 125.430 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_c_shift_ram_1_0, cache-ID = 868645c974172d2a; cache size = 125.430 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_pc_0, cache-ID = 70874ac265c40bcc; cache size = 125.430 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_system_ila_0_0, cache-ID = 29f89f0f1eff5fc8; cache size = 125.430 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_pc_1, cache-ID = 70874ac265c40bcc; cache size = 125.430 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_clk_wiz_0_1, cache-ID = 3d6e1d0ba130d514; cache size = 125.430 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_pc_2, cache-ID = 0fdf6a48b2d3567e; cache size = 125.430 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_ddr4_0_0, cache-ID = eff19c7f9cf26e63; cache size = 125.430 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_us_0, cache-ID = 95b99be16876e2a7; cache size = 125.430 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_rst_ddr4_0_333M_0, cache-ID = e6d2b60713116077; cache size = 125.430 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_us_1, cache-ID = 95b99be16876e2a7; cache size = 125.430 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_jtag_axi_0_0, cache-ID = 65a921f97be73816; cache size = 125.430 MB.
+config_ip_cache: Time (s): cpu = 00:00:19 ; elapsed = 00:00:38 . Memory (MB): peak = 12285.539 ; gain = 0.000 ; free physical = 1167 ; free virtual = 509063
+[Thu Jul  7 01:13:19 2022] Launched system_top_NutShell_0_0_synth_1, system_top_system_ila_1_0_synth_1, synth_1...
+Run output will be captured here:
+system_top_NutShell_0_0_synth_1: /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/system_top_NutShell_0_0_synth_1/runme.log
+system_top_system_ila_1_0_synth_1: /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/system_top_system_ila_1_0_synth_1/runme.log
+synth_1: /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/synth_1/runme.log
+[Thu Jul  7 01:13:19 2022] Launched impl_1...
+Run output will be captured here: /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:01:23 ; elapsed = 00:01:24 . Memory (MB): peak = 12285.539 ; gain = 0.000 ; free physical = 1185 ; free virtual = 509066
+set_property location {2 117 525} [get_bd_cells proc_sys_reset_0]
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-16:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/21330409X021A
+current_hw_device [get_hw_devices xcu250_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xcu250_0] 0]
+INFO: [Labtools 27-2302] Device xcu250 (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+create_hw_cfgmem -hw_device [get_hw_devices xcu250_0] -mem_dev [lindex [get_cfgmem_parts {mt25qu01g-spi-x1_x2_x4}] 0]
+close_hw_target {localhost:3121/xilinx_tcf/Xilinx/21330409X021A}
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost:3121/xilinx_tcf/Xilinx/21330409X021A
+open_hw_target {localhost:3121/xilinx_tcf/Xilinx/21330409X02FA}
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/21330409X02FA
+current_hw_device [get_hw_devices xcu250_0_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xcu250_0_1] 0]
+INFO: [Labtools 27-2302] Device xcu250 (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+open_bd_design {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd}
+open_bd_design {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd}
+launch_runs impl_1 -to_step write_bitstream -jobs 48
+[Sat Jul  9 05:36:47 2022] Launched impl_1...
+Run output will be captured here: /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/runme.log
+close_hw_target {localhost:3121/xilinx_tcf/Xilinx/21330409X02FA}
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost:3121/xilinx_tcf/Xilinx/21330409X02FA
+open_hw_target {localhost:3121/xilinx_tcf/Xilinx/21330409X021A}
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/21330409X021A
+set_property PROGRAM.FILE {/tools/Xilinx/Vivado/2020.2/data/xicom/cfgmem/bitfile/spi_xcu250_pullnone.bit} [get_hw_devices xcu250_0]
+set_property PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+set_property FULL_PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+current_hw_device [get_hw_devices xcu250_0]
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+INFO: [Labtools 27-2302] Device xcu250 (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'system_top_i/rv_system/system_ila_1/inst/ila_lib' at location 'uuid_47938D1447D4532AB8C9097739FB7FEC' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'system_top_i/rv_system/system_ila_0/inst/ila_lib' at location 'uuid_DCAC6CA3A8C35D1BA4885A6CC0496662' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'system_top_i/vio_0' at location 'uuid_FEA0A9BCE2A65F828FF4CBBE55B0EA59' from probes file, since it cannot be found on the programmed device.
+set_property PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+set_property FULL_PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+set_property PROGRAM.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xcu250_0]
+program_hw_devices [get_hw_devices xcu250_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 13341.355 ; gain = 0.000 ; free physical = 5413 ; free virtual = 507788
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+WARNING: [Labtools 27-3089] Calibration is still in-progress.
+INFO: [Labtools 27-2302] Device xcu250 (JTAG device index = 0) is programmed with a design that has 2 ILA core(s).
+INFO: [Labtools 27-2302] Device xcu250 (JTAG device index = 0) is programmed with a design that has 1 JTAG AXI core(s).
+INFO: [Labtools 27-2302] Device xcu250 (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+INFO: [Labtools 27-2302] Device xcu250 (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+WARNING: [Labtools 27-1952] VIO hw_probe OUTPUT_VALUE properties for hw_vio(s) [hw_vio_1] differ from output values in the VIO core(s).
+Resolution: 
+To synchronize the hw_probes properties and the VIO core outputs choose one of the following alternatives:
+  1) Execute the command 'Commit Output Values to VIO Core', to write down the hw_probe values to the core.
+  2) Execute the command 'Refresh Input and Output Values from VIO Core', to update the hw_probe properties with the core values.
+  3) First restore initial values in the core with the command 'Reset VIO Core Outputs', and then execute the command 'Refresh Input and Output Values from VIO Core'.
+INFO: [Labtools 27-3143] Calibration status change detected, refreshing MIG_1
+refresh_hw_device: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 13341.355 ; gain = 0.000 ; free physical = 5378 ; free virtual = 507759
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_0/inst/ila_lib"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_1/inst/ila_lib"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes system_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {system_top_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes system_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {system_top_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes system_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {system_top_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes system_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {system_top_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes system_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {system_top_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+open_bd_design {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:system_ila:1.1 system_ila_0
+endgroup
+move_bd_cells [get_bd_cells rv_system] [get_bd_cells system_ila_0]
+set_property -dict [list CONFIG.C_BRAM_CNT {0.5} CONFIG.C_MON_TYPE {NATIVE}] [get_bd_cells rv_system/system_ila_2]
+connect_bd_net [get_bd_pins rv_system/coreclk] [get_bd_pins rv_system/system_ila_2/clk]
+connect_bd_net [get_bd_pins rv_system/corerstn] [get_bd_pins rv_system/system_ila_2/probe0]
+save_bd_design
+Wrote  : </home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd> 
+Wrote  : </home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/ui/bd_9edf8fa5.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 48
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /rv_system/c_shift_ram_1 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /rv_system/c_shift_ram_1 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /rv_system/c_shift_ram_0 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /rv_system/c_shift_ram_0 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mem(1)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mem(1)
+WARNING: [BD 41-237] Bus Interface property RUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mem(1)
+WARNING: [BD 41-237] Bus Interface property BUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mem(1)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_interconnect_0/s01_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mmio(1)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_interconnect_0/s01_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mmio(1)
+WARNING: [BD 41-237] Bus Interface property RUSER_WIDTH does not match between /axi_interconnect_0/s01_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mmio(1)
+WARNING: [BD 41-237] Bus Interface property BUSER_WIDTH does not match between /axi_interconnect_0/s01_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mmio(1)
+Wrote  : </home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd> 
+Wrote  : </home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/ui/bd_9edf8fa5.ui> 
+VHDL Output written to : /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/synth/system_top.v
+VHDL Output written to : /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/sim/system_top.v
+VHDL Output written to : /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/hdl/system_top_wrapper.v
+Exporting to file /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_system_ila_1_0/bd_0/hw_handoff/system_top_system_ila_1_0.hwh
+Generated Block Design Tcl file /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_system_ila_1_0/bd_0/hw_handoff/system_top_system_ila_1_0_bd.tcl
+Generated Hardware Definition File /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_system_ila_1_0/bd_0/synth/system_top_system_ila_1_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rv_system/system_ila_1 .
+Exporting to file /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_system_ila_0_0/bd_0/hw_handoff/system_top_system_ila_0_0.hwh
+Generated Block Design Tcl file /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_system_ila_0_0/bd_0/hw_handoff/system_top_system_ila_0_0_bd.tcl
+Generated Hardware Definition File /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_system_ila_0_0/bd_0/synth/system_top_system_ila_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rv_system/system_ila_0 .
+INFO: [BD 41-1637] Generated targets are already up-to-date for block design 'bd_c96b' - hence not re-generating.
+Exporting to file /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_system_ila_0_1/bd_0/hw_handoff/system_top_system_ila_0_1.hwh
+Generated Block Design Tcl file /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_system_ila_0_1/bd_0/hw_handoff/system_top_system_ila_0_1_bd.tcl
+Generated Hardware Definition File /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_system_ila_0_1/bd_0/synth/system_top_system_ila_0_1.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rv_system/system_ila_2 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_us_0/system_top_auto_us_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_us_1/system_top_auto_us_1_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s01_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_us_2/system_top_auto_us_2_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s02_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_cc_0/system_top_auto_cc_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m00_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_ds_0/system_top_auto_ds_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_pc_0/system_top_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_ds_1/system_top_auto_ds_1_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m02_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_pc_1/system_top_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m02_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_cc_1/system_top_auto_cc_1_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m03_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_ds_2/system_top_auto_ds_2_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m03_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_pc_2/system_top_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m03_couplers/auto_pc .
+Exporting to file /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/hw_handoff/system_top.hwh
+Generated Block Design Tcl file /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/hw_handoff/system_top_bd.tcl
+Generated Hardware Definition File /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/synth/system_top.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_cc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_cc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_ds_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_ds_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_ds_2
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_pc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_pc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_pc_2
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_us_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_us_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_us_2
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_system_ila_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_system_ila_0_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_system_ila_1_0
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_cc_0, cache-ID = 9327452ff92ab4af; cache size = 135.911 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_us_2, cache-ID = f5a25bd4f3341902; cache size = 135.911 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_cc_1, cache-ID = 19d834681fff89a5; cache size = 135.911 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_ds_0, cache-ID = 32671fc0b1d8feef; cache size = 135.911 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_ds_1, cache-ID = 32671fc0b1d8feef; cache size = 135.911 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_ds_2, cache-ID = dd1dbb0c379b91c8; cache size = 135.911 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_pc_0, cache-ID = 70874ac265c40bcc; cache size = 135.911 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_pc_1, cache-ID = 70874ac265c40bcc; cache size = 135.911 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_pc_2, cache-ID = 0fdf6a48b2d3567e; cache size = 135.911 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_system_ila_0_0, cache-ID = 29f89f0f1eff5fc8; cache size = 135.911 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_us_0, cache-ID = 95b99be16876e2a7; cache size = 135.911 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_system_ila_1_0, cache-ID = badf57a92de2b896; cache size = 135.911 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_us_1, cache-ID = 95b99be16876e2a7; cache size = 135.911 MB.
+config_ip_cache: Time (s): cpu = 00:00:18 ; elapsed = 00:00:30 . Memory (MB): peak = 13896.363 ; gain = 0.000 ; free physical = 3549 ; free virtual = 507128
+[Sat Jul  9 14:12:51 2022] Launched system_top_system_ila_0_1_synth_1, synth_1...
+Run output will be captured here:
+system_top_system_ila_0_1_synth_1: /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/system_top_system_ila_0_1_synth_1/runme.log
+synth_1: /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/synth_1/runme.log
+[Sat Jul  9 14:12:51 2022] Launched impl_1...
+Run output will be captured here: /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:01:27 ; elapsed = 00:01:24 . Memory (MB): peak = 13916.375 ; gain = 20.012 ; free physical = 3503 ; free virtual = 507082
+set_property PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+set_property FULL_PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+set_property PROGRAM.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xcu250_0]
+program_hw_devices [get_hw_devices xcu250_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:22 ; elapsed = 00:00:20 . Memory (MB): peak = 13916.375 ; gain = 0.000 ; free physical = 7953 ; free virtual = 507248
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+WARNING: [Labtools 27-3089] Calibration is still in-progress.
+INFO: [Labtools 27-2302] Device xcu250 (JTAG device index = 0) is programmed with a design that has 3 ILA core(s).
+INFO: [Labtools 27-2302] Device xcu250 (JTAG device index = 0) is programmed with a design that has 1 JTAG AXI core(s).
+INFO: [Labtools 27-2302] Device xcu250 (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+INFO: [Labtools 27-2302] Device xcu250 (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+INFO: [Labtools 27-3143] Calibration status change detected, refreshing MIG_1
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_2/inst/ila_lib"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes system_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {system_top_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes system_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {system_top_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+open_bd_design {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd}
+set_property OUTPUT_VALUE 1 [get_hw_probes system_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {system_top_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_2/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_3' trigger was armed at 2022-Jul-09 23:05:34
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_2/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_2/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_3' triggered at 2022-Jul-09 23:05:34
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.hw/backup/hw_ila_data_3.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_2/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_3' trigger was armed at 2022-Jul-09 23:05:44
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_2/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_2/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_3' triggered at 2022-Jul-09 23:05:44
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.hw/backup/hw_ila_data_3.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property OUTPUT_VALUE 0 [get_hw_probes system_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {system_top_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_2/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_3' trigger was armed at 2022-Jul-09 23:05:53
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_2/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_2/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_3' triggered at 2022-Jul-09 23:05:53
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.hw/backup/hw_ila_data_3.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property OUTPUT_VALUE 1 [get_hw_probes system_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {system_top_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_2/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_3' trigger was armed at 2022-Jul-09 23:06:26
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_2/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_2/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_3' triggered at 2022-Jul-09 23:06:26
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.hw/backup/hw_ila_data_3.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Jul-09 23:06:32
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Jul-09 23:06:32
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Jul-09 23:06:38
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Jul-09 23:06:38
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_2/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_3' trigger was armed at 2022-Jul-09 23:06:45
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_2/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_2/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_3' triggered at 2022-Jul-09 23:06:45
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.hw/backup/hw_ila_data_3.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property OUTPUT_VALUE 0 [get_hw_probes system_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {system_top_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_2/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_3' trigger was armed at 2022-Jul-09 23:07:13
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_2/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_2/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_3' triggered at 2022-Jul-09 23:07:13
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.hw/backup/hw_ila_data_3.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+open_bd_design {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd}
+startgroup
+set_property -dict [list CONFIG.C_NUM_OF_PROBES {2}] [get_bd_cells rv_system/system_ila_2]
+endgroup
+connect_bd_net [get_bd_pins rv_system/c_shift_ram_0/Q] [get_bd_pins rv_system/system_ila_2/probe1]
+save_bd_design
+Wrote  : </home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd> 
+Wrote  : </home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/ui/bd_9edf8fa5.ui> 
+reset_run synth_1
+reset_run system_top_system_ila_0_1_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 48
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /rv_system/c_shift_ram_1 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /rv_system/c_shift_ram_1 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /rv_system/c_shift_ram_0 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /rv_system/c_shift_ram_0 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mem(1)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mem(1)
+WARNING: [BD 41-237] Bus Interface property RUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mem(1)
+WARNING: [BD 41-237] Bus Interface property BUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mem(1)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_interconnect_0/s01_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mmio(1)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_interconnect_0/s01_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mmio(1)
+WARNING: [BD 41-237] Bus Interface property RUSER_WIDTH does not match between /axi_interconnect_0/s01_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mmio(1)
+WARNING: [BD 41-237] Bus Interface property BUSER_WIDTH does not match between /axi_interconnect_0/s01_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mmio(1)
+Wrote  : </home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd> 
+Wrote  : </home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/ui/bd_9edf8fa5.ui> 
+VHDL Output written to : /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/synth/system_top.v
+VHDL Output written to : /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/sim/system_top.v
+VHDL Output written to : /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/hdl/system_top_wrapper.v
+Exporting to file /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_system_ila_1_0/bd_0/hw_handoff/system_top_system_ila_1_0.hwh
+Generated Block Design Tcl file /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_system_ila_1_0/bd_0/hw_handoff/system_top_system_ila_1_0_bd.tcl
+Generated Hardware Definition File /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_system_ila_1_0/bd_0/synth/system_top_system_ila_1_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rv_system/system_ila_1 .
+Exporting to file /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_system_ila_0_0/bd_0/hw_handoff/system_top_system_ila_0_0.hwh
+Generated Block Design Tcl file /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_system_ila_0_0/bd_0/hw_handoff/system_top_system_ila_0_0_bd.tcl
+Generated Hardware Definition File /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_system_ila_0_0/bd_0/synth/system_top_system_ila_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rv_system/system_ila_0 .
+INFO: [BD 41-1637] Generated targets are already up-to-date for block design 'bd_c96b' - hence not re-generating.
+Exporting to file /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_system_ila_0_1/bd_0/hw_handoff/system_top_system_ila_0_1.hwh
+Generated Block Design Tcl file /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_system_ila_0_1/bd_0/hw_handoff/system_top_system_ila_0_1_bd.tcl
+Generated Hardware Definition File /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_system_ila_0_1/bd_0/synth/system_top_system_ila_0_1.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rv_system/system_ila_2 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_us_0/system_top_auto_us_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_us_1/system_top_auto_us_1_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s01_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_us_2/system_top_auto_us_2_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s02_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_cc_0/system_top_auto_cc_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m00_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_ds_0/system_top_auto_ds_0_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_pc_0/system_top_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_ds_1/system_top_auto_ds_1_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m02_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_pc_1/system_top_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m02_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_cc_1/system_top_auto_cc_1_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m03_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_ds_2/system_top_auto_ds_2_ooc.xdc'
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m03_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_pc_2/system_top_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m03_couplers/auto_pc .
+Exporting to file /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/hw_handoff/system_top.hwh
+Generated Block Design Tcl file /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/hw_handoff/system_top_bd.tcl
+Generated Hardware Definition File /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/synth/system_top.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_cc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_cc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_ds_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_ds_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_ds_2
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_pc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_pc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_pc_2
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_us_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_us_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_auto_us_2
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_system_ila_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_system_ila_0_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_top_system_ila_1_0
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_cc_0, cache-ID = 9327452ff92ab4af; cache size = 145.319 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_system_ila_0_0, cache-ID = 29f89f0f1eff5fc8; cache size = 145.319 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_cc_1, cache-ID = 19d834681fff89a5; cache size = 145.319 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_us_2, cache-ID = f5a25bd4f3341902; cache size = 145.319 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_ds_0, cache-ID = 32671fc0b1d8feef; cache size = 145.319 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_ds_1, cache-ID = 32671fc0b1d8feef; cache size = 145.319 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_ds_2, cache-ID = dd1dbb0c379b91c8; cache size = 145.319 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_pc_0, cache-ID = 70874ac265c40bcc; cache size = 145.319 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_pc_1, cache-ID = 70874ac265c40bcc; cache size = 145.319 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_pc_2, cache-ID = 0fdf6a48b2d3567e; cache size = 145.319 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_system_ila_1_0, cache-ID = badf57a92de2b896; cache size = 145.319 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_us_0, cache-ID = 95b99be16876e2a7; cache size = 145.319 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_top_auto_us_1, cache-ID = 95b99be16876e2a7; cache size = 145.319 MB.
+config_ip_cache: Time (s): cpu = 00:00:20 ; elapsed = 00:00:29 . Memory (MB): peak = 14021.617 ; gain = 0.000 ; free physical = 8090 ; free virtual = 507149
+[Sat Jul  9 23:09:41 2022] Launched system_top_system_ila_0_1_synth_1, synth_1...
+Run output will be captured here:
+system_top_system_ila_0_1_synth_1: /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/system_top_system_ila_0_1_synth_1/runme.log
+synth_1: /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/synth_1/runme.log
+[Sat Jul  9 23:09:41 2022] Launched impl_1...
+Run output will be captured here: /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:01:30 ; elapsed = 00:01:27 . Memory (MB): peak = 14051.945 ; gain = 30.328 ; free physical = 8043 ; free virtual = 507096
+set_property PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+set_property FULL_PROBES.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.ltx} [get_hw_devices xcu250_0]
+set_property PROGRAM.FILE {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.bit} [get_hw_devices xcu250_0]
+program_hw_devices [get_hw_devices xcu250_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 14051.945 ; gain = 0.000 ; free physical = 7888 ; free virtual = 507194
+refresh_hw_device [lindex [get_hw_devices xcu250_0] 0]
+WARNING: [Labtools 27-3089] Calibration is still in-progress.
+INFO: [Labtools 27-2302] Device xcu250 (JTAG device index = 0) is programmed with a design that has 3 ILA core(s).
+INFO: [Labtools 27-2302] Device xcu250 (JTAG device index = 0) is programmed with a design that has 1 JTAG AXI core(s).
+INFO: [Labtools 27-2302] Device xcu250 (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+INFO: [Labtools 27-2302] Device xcu250 (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+INFO: [Labtools 27-3143] Calibration status change detected, refreshing MIG_1
+add_wave -into {hw_ila_data_3.wcfg} -radix hex { {system_top_i/rv_system/system_ila_2/inst/probe1_1} }
+set_property NAME.CUSTOM c_shift_ram_0_Q [get_hw_probes system_top_i/rv_system/system_ila_2/inst/probe1_1] 
+open_bd_design {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd}
+set_property OUTPUT_VALUE 1 [get_hw_probes system_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {system_top_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Jul-10 09:06:19
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Jul-10 09:06:19
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property OUTPUT_VALUE 0 [get_hw_probes system_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {system_top_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Jul-10 09:06:30
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Jul-10 09:06:30
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Jul-10 09:06:33
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Jul-10 09:06:33
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property OUTPUT_VALUE 1 [get_hw_probes system_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {system_top_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_2/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_3' trigger was armed at 2022-Jul-10 09:06:58
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_2/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_2/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_3' triggered at 2022-Jul-10 09:06:58
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.hw/backup/hw_ila_data_3.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_2/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_3' trigger was armed at 2022-Jul-10 09:07:09
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_2/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_2/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_3' triggered at 2022-Jul-10 09:07:09
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.hw/backup/hw_ila_data_3.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property OUTPUT_VALUE 0 [get_hw_probes system_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {system_top_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_2/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_3' trigger was armed at 2022-Jul-10 09:07:28
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_2/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_2/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_3' triggered at 2022-Jul-10 09:07:28
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.hw/backup/hw_ila_data_3.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Jul-10 09:07:36
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/rv_system/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Jul-10 09:07:36
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+open_bd_design {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd}
+delete_bd_objs [get_bd_nets rv_system/NutShell_0_io_mem_awvalid]
+delete_bd_objs [get_bd_nets rv_system/NutShell_0_io_mem_wvalid]
+connect_bd_net [get_bd_pins rv_system/NutShell_0/io_mem_arready] [get_bd_pins rv_system/system_ila_1/probe0]
+connect_bd_net [get_bd_pins rv_system/NutShell_0/io_mem_rvalid] [get_bd_pins rv_system/system_ila_1/probe1]
+delete_bd_objs [get_bd_nets rv_system/NutShell_0_io_mmio_awvalid]
+delete_bd_objs [get_bd_nets rv_system/NutShell_0_io_mmio_wvalid]
+delete_bd_objs [get_bd_nets rv_system/NutShell_0_io_mmio_bready]
+connect_bd_net [get_bd_pins rv_system/NutShell_0/io_mmio_arready] [get_bd_pins rv_system/system_ila_1/probe5]
+connect_bd_net [get_bd_pins rv_system/NutShell_0/io_mmio_rvalid] [get_bd_pins rv_system/system_ila_1/probe6]
+validate_bd_design
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /rv_system/c_shift_ram_1 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /rv_system/c_shift_ram_0 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mem(1)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mem(1)
+WARNING: [BD 41-237] Bus Interface property RUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mem(1)
+WARNING: [BD 41-237] Bus Interface property BUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mem(1)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_interconnect_0/s01_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mmio(1)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_interconnect_0/s01_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mmio(1)
+WARNING: [BD 41-237] Bus Interface property RUSER_WIDTH does not match between /axi_interconnect_0/s01_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mmio(1)
+WARNING: [BD 41-237] Bus Interface property BUSER_WIDTH does not match between /axi_interconnect_0/s01_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mmio(1)
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/rv_system/NutShell_0/io_mem_arready
+/rv_system/NutShell_0/io_mem_rvalid
+/rv_system/NutShell_0/io_mmio_arready
+/rv_system/NutShell_0/io_mmio_rvalid
+/rv_system/system_ila_1/probe0
+/rv_system/system_ila_1/probe1
+/rv_system/system_ila_1/probe5
+/rv_system/system_ila_1/probe6
+
+validate_bd_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:34 . Memory (MB): peak = 14119.141 ; gain = 0.000 ; free physical = 2242 ; free virtual = 503744
+set_property offset 0x80000000 [get_bd_addr_segs {jtag_axi_0/Data/SEG_ddr4_0_C0_DDR4_ADDRESS_BLOCK}]
+open_bd_design {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd}
+undo
+INFO: [Common 17-17] undo 'set_property offset 0x80000000 [get_bd_addr_segs {jtag_axi_0/Data/SEG_ddr4_0_C0_DDR4_ADDRESS_BLOCK}]'
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins rv_system/NutShell_0/io_mmio_rvalid] [get_bd_pins rv_system/system_ila_1/probe6]'
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins rv_system/NutShell_0/io_mmio_arready] [get_bd_pins rv_system/system_ila_1/probe5]'
+undo
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_nets rv_system/NutShell_0_io_mmio_bready]'
+undo
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_nets rv_system/NutShell_0_io_mmio_wvalid]'
+undo
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_nets rv_system/NutShell_0_io_mmio_awvalid]'
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins rv_system/NutShell_0/io_mem_rvalid] [get_bd_pins rv_system/system_ila_1/probe1]'
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins rv_system/NutShell_0/io_mem_arready] [get_bd_pins rv_system/system_ila_1/probe0]'
+undo
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_nets rv_system/NutShell_0_io_mem_wvalid]'
+undo
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_nets rv_system/NutShell_0_io_mem_awvalid]'
+undo
+INFO: [Common 17-17] undo 'set_property OUTPUT_VALUE 0 [get_hw_probes system_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]'
+redo
+INFO: [Common 17-16] redo 'set_property OUTPUT_VALUE 0 [get_hw_probes system_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]'
+undo
+INFO: [Common 17-17] undo 'set_property OUTPUT_VALUE 0 [get_hw_probes system_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]'
+undo
+INFO: [Common 17-17] undo 'set_property OUTPUT_VALUE 1 [get_hw_probes system_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]'
+redo
+INFO: [Common 17-16] redo 'set_property OUTPUT_VALUE 1 [get_hw_probes system_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]'
+redo
+INFO: [Common 17-16] redo 'set_property OUTPUT_VALUE 0 [get_hw_probes system_top_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcu250_0] -filter {CELL_NAME=~"system_top_i/vio_0"}]]'
+redo
+INFO: [Common 17-16] redo 'delete_bd_objs [get_bd_nets rv_system/NutShell_0_io_mem_awvalid]'
+redo
+INFO: [Common 17-16] redo 'delete_bd_objs [get_bd_nets rv_system/NutShell_0_io_mem_wvalid]'
+undo
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_nets rv_system/NutShell_0_io_mem_wvalid]'
+undo
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_nets rv_system/NutShell_0_io_mem_awvalid]'
+validate_bd_design -force
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /rv_system/c_shift_ram_1 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /rv_system/c_shift_ram_0 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mem(1)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mem(1)
+WARNING: [BD 41-237] Bus Interface property RUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mem(1)
+WARNING: [BD 41-237] Bus Interface property BUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mem(1)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_interconnect_0/s01_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mmio(1)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_interconnect_0/s01_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mmio(1)
+WARNING: [BD 41-237] Bus Interface property RUSER_WIDTH does not match between /axi_interconnect_0/s01_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mmio(1)
+WARNING: [BD 41-237] Bus Interface property BUSER_WIDTH does not match between /axi_interconnect_0/s01_couplers/auto_us/S_AXI(0) and /rv_system/NutShell_0/io_mmio(1)
+validate_bd_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:35 . Memory (MB): peak = 14119.141 ; gain = 0.000 ; free physical = 1142 ; free virtual = 502516
+write_bd_layout -format pdf -orientation landscape /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top.pdf
+/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top.pdf
+write_bd_layout -format pdf -orientation portrait -force /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top.pdf
+/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top.pdf
+write_bd_layout -format pdf -orientation landscape -force /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top.pdf
+/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top.pdf

@@ -1,0 +1,988 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jul 18 02:47:29 2022
+# Process ID: 75319
+# Current directory: /home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/system_top_NutShell_0_0_synth_1
+# Command line: vivado -log system_top_NutShell_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_top_NutShell_0_0.tcl
+# Log file: /home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/system_top_NutShell_0_0_synth_1/system_top_NutShell_0_0.vds
+# Journal file: /home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/system_top_NutShell_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source system_top_NutShell_0_0.tcl -notrace
+Command: synth_design -top system_top_NutShell_0_0 -part xcu250-figd2104-2L-e -mode out_of_context
+Starting synth_design
+WARNING: [IP_Flow 19-3571] IP 'system_top_NutShell_0_0' is restricted:
+* Module reference is stale and needs refreshing.
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu250'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu250'
+INFO: [Device 21-403] Loading part xcu250-figd2104-2L-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 75683
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3231.285 ; gain = 221.684 ; free physical = 229394 ; free virtual = 517331
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'system_top_NutShell_0_0' [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_NutShell_0_0/synth/system_top_NutShell_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'NutShell' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:24111]
+INFO: [Synth 8-6157] synthesizing module 'NutCore' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:15282]
+INFO: [Synth 8-6157] synthesizing module 'Frontend_inorder' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:2570]
+INFO: [Synth 8-6157] synthesizing module 'IFU_inorder' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:503]
+INFO: [Synth 8-6157] synthesizing module 'BPU_inorder' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:210]
+INFO: [Synth 8-6157] synthesizing module 'SRAMTemplate' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:81]
+INFO: [Synth 8-6157] synthesizing module 'array' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:26719]
+INFO: [Synth 8-6157] synthesizing module 'array_ext' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:26945]
+INFO: [Synth 8-6155] done synthesizing module 'array_ext' (1#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:26945]
+INFO: [Synth 8-6155] done synthesizing module 'array' (2#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:26719]
+INFO: [Synth 8-6155] done synthesizing module 'SRAMTemplate' (3#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:81]
+INFO: [Synth 8-6155] done synthesizing module 'BPU_inorder' (4#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:210]
+INFO: [Synth 8-6155] done synthesizing module 'IFU_inorder' (5#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:503]
+INFO: [Synth 8-6157] synthesizing module 'NaiveRVCAlignBuffer' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:729]
+INFO: [Synth 8-6155] done synthesizing module 'NaiveRVCAlignBuffer' (6#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:729]
+INFO: [Synth 8-6157] synthesizing module 'IDU' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:2129]
+INFO: [Synth 8-6157] synthesizing module 'Decoder' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:1108]
+INFO: [Synth 8-6155] done synthesizing module 'Decoder' (7#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:1108]
+INFO: [Synth 8-6157] synthesizing module 'Decoder_1' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:2101]
+INFO: [Synth 8-6155] done synthesizing module 'Decoder_1' (8#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:2101]
+INFO: [Synth 8-6155] done synthesizing module 'IDU' (9#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:2129]
+INFO: [Synth 8-6157] synthesizing module 'FlushableQueue' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:2351]
+INFO: [Synth 8-6155] done synthesizing module 'FlushableQueue' (10#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:2351]
+INFO: [Synth 8-6155] done synthesizing module 'Frontend_inorder' (11#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:2570]
+INFO: [Synth 8-6157] synthesizing module 'Backend_inorder' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:6527]
+INFO: [Synth 8-6157] synthesizing module 'ISU' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:3088]
+INFO: [Synth 8-6155] done synthesizing module 'ISU' (12#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:3088]
+INFO: [Synth 8-6157] synthesizing module 'EXU' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:5974]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:3363]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (13#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:3363]
+INFO: [Synth 8-6157] synthesizing module 'UnpipelinedLSU' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:3968]
+INFO: [Synth 8-6157] synthesizing module 'LSExecUnit' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:3642]
+INFO: [Synth 8-6155] done synthesizing module 'LSExecUnit' (14#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:3642]
+INFO: [Synth 8-6157] synthesizing module 'AtomALU' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:3926]
+INFO: [Synth 8-6155] done synthesizing module 'AtomALU' (15#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:3926]
+INFO: [Synth 8-6155] done synthesizing module 'UnpipelinedLSU' (16#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:3968]
+INFO: [Synth 8-6157] synthesizing module 'MDU' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:4767]
+INFO: [Synth 8-6157] synthesizing module 'Multiplier' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:4313]
+INFO: [Synth 8-6155] done synthesizing module 'Multiplier' (17#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:4313]
+INFO: [Synth 8-6157] synthesizing module 'Divider' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:4433]
+INFO: [Synth 8-6155] done synthesizing module 'Divider' (18#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:4433]
+INFO: [Synth 8-6155] done synthesizing module 'MDU' (19#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:4767]
+INFO: [Synth 8-6157] synthesizing module 'CSR' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:4928]
+INFO: [Synth 8-6155] done synthesizing module 'CSR' (20#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:4928]
+INFO: [Synth 8-6157] synthesizing module 'MOU' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:5956]
+INFO: [Synth 8-6155] done synthesizing module 'MOU' (21#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:5956]
+INFO: [Synth 8-6155] done synthesizing module 'EXU' (22#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:5974]
+INFO: [Synth 8-6157] synthesizing module 'WBU' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:6484]
+INFO: [Synth 8-6155] done synthesizing module 'WBU' (23#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:6484]
+INFO: [Synth 8-6155] done synthesizing module 'Backend_inorder' (24#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:6527]
+INFO: [Synth 8-6157] synthesizing module 'SimpleBusCrossbarNto1' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:7545]
+INFO: [Synth 8-6157] synthesizing module 'LockingArbiter' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:7438]
+INFO: [Synth 8-6155] done synthesizing module 'LockingArbiter' (25#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:7438]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleBusCrossbarNto1' (26#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:7545]
+INFO: [Synth 8-6157] synthesizing module 'SimpleBusCrossbarNto1_1' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:7921]
+INFO: [Synth 8-6157] synthesizing module 'LockingArbiter_1' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:7778]
+INFO: [Synth 8-6155] done synthesizing module 'LockingArbiter_1' (27#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:7778]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleBusCrossbarNto1_1' (28#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:7921]
+INFO: [Synth 8-6157] synthesizing module 'EmbeddedTLB' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:9039]
+INFO: [Synth 8-6157] synthesizing module 'EmbeddedTLBExec' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:8208]
+INFO: [Synth 8-6155] done synthesizing module 'EmbeddedTLBExec' (29#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:8208]
+INFO: [Synth 8-6157] synthesizing module 'EmbeddedTLBMD' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:8884]
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "tlbmd_0_reg" dissolved into registers
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "tlbmd_1_reg" dissolved into registers
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "tlbmd_2_reg" dissolved into registers
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "tlbmd_3_reg" dissolved into registers
+INFO: [Synth 8-6155] done synthesizing module 'EmbeddedTLBMD' (30#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:8884]
+INFO: [Synth 8-6155] done synthesizing module 'EmbeddedTLB' (31#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:9039]
+INFO: [Synth 8-6157] synthesizing module 'Cache' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:10999]
+INFO: [Synth 8-6157] synthesizing module 'CacheStage1' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:9310]
+INFO: [Synth 8-6155] done synthesizing module 'CacheStage1' (32#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:9310]
+INFO: [Synth 8-6157] synthesizing module 'CacheStage2' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:9356]
+INFO: [Synth 8-6155] done synthesizing module 'CacheStage2' (33#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:9356]
+INFO: [Synth 8-6157] synthesizing module 'CacheStage3' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:9706]
+INFO: [Synth 8-6157] synthesizing module 'Arbiter' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:9660]
+INFO: [Synth 8-6155] done synthesizing module 'Arbiter' (34#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:9660]
+INFO: [Synth 8-6157] synthesizing module 'Arbiter_1' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:9685]
+INFO: [Synth 8-6155] done synthesizing module 'Arbiter_1' (35#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:9685]
+INFO: [Synth 8-6155] done synthesizing module 'CacheStage3' (36#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:9706]
+INFO: [Synth 8-6157] synthesizing module 'SRAMTemplateWithArbiter' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:10410]
+INFO: [Synth 8-6157] synthesizing module 'SRAMTemplate_1' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:10239]
+INFO: [Synth 8-6157] synthesizing module 'array_0' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:26748]
+INFO: [Synth 8-6157] synthesizing module 'array_0_ext' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:26994]
+INFO: [Synth 8-6155] done synthesizing module 'array_0_ext' (37#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:26994]
+INFO: [Synth 8-6155] done synthesizing module 'array_0' (38#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:26748]
+INFO: [Synth 8-6155] done synthesizing module 'SRAMTemplate_1' (39#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:10239]
+INFO: [Synth 8-6157] synthesizing module 'Arbiter_2' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:10398]
+INFO: [Synth 8-6155] done synthesizing module 'Arbiter_2' (40#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:10398]
+INFO: [Synth 8-6155] done synthesizing module 'SRAMTemplateWithArbiter' (41#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:10410]
+INFO: [Synth 8-6157] synthesizing module 'SRAMTemplateWithArbiter_1' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:10765]
+INFO: [Synth 8-6157] synthesizing module 'SRAMTemplate_2' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:10679]
+INFO: [Synth 8-6157] synthesizing module 'array_1' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:26797]
+INFO: [Synth 8-6157] synthesizing module 'array_1_ext' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:27046]
+INFO: [Synth 8-6155] done synthesizing module 'array_1_ext' (42#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:27046]
+INFO: [Synth 8-6155] done synthesizing module 'array_1' (43#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:26797]
+INFO: [Synth 8-6155] done synthesizing module 'SRAMTemplate_2' (44#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:10679]
+INFO: [Synth 8-6157] synthesizing module 'Arbiter_3' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:10747]
+INFO: [Synth 8-6155] done synthesizing module 'Arbiter_3' (45#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:10747]
+INFO: [Synth 8-6155] done synthesizing module 'SRAMTemplateWithArbiter_1' (46#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:10765]
+INFO: [Synth 8-6157] synthesizing module 'Arbiter_4' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:10984]
+INFO: [Synth 8-6155] done synthesizing module 'Arbiter_4' (47#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:10984]
+INFO: [Synth 8-6155] done synthesizing module 'Cache' (48#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:10999]
+INFO: [Synth 8-6157] synthesizing module 'EmbeddedTLB_1' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:12734]
+INFO: [Synth 8-6157] synthesizing module 'EmbeddedTLBExec_1' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:11833]
+INFO: [Synth 8-6155] done synthesizing module 'EmbeddedTLBExec_1' (49#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:11833]
+INFO: [Synth 8-6157] synthesizing module 'EmbeddedTLBEmpty_1' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:12541]
+INFO: [Synth 8-6155] done synthesizing module 'EmbeddedTLBEmpty_1' (50#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:12541]
+INFO: [Synth 8-6157] synthesizing module 'EmbeddedTLBMD_1' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:12565]
+INFO: [Synth 8-6155] done synthesizing module 'EmbeddedTLBMD_1' (51#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:12565]
+INFO: [Synth 8-6155] done synthesizing module 'EmbeddedTLB_1' (52#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:12734]
+INFO: [Synth 8-6157] synthesizing module 'Cache_1' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:14306]
+INFO: [Synth 8-6157] synthesizing module 'CacheStage1_1' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:13168]
+INFO: [Synth 8-6155] done synthesizing module 'CacheStage1_1' (53#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:13168]
+INFO: [Synth 8-6157] synthesizing module 'CacheStage2_1' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:13223]
+INFO: [Synth 8-6155] done synthesizing module 'CacheStage2_1' (54#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:13223]
+INFO: [Synth 8-6157] synthesizing module 'CacheStage3_1' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:13536]
+INFO: [Synth 8-6155] done synthesizing module 'CacheStage3_1' (55#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:13536]
+INFO: [Synth 8-6157] synthesizing module 'Arbiter_9' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:14272]
+INFO: [Synth 8-6155] done synthesizing module 'Arbiter_9' (56#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:14272]
+INFO: [Synth 8-6155] done synthesizing module 'Cache_1' (57#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:14306]
+INFO: [Synth 8-6155] done synthesizing module 'NutCore' (58#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:15282]
+INFO: [Synth 8-6157] synthesizing module 'CoherenceManager' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:19268]
+INFO: [Synth 8-6155] done synthesizing module 'CoherenceManager' (59#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:19268]
+INFO: [Synth 8-6157] synthesizing module 'AXI42SimpleBusConverter' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:19491]
+INFO: [Synth 8-6155] done synthesizing module 'AXI42SimpleBusConverter' (60#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:19491]
+INFO: [Synth 8-6157] synthesizing module 'Prefetcher' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:19855]
+INFO: [Synth 8-6155] done synthesizing module 'Prefetcher' (61#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:19855]
+INFO: [Synth 8-6157] synthesizing module 'Cache_2' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:21848]
+INFO: [Synth 8-6157] synthesizing module 'CacheStage1_2' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:19986]
+INFO: [Synth 8-6155] done synthesizing module 'CacheStage1_2' (62#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:19986]
+INFO: [Synth 8-6157] synthesizing module 'CacheStage2_2' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:20038]
+INFO: [Synth 8-6155] done synthesizing module 'CacheStage2_2' (63#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:20038]
+INFO: [Synth 8-6157] synthesizing module 'CacheStage3_2' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:20393]
+INFO: [Synth 8-6157] synthesizing module 'Arbiter_10' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:20348]
+INFO: [Synth 8-6155] done synthesizing module 'Arbiter_10' (64#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:20348]
+INFO: [Synth 8-6157] synthesizing module 'Arbiter_11' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:20372]
+INFO: [Synth 8-6155] done synthesizing module 'Arbiter_11' (65#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:20372]
+INFO: [Synth 8-6155] done synthesizing module 'CacheStage3_2' (66#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:20393]
+INFO: [Synth 8-6157] synthesizing module 'SRAMTemplateWithArbiter_4' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:21274]
+INFO: [Synth 8-6157] synthesizing module 'SRAMTemplate_5' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:21103]
+INFO: [Synth 8-6157] synthesizing module 'array_2' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:26846]
+INFO: [Synth 8-6157] synthesizing module 'array_2_ext' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:27098]
+INFO: [Synth 8-6155] done synthesizing module 'array_2_ext' (67#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:27098]
+INFO: [Synth 8-6155] done synthesizing module 'array_2' (68#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:26846]
+INFO: [Synth 8-6155] done synthesizing module 'SRAMTemplate_5' (69#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:21103]
+INFO: [Synth 8-6157] synthesizing module 'Arbiter_12' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:21262]
+INFO: [Synth 8-6155] done synthesizing module 'Arbiter_12' (70#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:21262]
+INFO: [Synth 8-6155] done synthesizing module 'SRAMTemplateWithArbiter_4' (71#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:21274]
+INFO: [Synth 8-6157] synthesizing module 'SRAMTemplateWithArbiter_5' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:21629]
+INFO: [Synth 8-6157] synthesizing module 'SRAMTemplate_6' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:21543]
+INFO: [Synth 8-6157] synthesizing module 'array_3' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:26895]
+INFO: [Synth 8-6157] synthesizing module 'array_3_ext' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:27150]
+INFO: [Synth 8-6155] done synthesizing module 'array_3_ext' (72#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:27150]
+INFO: [Synth 8-6155] done synthesizing module 'array_3' (73#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:26895]
+INFO: [Synth 8-6155] done synthesizing module 'SRAMTemplate_6' (74#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:21543]
+INFO: [Synth 8-6157] synthesizing module 'Arbiter_13' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:21611]
+INFO: [Synth 8-6155] done synthesizing module 'Arbiter_13' (75#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:21611]
+INFO: [Synth 8-6155] done synthesizing module 'SRAMTemplateWithArbiter_5' (76#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:21629]
+INFO: [Synth 8-6155] done synthesizing module 'Cache_2' (77#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:21848]
+INFO: [Synth 8-6157] synthesizing module 'SimpleBusAddressMapper' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:22740]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleBusAddressMapper' (78#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:22740]
+INFO: [Synth 8-6157] synthesizing module 'SimpleBus2AXI4Converter' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:22767]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleBus2AXI4Converter' (79#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:22767]
+INFO: [Synth 8-6157] synthesizing module 'SimpleBusCrossbar1toN' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:22937]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleBusCrossbar1toN' (80#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:22937]
+INFO: [Synth 8-6157] synthesizing module 'SimpleBus2AXI4Converter_1' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:23148]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleBus2AXI4Converter_1' (81#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:23148]
+INFO: [Synth 8-6157] synthesizing module 'AXI4CLINT' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:23327]
+INFO: [Synth 8-6155] done synthesizing module 'AXI4CLINT' (82#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:23327]
+INFO: [Synth 8-6157] synthesizing module 'SimpleBus2AXI4Converter_2' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:23590]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleBus2AXI4Converter_2' (83#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:23590]
+INFO: [Synth 8-6157] synthesizing module 'AXI4PLIC' [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:23747]
+INFO: [Synth 8-6155] done synthesizing module 'AXI4PLIC' (84#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:23747]
+INFO: [Synth 8-6155] done synthesizing module 'NutShell' (85#1) [/home/chenxuhao/NutShell_U250_copy/build/TopMain.v:24111]
+INFO: [Synth 8-6155] done synthesizing module 'system_top_NutShell_0_0' (86#1) [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_NutShell_0_0/synth/system_top_NutShell_0_0.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 3412.133 ; gain = 402.531 ; free physical = 229675 ; free virtual = 517616
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 3422.035 ; gain = 412.434 ; free physical = 229702 ; free virtual = 517642
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 3422.035 ; gain = 412.434 ; free physical = 229702 ; free virtual = 517642
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.43 ; elapsed = 00:00:00.44 . Memory (MB): peak = 3422.035 ; gain = 0.000 ; free physical = 229661 ; free virtual = 517602
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3603.836 ; gain = 0.000 ; free physical = 229451 ; free virtual = 517392
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.41 . Memory (MB): peak = 3644.652 ; gain = 40.816 ; free physical = 229433 ; free virtual = 517374
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 3644.652 ; gain = 635.051 ; free physical = 229684 ; free virtual = 517624
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcu250-figd2104-2L-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 3644.652 ; gain = 635.051 ; free physical = 229684 ; free virtual = 517624
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 3644.652 ; gain = 635.051 ; free physical = 229684 ; free virtual = 517624
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6904] The RAM "BPU_inorder:/ras_reg" of size (depth=16 x width=39) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "BPU_inorder:/pht_reg" of size (depth=512 x width=2) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "FlushableQueue:/ram_instr_reg" of size (depth=4 x width=64) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "FlushableQueue:/ram_pc_reg" of size (depth=4 x width=39) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "FlushableQueue:/ram_pnpc_reg" of size (depth=4 x width=39) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "FlushableQueue:/ram_exceptionVec_12_reg" of size (depth=4 x width=1) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "FlushableQueue:/ram_brIdx_reg" of size (depth=4 x width=4) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+WARNING: [Synth 8-6841] Block RAM (ram_reg) originally specified as a Byte Wide Write Enable RAM cannot take advantage of ByteWide feature and is implemented with single write enable per RAM due to following reason.
+(byte width (21) is not a multiple of 8(data_only) or 9(data + parity))
+INFO: [Synth 8-6794] RAM ("array_1_ext:/ram_reg") will be automatically implemented using URAM. 
+INFO: [Synth 8-6794] RAM ("array_1_ext:/ram_reg") will be automatically implemented using URAM. 
+WARNING: [Synth 8-6841] Block RAM (ram_reg) originally specified as a Byte Wide Write Enable RAM cannot take advantage of ByteWide feature and is implemented with single write enable per RAM due to following reason.
+(byte width (64) is too high. Maximum supported byte width = 32 (data_only) or 36 (data + parity))
+INFO: [Synth 8-6794] RAM ("array_1_ext:/ram_reg") will be automatically implemented using URAM. 
+INFO: [Synth 8-5780] Default cascade height of 8 will be used for URAM '"array_1_ext:/ram_reg"'.
+INFO: [Synth 8-6794] RAM ("array_1_ext:/ram_reg") will be automatically implemented using URAM. 
+INFO: [Synth 8-5780] Default cascade height of 8 will be used for URAM '"array_1_ext:/ram_reg"'.
+INFO: [Synth 8-6794] RAM ("array_1_ext:/ram_reg") will be automatically implemented using URAM. 
+INFO: [Synth 8-5780] Default cascade height of 8 will be used for URAM '"array_1_ext:/ram_reg"'.
+INFO: [Synth 8-6794] RAM ("array_1_ext:/ram_reg") will be automatically implemented using URAM. 
+INFO: [Synth 8-5780] Default cascade height of 8 will be used for URAM '"array_1_ext:/ram_reg"'.
+INFO: [Synth 8-6904] The RAM "EmbeddedTLBMD_1:/tlbmd_0_reg" of size (depth=16 x width=121) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "EmbeddedTLBMD_1:/tlbmd_1_reg" of size (depth=16 x width=121) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "EmbeddedTLBMD_1:/tlbmd_2_reg" of size (depth=16 x width=121) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "EmbeddedTLBMD_1:/tlbmd_3_reg" of size (depth=16 x width=121) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+WARNING: [Synth 8-6841] Block RAM (ram_reg) originally specified as a Byte Wide Write Enable RAM cannot take advantage of ByteWide feature and is implemented with single write enable per RAM due to following reason.
+(byte width (19) is not a multiple of 8(data_only) or 9(data + parity))
+INFO: [Synth 8-6794] RAM ("array_3_ext:/ram_reg") will be automatically implemented using URAM. 
+INFO: [Synth 8-6794] RAM ("array_3_ext:/ram_reg") will be automatically implemented using URAM. 
+WARNING: [Synth 8-6841] Block RAM (ram_reg) originally specified as a Byte Wide Write Enable RAM cannot take advantage of ByteWide feature and is implemented with single write enable per RAM due to following reason.
+(byte width (64) is too high. Maximum supported byte width = 32 (data_only) or 36 (data + parity))
+INFO: [Synth 8-6794] RAM ("array_3_ext:/ram_reg") will be automatically implemented using URAM. 
+INFO: [Synth 8-5780] Default cascade height of 8 will be used for URAM '"array_3_ext:/ram_reg"'.
+INFO: [Synth 8-6794] RAM ("array_3_ext:/ram_reg") will be automatically implemented using URAM. 
+INFO: [Synth 8-5780] Default cascade height of 8 will be used for URAM '"array_3_ext:/ram_reg"'.
+INFO: [Synth 8-6794] RAM ("array_3_ext:/ram_reg") will be automatically implemented using URAM. 
+INFO: [Synth 8-5780] Default cascade height of 8 will be used for URAM '"array_3_ext:/ram_reg"'.
+INFO: [Synth 8-6794] RAM ("array_3_ext:/ram_reg") will be automatically implemented using URAM. 
+INFO: [Synth 8-5780] Default cascade height of 8 will be used for URAM '"array_3_ext:/ram_reg"'.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 3644.652 ; gain = 635.051 ; free physical = 229662 ; free virtual = 517606
+---------------------------------------------------------------------------------
+RAM Pipeline Warning: Read Address Register Found For RAM ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM ram_reg. We will not be able to pipeline it. This may degrade performance. 
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   65 Bit       Adders := 2     
+	   2 Input   64 Bit       Adders := 8     
+	   3 Input   64 Bit       Adders := 1     
+	   2 Input   39 Bit       Adders := 11    
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 2     
+	   2 Input    9 Bit       Adders := 2     
+	   2 Input    7 Bit       Adders := 2     
+	   3 Input    7 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 4     
+	   2 Input    3 Bit       Adders := 18    
+	   2 Input    2 Bit       Adders := 9     
++---XORs : 
+	   2 Input     64 Bit         XORs := 4     
+	   2 Input     32 Bit         XORs := 8     
+	   4 Input      1 Bit         XORs := 5     
+	   2 Input      1 Bit         XORs := 4     
++---Registers : 
+	              130 Bit    Registers := 3     
+	              129 Bit    Registers := 1     
+	              121 Bit    Registers := 12    
+	               87 Bit    Registers := 3     
+	               73 Bit    Registers := 1     
+	               65 Bit    Registers := 3     
+	               64 Bit    Registers := 127   
+	               40 Bit    Registers := 2     
+	               39 Bit    Registers := 24    
+	               32 Bit    Registers := 20    
+	               27 Bit    Registers := 2     
+	               20 Bit    Registers := 2     
+	               19 Bit    Registers := 18    
+	               18 Bit    Registers := 5     
+	               17 Bit    Registers := 9     
+	               16 Bit    Registers := 6     
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 4     
+	                8 Bit    Registers := 10    
+	                7 Bit    Registers := 10    
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 15    
+	                4 Bit    Registers := 34    
+	                3 Bit    Registers := 36    
+	                2 Bit    Registers := 21    
+	                1 Bit    Registers := 262   
++---Multipliers : 
+	              65x65  Multipliers := 1     
++---RAMs : 
+	            1024K Bit	(4096 X 256 bit)          RAMs := 1     
+	             256K Bit	(1024 X 256 bit)          RAMs := 2     
+	              38K Bit	(512 X 76 bit)          RAMs := 1     
+	              36K Bit	(512 X 73 bit)          RAMs := 1     
+	              10K Bit	(128 X 84 bit)          RAMs := 2     
+	             1024 Bit	(512 X 2 bit)          RAMs := 1     
+	               1K Bit	(16 X 121 bit)          RAMs := 4     
+	              624 Bit	(16 X 39 bit)          RAMs := 1     
+	              256 Bit	(4 X 64 bit)          RAMs := 1     
+	              156 Bit	(4 X 39 bit)          RAMs := 2     
+	               16 Bit	(4 X 4 bit)          RAMs := 1     
+	                4 Bit	(4 X 1 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input  256 Bit        Muxes := 18    
+	   4 Input  129 Bit        Muxes := 1     
+	   2 Input  129 Bit        Muxes := 1     
+	   2 Input   94 Bit        Muxes := 8     
+	   2 Input   87 Bit        Muxes := 2     
+	   2 Input   84 Bit        Muxes := 12    
+	   2 Input   76 Bit        Muxes := 6     
+	   2 Input   73 Bit        Muxes := 7     
+	   2 Input   65 Bit        Muxes := 3     
+	   2 Input   64 Bit        Muxes := 243   
+	   4 Input   64 Bit        Muxes := 7     
+	   3 Input   64 Bit        Muxes := 7     
+	   5 Input   64 Bit        Muxes := 1     
+	   2 Input   39 Bit        Muxes := 18    
+	   4 Input   39 Bit        Muxes := 3     
+	   2 Input   32 Bit        Muxes := 40    
+	   4 Input   32 Bit        Muxes := 2     
+	   2 Input   24 Bit        Muxes := 1     
+	   2 Input   21 Bit        Muxes := 10    
+	   2 Input   20 Bit        Muxes := 2     
+	   2 Input   19 Bit        Muxes := 41    
+	   2 Input   18 Bit        Muxes := 16    
+	   4 Input   18 Bit        Muxes := 2     
+	   2 Input   17 Bit        Muxes := 18    
+	   2 Input   16 Bit        Muxes := 6     
+	   5 Input   13 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 4     
+	   2 Input   10 Bit        Muxes := 6     
+	   2 Input    9 Bit        Muxes := 7     
+	   4 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 11    
+	 124 Input    7 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 11    
+	   4 Input    7 Bit        Muxes := 1     
+	   6 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 11    
+	   2 Input    5 Bit        Muxes := 24    
+	  34 Input    5 Bit        Muxes := 2     
+	   4 Input    5 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 88    
+	 124 Input    4 Bit        Muxes := 1     
+	  32 Input    4 Bit        Muxes := 1     
+	  34 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 7     
+	   5 Input    4 Bit        Muxes := 4     
+	   3 Input    4 Bit        Muxes := 9     
+	   8 Input    4 Bit        Muxes := 1     
+	  10 Input    4 Bit        Muxes := 1     
+	   9 Input    4 Bit        Muxes := 1     
+	   7 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 77    
+	 126 Input    3 Bit        Muxes := 1     
+	  34 Input    3 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 8     
+	   3 Input    3 Bit        Muxes := 10    
+	   6 Input    3 Bit        Muxes := 2     
+	   7 Input    3 Bit        Muxes := 2     
+	  10 Input    3 Bit        Muxes := 1     
+	   5 Input    3 Bit        Muxes := 5     
+	   2 Input    2 Bit        Muxes := 119   
+	   4 Input    2 Bit        Muxes := 6     
+	   5 Input    2 Bit        Muxes := 8     
+	   3 Input    2 Bit        Muxes := 7     
+	   2 Input    1 Bit        Muxes := 283   
+	   4 Input    1 Bit        Muxes := 23    
+	   7 Input    1 Bit        Muxes := 1     
+	   5 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 12288 (col length:96)
+BRAMs: 5376 (col length: RAMB18 384 RAMB36 192)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6904] The RAM "\inst/nutcore/frontend /ifu/bp1/ras_reg" of size (depth=16 x width=39) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\inst/nutcore/frontend /ifu/bp1/pht_reg" of size (depth=512 x width=2) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\inst/nutcore/frontend/FlushableQueue/ram_instr_reg " of size (depth=4 x width=64) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\inst/nutcore/frontend/FlushableQueue/ram_pc_reg " of size (depth=4 x width=39) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\inst/nutcore/frontend/FlushableQueue/ram_pnpc_reg " of size (depth=4 x width=39) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\inst/nutcore/frontend/FlushableQueue/ram_exceptionVec_12_reg " of size (depth=4 x width=1) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\inst/nutcore/frontend/FlushableQueue/ram_brIdx_reg " of size (depth=4 x width=4) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "nutcorei_0/EmbeddedTLB_1/mdTLB/tlbmd_0_reg" of size (depth=16 x width=121) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "nutcorei_0/EmbeddedTLB_1/mdTLB/tlbmd_1_reg" of size (depth=16 x width=121) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "nutcorei_0/EmbeddedTLB_1/mdTLB/tlbmd_2_reg" of size (depth=16 x width=121) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "nutcorei_0/EmbeddedTLB_1/mdTLB/tlbmd_3_reg" of size (depth=16 x width=121) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+DSP Report: Generating DSP mdu/mul/_T_5_reg, operation Mode is: (A2*B2)'.
+DSP Report: register mdu/mul/_T_5_reg is absorbed into DSP mdu/mul/_T_5_reg.
+DSP Report: register mdu/mul/_T_5_reg is absorbed into DSP mdu/mul/_T_5_reg.
+DSP Report: register mdu/mul/_T_5_reg is absorbed into DSP mdu/mul/_T_5_reg.
+DSP Report: register mdu/mul/_T_4_reg is absorbed into DSP mdu/mul/_T_5_reg.
+DSP Report: operator mdu/mul/_T_40 is absorbed into DSP mdu/mul/_T_5_reg.
+DSP Report: operator mdu/mul/_T_40 is absorbed into DSP mdu/mul/_T_5_reg.
+DSP Report: Generating DSP mdu/mul/_T_4_reg, operation Mode is: (A2*B2)'.
+DSP Report: register mdu/mul/_T_4_reg is absorbed into DSP mdu/mul/_T_4_reg.
+DSP Report: register mdu/mul/_T_4_reg is absorbed into DSP mdu/mul/_T_4_reg.
+DSP Report: register mdu/mul/_T_4_reg is absorbed into DSP mdu/mul/_T_4_reg.
+DSP Report: operator mdu/mul/_T_40 is absorbed into DSP mdu/mul/_T_4_reg.
+DSP Report: operator mdu/mul/_T_40 is absorbed into DSP mdu/mul/_T_4_reg.
+DSP Report: Generating DSP mdu/mul/_T_40, operation Mode is: (PCIN>>17)+(A2*B2)'.
+DSP Report: register mdu/mul/_T_40 is absorbed into DSP mdu/mul/_T_40.
+DSP Report: register mdu/mul/_T_40 is absorbed into DSP mdu/mul/_T_40.
+DSP Report: register mdu/mul/_T_4_reg is absorbed into DSP mdu/mul/_T_40.
+DSP Report: operator mdu/mul/_T_40 is absorbed into DSP mdu/mul/_T_40.
+DSP Report: operator mdu/mul/_T_40 is absorbed into DSP mdu/mul/_T_40.
+DSP Report: Generating DSP mdu/mul/_T_5_reg, operation Mode is: (PCIN+(A2*B2)')'.
+DSP Report: register mdu/mul/_T_5_reg is absorbed into DSP mdu/mul/_T_5_reg.
+DSP Report: register mdu/mul/_T_5_reg is absorbed into DSP mdu/mul/_T_5_reg.
+DSP Report: register mdu/mul/_T_5_reg is absorbed into DSP mdu/mul/_T_5_reg.
+DSP Report: register mdu/mul/_T_4_reg is absorbed into DSP mdu/mul/_T_5_reg.
+DSP Report: operator mdu/mul/_T_40 is absorbed into DSP mdu/mul/_T_5_reg.
+DSP Report: operator mdu/mul/_T_40 is absorbed into DSP mdu/mul/_T_5_reg.
+DSP Report: Generating DSP mdu/mul/_T_4_reg, operation Mode is: (A2*B2)'.
+DSP Report: register mdu/mul/_T_4_reg is absorbed into DSP mdu/mul/_T_4_reg.
+DSP Report: register mdu/mul/_T_4_reg is absorbed into DSP mdu/mul/_T_4_reg.
+DSP Report: register mdu/mul/_T_4_reg is absorbed into DSP mdu/mul/_T_4_reg.
+DSP Report: operator mdu/mul/_T_40 is absorbed into DSP mdu/mul/_T_4_reg.
+DSP Report: operator mdu/mul/_T_40 is absorbed into DSP mdu/mul/_T_4_reg.
+DSP Report: Generating DSP mdu/mul/_T_40, operation Mode is: (PCIN>>17)+(A2*B2)'.
+DSP Report: register mdu/mul/_T_40 is absorbed into DSP mdu/mul/_T_40.
+DSP Report: register mdu/mul/_T_40 is absorbed into DSP mdu/mul/_T_40.
+DSP Report: register mdu/mul/_T_4_reg is absorbed into DSP mdu/mul/_T_40.
+DSP Report: operator mdu/mul/_T_40 is absorbed into DSP mdu/mul/_T_40.
+DSP Report: operator mdu/mul/_T_40 is absorbed into DSP mdu/mul/_T_40.
+DSP Report: Generating DSP mdu/mul/_T_5_reg, operation Mode is: (PCIN+(A2*B2)')'.
+DSP Report: register mdu/mul/_T_5_reg is absorbed into DSP mdu/mul/_T_5_reg.
+DSP Report: register mdu/mul/_T_5_reg is absorbed into DSP mdu/mul/_T_5_reg.
+DSP Report: register mdu/mul/_T_5_reg is absorbed into DSP mdu/mul/_T_5_reg.
+DSP Report: register mdu/mul/_T_4_reg is absorbed into DSP mdu/mul/_T_5_reg.
+DSP Report: operator mdu/mul/_T_40 is absorbed into DSP mdu/mul/_T_5_reg.
+DSP Report: operator mdu/mul/_T_40 is absorbed into DSP mdu/mul/_T_5_reg.
+DSP Report: Generating DSP mdu/mul/_T_4_reg, operation Mode is: (A2*B2)'.
+DSP Report: register mdu/mul/_T_4_reg is absorbed into DSP mdu/mul/_T_4_reg.
+DSP Report: register mdu/mul/_T_4_reg is absorbed into DSP mdu/mul/_T_4_reg.
+DSP Report: register mdu/mul/_T_4_reg is absorbed into DSP mdu/mul/_T_4_reg.
+DSP Report: operator mdu/mul/_T_40 is absorbed into DSP mdu/mul/_T_4_reg.
+DSP Report: operator mdu/mul/_T_40 is absorbed into DSP mdu/mul/_T_4_reg.
+DSP Report: Generating DSP mdu/mul/_T_40, operation Mode is: PCIN+(A2*B2)'.
+DSP Report: register mdu/mul/_T_40 is absorbed into DSP mdu/mul/_T_40.
+DSP Report: register mdu/mul/_T_40 is absorbed into DSP mdu/mul/_T_40.
+DSP Report: register mdu/mul/_T_4_reg is absorbed into DSP mdu/mul/_T_40.
+DSP Report: operator mdu/mul/_T_40 is absorbed into DSP mdu/mul/_T_40.
+DSP Report: operator mdu/mul/_T_40 is absorbed into DSP mdu/mul/_T_40.
+DSP Report: Generating DSP mdu/mul/_T_5_reg, operation Mode is: (PCIN+(A2*B2)')'.
+DSP Report: register mdu/mul/_T_5_reg is absorbed into DSP mdu/mul/_T_5_reg.
+DSP Report: register mdu/mul/_T_5_reg is absorbed into DSP mdu/mul/_T_5_reg.
+DSP Report: register mdu/mul/_T_5_reg is absorbed into DSP mdu/mul/_T_5_reg.
+DSP Report: register mdu/mul/_T_4_reg is absorbed into DSP mdu/mul/_T_5_reg.
+DSP Report: operator mdu/mul/_T_40 is absorbed into DSP mdu/mul/_T_5_reg.
+DSP Report: operator mdu/mul/_T_40 is absorbed into DSP mdu/mul/_T_5_reg.
+DSP Report: Generating DSP mdu/mul/_T_4_reg, operation Mode is: (A2*B2)'.
+DSP Report: register mdu/mul/_T_4_reg is absorbed into DSP mdu/mul/_T_4_reg.
+DSP Report: register mdu/mul/_T_4_reg is absorbed into DSP mdu/mul/_T_4_reg.
+DSP Report: register mdu/mul/_T_4_reg is absorbed into DSP mdu/mul/_T_4_reg.
+DSP Report: operator mdu/mul/_T_40 is absorbed into DSP mdu/mul/_T_4_reg.
+DSP Report: operator mdu/mul/_T_40 is absorbed into DSP mdu/mul/_T_4_reg.
+DSP Report: Generating DSP mdu/mul/_T_40, operation Mode is: PCIN+(A2*B2)'.
+DSP Report: register mdu/mul/_T_40 is absorbed into DSP mdu/mul/_T_40.
+DSP Report: register mdu/mul/_T_40 is absorbed into DSP mdu/mul/_T_40.
+DSP Report: register mdu/mul/_T_4_reg is absorbed into DSP mdu/mul/_T_40.
+DSP Report: operator mdu/mul/_T_40 is absorbed into DSP mdu/mul/_T_40.
+DSP Report: operator mdu/mul/_T_40 is absorbed into DSP mdu/mul/_T_40.
+DSP Report: Generating DSP mdu/mul/_T_5_reg, operation Mode is: (PCIN+(A2*B2)')'.
+DSP Report: register mdu/mul/_T_5_reg is absorbed into DSP mdu/mul/_T_5_reg.
+DSP Report: register mdu/mul/_T_5_reg is absorbed into DSP mdu/mul/_T_5_reg.
+DSP Report: register mdu/mul/_T_5_reg is absorbed into DSP mdu/mul/_T_5_reg.
+DSP Report: register mdu/mul/_T_4_reg is absorbed into DSP mdu/mul/_T_5_reg.
+DSP Report: operator mdu/mul/_T_40 is absorbed into DSP mdu/mul/_T_5_reg.
+DSP Report: operator mdu/mul/_T_40 is absorbed into DSP mdu/mul/_T_5_reg.
+DSP Report: Generating DSP mdu/mul/_T_4_reg, operation Mode is: (A2*B2)'.
+DSP Report: register mdu/mul/_T_4_reg is absorbed into DSP mdu/mul/_T_4_reg.
+DSP Report: register mdu/mul/_T_4_reg is absorbed into DSP mdu/mul/_T_4_reg.
+DSP Report: register mdu/mul/_T_4_reg is absorbed into DSP mdu/mul/_T_4_reg.
+DSP Report: operator mdu/mul/_T_40 is absorbed into DSP mdu/mul/_T_4_reg.
+DSP Report: operator mdu/mul/_T_40 is absorbed into DSP mdu/mul/_T_4_reg.
+DSP Report: Generating DSP mdu/mul/_T_40, operation Mode is: (PCIN>>17)+(A2*B2)'.
+DSP Report: register mdu/mul/_T_40 is absorbed into DSP mdu/mul/_T_40.
+DSP Report: register mdu/mul/_T_40 is absorbed into DSP mdu/mul/_T_40.
+DSP Report: register mdu/mul/_T_4_reg is absorbed into DSP mdu/mul/_T_40.
+DSP Report: operator mdu/mul/_T_40 is absorbed into DSP mdu/mul/_T_40.
+DSP Report: operator mdu/mul/_T_40 is absorbed into DSP mdu/mul/_T_40.
+DSP Report: Generating DSP mdu/mul/_T_5_reg, operation Mode is: (PCIN+(A2*B2)')'.
+DSP Report: register mdu/mul/_T_5_reg is absorbed into DSP mdu/mul/_T_5_reg.
+DSP Report: register mdu/mul/_T_5_reg is absorbed into DSP mdu/mul/_T_5_reg.
+DSP Report: register mdu/mul/_T_5_reg is absorbed into DSP mdu/mul/_T_5_reg.
+DSP Report: register mdu/mul/_T_4_reg is absorbed into DSP mdu/mul/_T_5_reg.
+DSP Report: operator mdu/mul/_T_40 is absorbed into DSP mdu/mul/_T_5_reg.
+DSP Report: operator mdu/mul/_T_40 is absorbed into DSP mdu/mul/_T_5_reg.
+RAM Pipeline Warning: Read Address Register Found For RAM ifu/bp1/btb/array/array_ext/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM ifu/bp1/btb/array/array_ext/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM ("\inst/nutcore/frontend/ifu/bp1/btb/array/array_ext/ram_reg ") is too shallow (depth = 512) to use URAM. Choosing BRAM instead of URAM 
+INFO: [Synth 8-6904] The RAM "\inst/nutcore/frontend/ifu/bp1/ras_reg " of size (depth=16 x width=39) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\inst/nutcore/frontend/ifu/bp1/pht_reg " of size (depth=512 x width=2) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+RAM Pipeline Warning: Read Address Register Found For RAM ram/array/array_0_ext/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM ram/array/array_0_ext/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+WARNING: [Synth 8-6841] Block RAM (ram/array/array_0_ext/ram_reg) originally specified as a Byte Wide Write Enable RAM cannot take advantage of ByteWide feature and is implemented with single write enable per RAM due to following reason.
+(byte width (21) is not a multiple of 8(data_only) or 9(data + parity))
+RAM ("nutcorei_0/Cache/metaArray/ram/array/array_0_ext/ram_reg") is too shallow (depth = 128) to use URAM. Choosing BRAM instead of URAM 
+RAM ("nutcorei_0/Cache/metaArray/ram/array/array_0_ext/ram_reg") is too shallow (depth = 128) to use URAM. Choosing BRAM instead of URAM 
+RAM ("nutcorei_0/Cache/metaArray/ram/array/array_0_ext/ram_reg") is too shallow (depth = 128) to use URAM. Choosing BRAM instead of URAM 
+RAM ("nutcorei_0/Cache/metaArray/ram/array/array_0_ext/ram_reg") is too shallow (depth = 128) to use URAM. Choosing BRAM instead of URAM 
+RAM Pipeline Warning: Read Address Register Found For RAM ram/array/array_1_ext/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM ram/array/array_1_ext/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM ("nutcorei_0/Cache/dataArray/ram/array/array_1_ext/ram_reg") is too shallow (depth = 1024) to use URAM. Choosing BRAM instead of URAM 
+WARNING: [Synth 8-6841] Block RAM (ram/array/array_1_ext/ram_reg) originally specified as a Byte Wide Write Enable RAM cannot take advantage of ByteWide feature and is implemented with single write enable per RAM due to following reason.
+(byte width (64) is too high. Maximum supported byte width = 32 (data_only) or 36 (data + parity))
+RAM ("nutcorei_0/Cache/dataArray/ram/array/array_1_ext/ram_reg") is too shallow (depth = 1024) to use URAM. Choosing BRAM instead of URAM 
+INFO: [Synth 8-5779] Default cascade height of 1 will be used for BRAM '"nutcorei_0/Cache/dataArray/ram/array/array_1_ext/ram_reg"'.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "nutcorei_0/Cache/dataArray/ram/array/array_1_ext/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 28 for RAM "nutcorei_0/Cache/dataArray/ram/array/array_1_ext/ram_reg"
+RAM ("nutcorei_0/Cache/dataArray/ram/array/array_1_ext/ram_reg") is too shallow (depth = 1024) to use URAM. Choosing BRAM instead of URAM 
+INFO: [Synth 8-5779] Default cascade height of 1 will be used for BRAM '"nutcorei_0/Cache/dataArray/ram/array/array_1_ext/ram_reg"'.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "nutcorei_0/Cache/dataArray/ram/array/array_1_ext/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 28 for RAM "nutcorei_0/Cache/dataArray/ram/array/array_1_ext/ram_reg"
+RAM ("nutcorei_0/Cache/dataArray/ram/array/array_1_ext/ram_reg") is too shallow (depth = 1024) to use URAM. Choosing BRAM instead of URAM 
+INFO: [Synth 8-5779] Default cascade height of 1 will be used for BRAM '"nutcorei_0/Cache/dataArray/ram/array/array_1_ext/ram_reg"'.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "nutcorei_0/Cache/dataArray/ram/array/array_1_ext/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 28 for RAM "nutcorei_0/Cache/dataArray/ram/array/array_1_ext/ram_reg"
+RAM ("nutcorei_0/Cache/dataArray/ram/array/array_1_ext/ram_reg") is too shallow (depth = 1024) to use URAM. Choosing BRAM instead of URAM 
+INFO: [Synth 8-5779] Default cascade height of 1 will be used for BRAM '"nutcorei_0/Cache/dataArray/ram/array/array_1_ext/ram_reg"'.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "nutcorei_0/Cache/dataArray/ram/array/array_1_ext/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 28 for RAM "nutcorei_0/Cache/dataArray/ram/array/array_1_ext/ram_reg"
+INFO: [Synth 8-6904] The RAM "nutcorei_0/EmbeddedTLB_1/mdTLB/tlbmd_0_reg" of size (depth=16 x width=121) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "nutcorei_0/EmbeddedTLB_1/mdTLB/tlbmd_1_reg" of size (depth=16 x width=121) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "nutcorei_0/EmbeddedTLB_1/mdTLB/tlbmd_2_reg" of size (depth=16 x width=121) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "nutcorei_0/EmbeddedTLB_1/mdTLB/tlbmd_3_reg" of size (depth=16 x width=121) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+RAM Pipeline Warning: Read Address Register Found For RAM ram/array/array_0_ext/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM ram/array/array_0_ext/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+WARNING: [Synth 8-6841] Block RAM (ram/array/array_0_ext/ram_reg) originally specified as a Byte Wide Write Enable RAM cannot take advantage of ByteWide feature and is implemented with single write enable per RAM due to following reason.
+(byte width (21) is not a multiple of 8(data_only) or 9(data + parity))
+RAM ("nutcorei_2/Cache_1/metaArray/ram/array/array_0_ext/ram_reg") is too shallow (depth = 128) to use URAM. Choosing BRAM instead of URAM 
+RAM ("nutcorei_2/Cache_1/metaArray/ram/array/array_0_ext/ram_reg") is too shallow (depth = 128) to use URAM. Choosing BRAM instead of URAM 
+RAM ("nutcorei_2/Cache_1/metaArray/ram/array/array_0_ext/ram_reg") is too shallow (depth = 128) to use URAM. Choosing BRAM instead of URAM 
+RAM ("nutcorei_2/Cache_1/metaArray/ram/array/array_0_ext/ram_reg") is too shallow (depth = 128) to use URAM. Choosing BRAM instead of URAM 
+RAM Pipeline Warning: Read Address Register Found For RAM ram/array/array_1_ext/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM ram/array/array_1_ext/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM ("nutcorei_2/Cache_1/dataArray/ram/array/array_1_ext/ram_reg") is too shallow (depth = 1024) to use URAM. Choosing BRAM instead of URAM 
+WARNING: [Synth 8-6841] Block RAM (ram/array/array_1_ext/ram_reg) originally specified as a Byte Wide Write Enable RAM cannot take advantage of ByteWide feature and is implemented with single write enable per RAM due to following reason.
+(byte width (64) is too high. Maximum supported byte width = 32 (data_only) or 36 (data + parity))
+RAM ("nutcorei_2/Cache_1/dataArray/ram/array/array_1_ext/ram_reg") is too shallow (depth = 1024) to use URAM. Choosing BRAM instead of URAM 
+INFO: [Synth 8-5779] Default cascade height of 1 will be used for BRAM '"nutcorei_2/Cache_1/dataArray/ram/array/array_1_ext/ram_reg"'.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "nutcorei_2/Cache_1/dataArray/ram/array/array_1_ext/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 28 for RAM "nutcorei_2/Cache_1/dataArray/ram/array/array_1_ext/ram_reg"
+RAM ("nutcorei_2/Cache_1/dataArray/ram/array/array_1_ext/ram_reg") is too shallow (depth = 1024) to use URAM. Choosing BRAM instead of URAM 
+INFO: [Synth 8-5779] Default cascade height of 1 will be used for BRAM '"nutcorei_2/Cache_1/dataArray/ram/array/array_1_ext/ram_reg"'.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "nutcorei_2/Cache_1/dataArray/ram/array/array_1_ext/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 28 for RAM "nutcorei_2/Cache_1/dataArray/ram/array/array_1_ext/ram_reg"
+RAM ("nutcorei_2/Cache_1/dataArray/ram/array/array_1_ext/ram_reg") is too shallow (depth = 1024) to use URAM. Choosing BRAM instead of URAM 
+INFO: [Synth 8-5779] Default cascade height of 1 will be used for BRAM '"nutcorei_2/Cache_1/dataArray/ram/array/array_1_ext/ram_reg"'.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "nutcorei_2/Cache_1/dataArray/ram/array/array_1_ext/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 28 for RAM "nutcorei_2/Cache_1/dataArray/ram/array/array_1_ext/ram_reg"
+RAM ("nutcorei_2/Cache_1/dataArray/ram/array/array_1_ext/ram_reg") is too shallow (depth = 1024) to use URAM. Choosing BRAM instead of URAM 
+INFO: [Synth 8-5779] Default cascade height of 1 will be used for BRAM '"nutcorei_2/Cache_1/dataArray/ram/array/array_1_ext/ram_reg"'.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "nutcorei_2/Cache_1/dataArray/ram/array/array_1_ext/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 28 for RAM "nutcorei_2/Cache_1/dataArray/ram/array/array_1_ext/ram_reg"
+RAM Pipeline Warning: Read Address Register Found For RAM ram/array/array_2_ext/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM ram/array/array_2_ext/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+WARNING: [Synth 8-6841] Block RAM (ram/array/array_2_ext/ram_reg) originally specified as a Byte Wide Write Enable RAM cannot take advantage of ByteWide feature and is implemented with single write enable per RAM due to following reason.
+(byte width (19) is not a multiple of 8(data_only) or 9(data + parity))
+RAM ("insti_4/Cache/metaArray/ram/array/array_2_ext/ram_reg") is too shallow (depth = 512) to use URAM. Choosing BRAM instead of URAM 
+RAM ("insti_4/Cache/metaArray/ram/array/array_2_ext/ram_reg") is too shallow (depth = 512) to use URAM. Choosing BRAM instead of URAM 
+RAM ("insti_4/Cache/metaArray/ram/array/array_2_ext/ram_reg") is too shallow (depth = 512) to use URAM. Choosing BRAM instead of URAM 
+RAM ("insti_4/Cache/metaArray/ram/array/array_2_ext/ram_reg") is too shallow (depth = 512) to use URAM. Choosing BRAM instead of URAM 
+RAM Pipeline Warning: Read Address Register Found For RAM ram/array/array_3_ext/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM ram/array/array_3_ext/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+INFO: [Synth 8-6794] RAM ("insti_4/Cache/dataArray/ram/array/array_3_ext/ram_reg") will be automatically implemented using URAM. 
+WARNING: [Synth 8-6841] Block RAM (ram/array/array_3_ext/ram_reg) originally specified as a Byte Wide Write Enable RAM cannot take advantage of ByteWide feature and is implemented with single write enable per RAM due to following reason.
+(byte width (64) is too high. Maximum supported byte width = 32 (data_only) or 36 (data + parity))
+INFO: [Synth 8-6794] RAM ("insti_4/Cache/dataArray/ram/array/array_3_ext/ram_reg") will be automatically implemented using URAM. 
+INFO: [Synth 8-5780] Default cascade height of 8 will be used for URAM '"insti_4/Cache/dataArray/ram/array/array_3_ext/ram_reg"'.
+INFO: [Synth 8-6794] RAM ("insti_4/Cache/dataArray/ram/array/array_3_ext/ram_reg") will be automatically implemented using URAM. 
+INFO: [Synth 8-5780] Default cascade height of 8 will be used for URAM '"insti_4/Cache/dataArray/ram/array/array_3_ext/ram_reg"'.
+INFO: [Synth 8-6794] RAM ("insti_4/Cache/dataArray/ram/array/array_3_ext/ram_reg") will be automatically implemented using URAM. 
+INFO: [Synth 8-5780] Default cascade height of 8 will be used for URAM '"insti_4/Cache/dataArray/ram/array/array_3_ext/ram_reg"'.
+INFO: [Synth 8-6794] RAM ("insti_4/Cache/dataArray/ram/array/array_3_ext/ram_reg") will be automatically implemented using URAM. 
+INFO: [Synth 8-5780] Default cascade height of 8 will be used for URAM '"insti_4/Cache/dataArray/ram/array/array_3_ext/ram_reg"'.
+RAM Pipeline Warning: Read Address Register Found For RAM ram/array/array_3_ext/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+INFO: [Synth 8-6794] RAM ("insti_4/Cache/dataArray/ram/array/array_3_ext/ram_reg") will be automatically implemented using URAM. 
+WARNING: [Synth 8-6841] Block RAM (ram/array/array_3_ext/ram_reg) originally specified as a Byte Wide Write Enable RAM cannot take advantage of ByteWide feature and is implemented with single write enable per RAM due to following reason.
+(byte width (64) is too high. Maximum supported byte width = 32 (data_only) or 36 (data + parity))
+INFO: [Synth 8-6794] RAM ("insti_4/Cache/dataArray/ram/array/array_3_ext/ram_reg") will be automatically implemented using URAM. 
+INFO: [Synth 8-5780] Default cascade height of 8 will be used for URAM '"insti_4/Cache/dataArray/ram/array/array_3_ext/ram_reg"'.
+INFO: [Synth 8-6794] RAM ("insti_4/Cache/dataArray/ram/array/array_3_ext/ram_reg") will be automatically implemented using URAM. 
+INFO: [Synth 8-5780] Default cascade height of 8 will be used for URAM '"insti_4/Cache/dataArray/ram/array/array_3_ext/ram_reg"'.
+INFO: [Synth 8-6794] RAM ("insti_4/Cache/dataArray/ram/array/array_3_ext/ram_reg") will be automatically implemented using URAM. 
+INFO: [Synth 8-5780] Default cascade height of 8 will be used for URAM '"insti_4/Cache/dataArray/ram/array/array_3_ext/ram_reg"'.
+INFO: [Synth 8-6794] RAM ("insti_4/Cache/dataArray/ram/array/array_3_ext/ram_reg") will be automatically implemented using URAM. 
+INFO: [Synth 8-5780] Default cascade height of 8 will be used for URAM '"insti_4/Cache/dataArray/ram/array/array_3_ext/ram_reg"'.
+RAM Pipeline Warning: Read Address Register Found For RAM ifu/bp1/btb/array/array_ext/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM ram/array/array_0_ext/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM ram/array/array_1_ext/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM ram/array/array_0_ext/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM ram/array/array_1_ext/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM ram/array/array_2_ext/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM ram/array/array_3_ext/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:05:12 ; elapsed = 00:05:20 . Memory (MB): peak = 5149.633 ; gain = 2140.031 ; free physical = 234133 ; free virtual = 522149
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6057] Memory: "ram/array/array_3_ext/ram_reg" defined in module: "insti_4/Cache/dataArray" implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Ultra RAM: Preliminary Mapping	Report (see note below)
++------------------------+-------------------------------+------------------------+---+---+------------------------+---+---+------------------+---------+--------------+--------------------------+-------------+
+|Module Name             | RTL Object                    | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | URAM288 | Matrix Shape | FF provided for Pipeline | FF absorbed | 
++------------------------+-------------------------------+------------------------+---+---+------------------------+---+---+------------------+---------+--------------+--------------------------+-------------+
+|insti_4/Cache/dataArray | ram/array/array_3_ext/ram_reg | 4 K x 256              | W |   | 4 K x 256              |   | R | Port A and B     | 4       | 1x1          | 0                        | 0           | 
++------------------------+-------------------------------+------------------------+---+---+------------------------+---+---+------------------+---------+--------------+--------------------------+-------------+
+
+Note: The table above is a preliminary report that shows the Ultra RAMs at the current stage of the synthesis flow. Some Ultra RAMs may be reimplemented as non Ultra RAM primitives later in the synthesis flow. Multiple instantiated Ultra RAMs are reported only once. Fields "FF provided for Pipeline" and "FF absorbed" respectively indicate number of registers available for pipelining and number of registers absorbed in the URAM matrix for pipelining. 
+
+Block RAM: Preliminary Mapping	Report (see note below)
++-----------------------------+-------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                  | RTL Object                          | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++-----------------------------+-------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|\inst/nutcore/frontend       | ifu/bp1/btb/array/array_ext/ram_reg | 512 x 73(READ_FIRST)   | W |   | 512 x 73(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      |                 | 
+|nutcorei_0/Cache/metaArray   | ram/array/array_0_ext/ram_reg       | 128 x 84(READ_FIRST)   | W |   | 128 x 84(WRITE_FIRST)  |   | R | Port A and B     | 4      | 0      |                 | 
+|nutcorei_0/Cache/dataArray   | ram/array/array_1_ext/ram_reg       | 1 K x 256(READ_FIRST)  | W |   | 1 K x 256(WRITE_FIRST) |   | R | Port A and B     | 0      | 8      | 1,1,1,1,1,1,1,1 | 
+|nutcorei_2/Cache_1/metaArray | ram/array/array_0_ext/ram_reg       | 128 x 84(READ_FIRST)   | W |   | 128 x 84(WRITE_FIRST)  |   | R | Port A and B     | 4      | 0      |                 | 
+|nutcorei_2/Cache_1/dataArray | ram/array/array_1_ext/ram_reg       | 1 K x 256(READ_FIRST)  | W |   | 1 K x 256(WRITE_FIRST) |   | R | Port A and B     | 0      | 8      | 1,1,1,1,1,1,1,1 | 
+|insti_4/Cache/metaArray      | ram/array/array_2_ext/ram_reg       | 512 x 76(READ_FIRST)   | W |   | 512 x 76(WRITE_FIRST)  |   | R | Port A and B     | 4      | 0      |                 | 
++-----------------------------+-------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++-------------------------+----------------------------------------+-----------+----------------------+----------------+
+|Module Name              | RTL Object                             | Inference | Size (Depth x Width) | Primitives     | 
++-------------------------+----------------------------------------+-----------+----------------------+----------------+
+|\inst/nutcore/frontend   | ifu/bp1/ras_reg                        | Implied   | 16 x 39              | RAM32M16 x 3	  | 
+|\inst/nutcore/frontend   | ifu/bp1/pht_reg                        | Implied   | 512 x 2              | RAM256X1D x 8	 | 
+|\inst/nutcore/frontend   | FlushableQueue/ram_instr_reg           | Implied   | 4 x 64               | RAM32M16 x 5	  | 
+|\inst/nutcore/frontend   | FlushableQueue/ram_pc_reg              | Implied   | 4 x 39               | RAM32M16 x 3	  | 
+|\inst/nutcore/frontend   | FlushableQueue/ram_pnpc_reg            | Implied   | 4 x 39               | RAM32M16 x 3	  | 
+|\inst/nutcore/frontend   | FlushableQueue/ram_exceptionVec_12_reg | Implied   | 4 x 1                | RAM16X1D x 1	  | 
+|\inst/nutcore/frontend   | FlushableQueue/ram_brIdx_reg           | Implied   | 4 x 4                | RAM32M16 x 1	  | 
+|nutcorei_0/EmbeddedTLB_1 | mdTLB/tlbmd_0_reg                      | Implied   | 16 x 121             | RAM32M16 x 9	  | 
+|nutcorei_0/EmbeddedTLB_1 | mdTLB/tlbmd_1_reg                      | Implied   | 16 x 121             | RAM32M16 x 9	  | 
+|nutcorei_0/EmbeddedTLB_1 | mdTLB/tlbmd_2_reg                      | Implied   | 16 x 121             | RAM32M16 x 9	  | 
+|nutcorei_0/EmbeddedTLB_1 | mdTLB/tlbmd_3_reg                      | Implied   | 16 x 121             | RAM32M16 x 9	  | 
+|system_top_NutShell_0_0  | Backend_inorder/isu/_T_31_reg          | Implied   | 32 x 64              | RAM32M16 x 10	 | 
++-------------------------+----------------------------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping	Report (see note below)
++------------+---------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping         | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+---------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|EXU         | (A2*B2)'            | 14     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|EXU         | (A2*B2)'            | 18     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|EXU         | (PCIN>>17)+(A2*B2)' | 18     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|EXU         | (PCIN+(A2*B2)')'    | 18     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|EXU         | (A2*B2)'            | 18     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|EXU         | (PCIN>>17)+(A2*B2)' | 18     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|EXU         | (PCIN+(A2*B2)')'    | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|EXU         | (A2*B2)'            | 18     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|EXU         | PCIN+(A2*B2)'       | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|EXU         | (PCIN+(A2*B2)')'    | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|EXU         | (A2*B2)'            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|EXU         | PCIN+(A2*B2)'       | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|EXU         | (PCIN+(A2*B2)')'    | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|EXU         | (A2*B2)'            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|EXU         | (PCIN>>17)+(A2*B2)' | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|EXU         | (PCIN+(A2*B2)')'    | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
++------------+---------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:05:35 ; elapsed = 00:06:08 . Memory (MB): peak = 5149.637 ; gain = 2140.035 ; free physical = 233734 ; free virtual = 521750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:05:35 ; elapsed = 00:06:08 . Memory (MB): peak = 5149.637 ; gain = 2140.035 ; free physical = 233734 ; free virtual = 521750
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6057] Memory: "ram/array/array_3_ext/ram_reg" defined in module: "insti_4/Cache/dataArray" implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Ultra RAM: Final Mapping	Report (see note below)
++------------------------+-------------------------------+------------------------+---+---+------------------------+---+---+------------------+---------+--------------+--------------------------+-------------+
+|Module Name             | RTL Object                    | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | URAM288 | Matrix Shape | FF provided for Pipeline | FF absorbed | 
++------------------------+-------------------------------+------------------------+---+---+------------------------+---+---+------------------+---------+--------------+--------------------------+-------------+
+|insti_4/Cache/dataArray | ram/array/array_3_ext/ram_reg | 4 K x 256              | W |   | 4 K x 256              |   | R | Port A and B     | 4       | 1x1          | 0                        | 0           | 
++------------------------+-------------------------------+------------------------+---+---+------------------------+---+---+------------------+---------+--------------+--------------------------+-------------+
+
+
+Block RAM: Final Mapping	Report
++-----------------------------+-------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                  | RTL Object                          | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++-----------------------------+-------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|\inst/nutcore/frontend       | ifu/bp1/btb/array/array_ext/ram_reg | 512 x 73(READ_FIRST)   | W |   | 512 x 73(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      |                 | 
+|nutcorei_0/Cache/metaArray   | ram/array/array_0_ext/ram_reg       | 128 x 84(READ_FIRST)   | W |   | 128 x 84(WRITE_FIRST)  |   | R | Port A and B     | 4      | 0      |                 | 
+|nutcorei_0/Cache/dataArray   | ram/array/array_1_ext/ram_reg       | 1 K x 256(READ_FIRST)  | W |   | 1 K x 256(WRITE_FIRST) |   | R | Port A and B     | 0      | 8      | 1,1,1,1,1,1,1,1 | 
+|nutcorei_2/Cache_1/metaArray | ram/array/array_0_ext/ram_reg       | 128 x 84(READ_FIRST)   | W |   | 128 x 84(WRITE_FIRST)  |   | R | Port A and B     | 4      | 0      |                 | 
+|nutcorei_2/Cache_1/dataArray | ram/array/array_1_ext/ram_reg       | 1 K x 256(READ_FIRST)  | W |   | 1 K x 256(WRITE_FIRST) |   | R | Port A and B     | 0      | 8      | 1,1,1,1,1,1,1,1 | 
+|insti_4/Cache/metaArray      | ram/array/array_2_ext/ram_reg       | 512 x 76(READ_FIRST)   | W |   | 512 x 76(WRITE_FIRST)  |   | R | Port A and B     | 4      | 0      |                 | 
++-----------------------------+-------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+
+Distributed RAM: Final Mapping	Report
++-------------------------+----------------------------------------+-----------+----------------------+----------------+
+|Module Name              | RTL Object                             | Inference | Size (Depth x Width) | Primitives     | 
++-------------------------+----------------------------------------+-----------+----------------------+----------------+
+|\inst/nutcore/frontend   | ifu/bp1/ras_reg                        | Implied   | 16 x 39              | RAM32M16 x 3	  | 
+|\inst/nutcore/frontend   | ifu/bp1/pht_reg                        | Implied   | 512 x 2              | RAM256X1D x 8	 | 
+|\inst/nutcore/frontend   | FlushableQueue/ram_instr_reg           | Implied   | 4 x 64               | RAM32M16 x 5	  | 
+|\inst/nutcore/frontend   | FlushableQueue/ram_pc_reg              | Implied   | 4 x 39               | RAM32M16 x 3	  | 
+|\inst/nutcore/frontend   | FlushableQueue/ram_pnpc_reg            | Implied   | 4 x 39               | RAM32M16 x 3	  | 
+|\inst/nutcore/frontend   | FlushableQueue/ram_exceptionVec_12_reg | Implied   | 4 x 1                | RAM16X1D x 1	  | 
+|\inst/nutcore/frontend   | FlushableQueue/ram_brIdx_reg           | Implied   | 4 x 4                | RAM32M16 x 1	  | 
+|nutcorei_0/EmbeddedTLB_1 | mdTLB/tlbmd_0_reg                      | Implied   | 16 x 121             | RAM32M16 x 9	  | 
+|nutcorei_0/EmbeddedTLB_1 | mdTLB/tlbmd_1_reg                      | Implied   | 16 x 121             | RAM32M16 x 9	  | 
+|nutcorei_0/EmbeddedTLB_1 | mdTLB/tlbmd_2_reg                      | Implied   | 16 x 121             | RAM32M16 x 9	  | 
+|nutcorei_0/EmbeddedTLB_1 | mdTLB/tlbmd_3_reg                      | Implied   | 16 x 121             | RAM32M16 x 9	  | 
+|system_top_NutShell_0_0  | Backend_inorder/isu/_T_31_reg          | Implied   | 32 x 64              | RAM32M16 x 10	 | 
++-------------------------+----------------------------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/nutcore/frontend/ifu/bp1/btb/array/array_ext/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/nutcore/frontend/ifu/bp1/btb/array/array_ext/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/nutcore/Cache/metaArray/ram/array/array_0_ext/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/nutcore/Cache/metaArray/ram/array/array_0_ext/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/nutcore/Cache/metaArray/ram/array/array_0_ext/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/nutcore/Cache/metaArray/ram/array/array_0_ext/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/nutcore/Cache/dataArray/ram/array/array_1_ext/ram_reg_0_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/nutcore/Cache/dataArray/ram/array/array_1_ext/ram_reg_0_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/nutcore/Cache/dataArray/ram/array/array_1_ext/ram_reg_1_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/nutcore/Cache/dataArray/ram/array/array_1_ext/ram_reg_1_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/nutcore/Cache/dataArray/ram/array/array_1_ext/ram_reg_2_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/nutcore/Cache/dataArray/ram/array/array_1_ext/ram_reg_2_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/nutcore/Cache/dataArray/ram/array/array_1_ext/ram_reg_3_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/nutcore/Cache/dataArray/ram/array/array_1_ext/ram_reg_3_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/nutcore/Cache_1/metaArray/ram/array/array_0_ext/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/nutcore/Cache_1/metaArray/ram/array/array_0_ext/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/nutcore/Cache_1/metaArray/ram/array/array_0_ext/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/nutcore/Cache_1/metaArray/ram/array/array_0_ext/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/nutcore/Cache_1/dataArray/ram/array/array_1_ext/ram_reg_0_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/nutcore/Cache_1/dataArray/ram/array/array_1_ext/ram_reg_0_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/nutcore/Cache_1/dataArray/ram/array/array_1_ext/ram_reg_1_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/nutcore/Cache_1/dataArray/ram/array/array_1_ext/ram_reg_1_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/nutcore/Cache_1/dataArray/ram/array/array_1_ext/ram_reg_2_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/nutcore/Cache_1/dataArray/ram/array/array_1_ext/ram_reg_2_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/nutcore/Cache_1/dataArray/ram/array/array_1_ext/ram_reg_3_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/nutcore/Cache_1/dataArray/ram/array/array_1_ext/ram_reg_3_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Cache/metaArray/ram/array/array_2_ext/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Cache/metaArray/ram/array/array_2_ext/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Cache/metaArray/ram/array/array_2_ext/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Cache/metaArray/ram/array/array_2_ext/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_uram_0 (implemented as a Ultra RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_1_uram_0 (implemented as a Ultra RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_2_uram_0 (implemented as a Ultra RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_3_uram_0 (implemented as a Ultra RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:05:45 ; elapsed = 00:06:19 . Memory (MB): peak = 5149.637 ; gain = 2140.035 ; free physical = 233752 ; free virtual = 521769
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:05:50 ; elapsed = 00:06:24 . Memory (MB): peak = 5149.637 ; gain = 2140.035 ; free physical = 233747 ; free virtual = 521763
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:05:50 ; elapsed = 00:06:24 . Memory (MB): peak = 5149.637 ; gain = 2140.035 ; free physical = 233747 ; free virtual = 521763
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:53 ; elapsed = 00:06:26 . Memory (MB): peak = 5149.637 ; gain = 2140.035 ; free physical = 233743 ; free virtual = 521760
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:05:53 ; elapsed = 00:06:26 . Memory (MB): peak = 5149.637 ; gain = 2140.035 ; free physical = 233743 ; free virtual = 521760
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:05:54 ; elapsed = 00:06:28 . Memory (MB): peak = 5149.637 ; gain = 2140.035 ; free physical = 233744 ; free virtual = 521760
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:05:54 ; elapsed = 00:06:28 . Memory (MB): peak = 5149.637 ; gain = 2140.035 ; free physical = 233743 ; free virtual = 521760
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------------------+----------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name             | RTL Name                                           | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------------------+----------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|system_top_NutShell_0_0 | inst/nutcore/Backend_inorder/exu/mdu/mul/_T_12_reg | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------------------+----------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |CARRY8          |   361|
+|2     |DSP_ALU         |    16|
+|4     |DSP_A_B_DATA    |    16|
+|7     |DSP_C_DATA      |    16|
+|9     |DSP_MULTIPLIER  |    16|
+|10    |DSP_M_DATA      |    16|
+|12    |DSP_OUTPUT      |    16|
+|14    |DSP_PREADD      |    16|
+|15    |DSP_PREADD_DATA |    16|
+|16    |LUT1            |   417|
+|17    |LUT2            |  1167|
+|18    |LUT3            |  4303|
+|19    |LUT4            |  2290|
+|20    |LUT5            |  3357|
+|21    |LUT6            |  4757|
+|22    |MUXF7           |     6|
+|23    |RAM16X1D        |     1|
+|24    |RAM256X1D       |     6|
+|25    |RAM32M16        |    61|
+|26    |RAMB18E2        |    13|
+|27    |RAMB36E2        |    17|
+|29    |SRL16E          |     1|
+|30    |URAM288         |     4|
+|31    |FDRE            | 12435|
+|32    |FDSE            |   232|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:05:55 ; elapsed = 00:06:28 . Memory (MB): peak = 5149.637 ; gain = 2140.035 ; free physical = 233744 ; free virtual = 521760
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 13 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:05:43 ; elapsed = 00:06:19 . Memory (MB): peak = 5149.637 ; gain = 1917.418 ; free physical = 233770 ; free virtual = 521786
+Synthesis Optimization Complete : Time (s): cpu = 00:05:55 ; elapsed = 00:06:28 . Memory (MB): peak = 5149.641 ; gain = 2140.035 ; free physical = 233770 ; free virtual = 521786
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.38 ; elapsed = 00:00:00.37 . Memory (MB): peak = 5149.641 ; gain = 0.000 ; free physical = 233837 ; free virtual = 521853
+INFO: [Netlist 29-17] Analyzing 451 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5181.652 ; gain = 0.000 ; free physical = 233727 ; free virtual = 521744
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 84 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 16 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 1 instance 
+  RAM256X1D => RAM256X1D (MUXF7(x4), MUXF8(x2), RAMD64E(x8)): 6 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 61 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+311 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:06:21 ; elapsed = 00:07:02 . Memory (MB): peak = 5181.652 ; gain = 2654.836 ; free physical = 233900 ; free virtual = 521916
+INFO: [Common 17-1381] The checkpoint '/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/system_top_NutShell_0_0_synth_1/system_top_NutShell_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 5213.672 ; gain = 32.020 ; free physical = 233893 ; free virtual = 521915
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1174] Renamed 80 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/system_top_NutShell_0_0_synth_1/system_top_NutShell_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 5213.672 ; gain = 0.000 ; free physical = 233869 ; free virtual = 521910
+INFO: [runtcl-4] Executing : report_utilization -file system_top_NutShell_0_0_utilization_synth.rpt -pb system_top_NutShell_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 18 02:55:05 2022...

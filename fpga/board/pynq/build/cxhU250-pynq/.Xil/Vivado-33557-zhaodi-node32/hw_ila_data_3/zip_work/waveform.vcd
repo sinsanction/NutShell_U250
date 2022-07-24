@@ -1,0 +1,27 @@
+$date
+        2022-Jul-14 06:06:54
+$end
+$version
+        Vivado v2020.2 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 1 " system_top_i/rv_system/system_ila_2/inst/probe0_1 $end
+$var reg 1 # system_top_i/rv_system/system_ila_2/inst/probe1_1 $end
+$var reg 1 $ _TRIGGER $end
+$var reg 1 % _WINDOW $end
+$var reg 1 & _GAP $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0"
+1#
+0$
+1%
+0&
+$end
+#512
+1$

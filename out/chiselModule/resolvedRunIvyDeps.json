@@ -1,0 +1,27 @@
+{
+    "value": [
+        "qref:f1896504:/home/chenxuhao/.cache/coursier/v1/https/repo1.maven.org/maven2/edu/berkeley/cs/chisel3_2.11/3.3.2/chisel3_2.11-3.3.2.jar",
+        "qref:9c33d247:/home/chenxuhao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar",
+        "qref:de80a4b7:/home/chenxuhao/.cache/coursier/v1/https/repo1.maven.org/maven2/edu/berkeley/cs/chisel3-macros_2.11/3.3.2/chisel3-macros_2.11-3.3.2.jar",
+        "qref:7aa3f328:/home/chenxuhao/.cache/coursier/v1/https/repo1.maven.org/maven2/edu/berkeley/cs/chisel3-core_2.11/3.3.2/chisel3-core_2.11-3.3.2.jar",
+        "qref:b4c90a6e:/home/chenxuhao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12.jar",
+        "qref:56aa6d0d:/home/chenxuhao/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/scopt/scopt_2.11/3.7.1/scopt_2.11-3.7.1.jar",
+        "qref:d7415518:/home/chenxuhao/.cache/coursier/v1/https/repo1.maven.org/maven2/edu/berkeley/cs/firrtl_2.11/1.3.2/firrtl_2.11-1.3.2.jar",
+        "qref:1ab04d03:/home/chenxuhao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.7.1/antlr4-runtime-4.7.1.jar",
+        "qref:95070a54:/home/chenxuhao/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/protobuf/protobuf-java/3.9.0/protobuf-java-3.9.0.jar",
+        "qref:2262891e:/home/chenxuhao/.cache/coursier/v1/https/repo1.maven.org/maven2/net/jcazevedo/moultingyaml_2.11/0.4.2/moultingyaml_2.11-0.4.2.jar",
+        "qref:db22ad89:/home/chenxuhao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-native_2.11/3.6.8/json4s-native_2.11-3.6.8.jar",
+        "qref:aac1ec7c:/home/chenxuhao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-text/1.8/commons-text-1.8.jar",
+        "qref:1edcade0:/home/chenxuhao/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/nscala-time/nscala-time_2.11/2.22.0/nscala-time_2.11-2.22.0.jar",
+        "qref:93deb07b:/home/chenxuhao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/yaml/snakeyaml/1.26/snakeyaml-1.26.jar",
+        "qref:9fa9b57d:/home/chenxuhao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-core_2.11/3.6.8/json4s-core_2.11-3.6.8.jar",
+        "qref:78f542df:/home/chenxuhao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.9/commons-lang3-3.9.jar",
+        "qref:f9afb669:/home/chenxuhao/.cache/coursier/v1/https/repo1.maven.org/maven2/joda-time/joda-time/2.10.1/joda-time-2.10.1.jar",
+        "qref:e47d4807:/home/chenxuhao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/joda/joda-convert/2.2.0/joda-convert-2.2.0.jar",
+        "qref:0bbb6b9c:/home/chenxuhao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-ast_2.11/3.6.8/json4s-ast_2.11-3.6.8.jar",
+        "qref:740b251d:/home/chenxuhao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-scalap_2.11/3.6.8/json4s-scalap_2.11-3.6.8.jar",
+        "qref:c6bdc590:/home/chenxuhao/.cache/coursier/v1/https/repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.jar"
+    ],
+    "valueHash": 295748007,
+    "inputsHash": 418539786
+}

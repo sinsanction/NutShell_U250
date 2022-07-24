@@ -1,0 +1,807 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun May 15 02:13:52 2022
+# Process ID: 90491
+# Current directory: /home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.runs/impl_1
+# Command line: vivado -log system_top_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source system_top_wrapper.tcl -notrace
+# Log file: /home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.runs/impl_1/system_top_wrapper.vdi
+# Journal file: /home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source system_top_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+add_files: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2812.828 ; gain = 280.133 ; free physical = 420536 ; free virtual = 508823
+Command: link_design -top system_top_wrapper -part xc7z020clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_processing_system7_0_0/system_top_processing_system7_0_0.dcp' for cell 'system_top_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_cc_0/system_top_auto_cc_0.dcp' for cell 'system_top_i/axi_interconnect_0/s00_couplers/auto_cc'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_pc_0/system_top_auto_pc_0.dcp' for cell 'system_top_i/axi_interconnect_0/s00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_xbar_0/system_top_xbar_0.dcp' for cell 'system_top_i/axi_interconnect_1/xbar'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_ds_0/system_top_auto_ds_0.dcp' for cell 'system_top_i/axi_interconnect_1/m00_couplers/auto_ds'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_pc_1/system_top_auto_pc_1.dcp' for cell 'system_top_i/axi_interconnect_1/m00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_cc_1/system_top_auto_cc_1.dcp' for cell 'system_top_i/axi_interconnect_1/m01_couplers/auto_cc'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_pc_2/system_top_auto_pc_2.dcp' for cell 'system_top_i/axi_interconnect_1/s00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_us_0/system_top_auto_us_0.dcp' for cell 'system_top_i/axi_interconnect_1/s00_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_cc_2/system_top_auto_cc_2.dcp' for cell 'system_top_i/axi_interconnect_2/s00_couplers/auto_cc'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_ds_1/system_top_auto_ds_1.dcp' for cell 'system_top_i/axi_interconnect_2/s00_couplers/auto_ds'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_pc_3/system_top_auto_pc_3.dcp' for cell 'system_top_i/axi_interconnect_2/s00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_axi_gpio_0_0/system_top_axi_gpio_0_0.dcp' for cell 'system_top_i/hier_clkrst/axi_gpio_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_clk_wiz_0_0/system_top_clk_wiz_0_0.dcp' for cell 'system_top_i/hier_clkrst/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_uncorerst_0/system_top_uncorerst_0.dcp' for cell 'system_top_i/hier_clkrst/uncorerst'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_NutShell_0_0/system_top_NutShell_0_0.dcp' for cell 'system_top_i/rv_system/NutShell_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_axi_protocol_convert_0_0/system_top_axi_protocol_convert_0_0.dcp' for cell 'system_top_i/rv_system/axi_protocol_convert_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_axi_protocol_convert_1_0/system_top_axi_protocol_convert_1_0.dcp' for cell 'system_top_i/rv_system/axi_protocol_convert_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_c_shift_ram_0_0/system_top_c_shift_ram_0_0.dcp' for cell 'system_top_i/rv_system/c_shift_ram_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_c_shift_ram_1_0/system_top_c_shift_ram_1_0.dcp' for cell 'system_top_i/rv_system/c_shift_ram_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_system_ila_0_0/system_top_system_ila_0_0.dcp' for cell 'system_top_i/rv_system/system_ila_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_util_vector_logic_0_0/system_top_util_vector_logic_0_0.dcp' for cell 'system_top_i/rv_system/util_vector_logic_0'
+Netlist sorting complete. Time (s): cpu = 00:00:00.56 ; elapsed = 00:00:00.56 . Memory (MB): peak = 2812.828 ; gain = 0.000 ; free physical = 419928 ; free virtual = 508217
+INFO: [Netlist 29-17] Analyzing 1293 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. system_top_i/hier_clkrst/clk_wiz_0/inst/clkin1_ibufg 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'system_top_i/hier_clkrst/clk_wiz_0/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+INFO: [Chipscope 16-324] Core: system_top_i/rv_system/system_ila_0/inst/ila_lib UUID: dcac6ca3-a8c3-5d1b-a488-5a6cc0496662 
+Parsing XDC File [/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_axi_gpio_0_0/system_top_axi_gpio_0_0_board.xdc] for cell 'system_top_i/hier_clkrst/axi_gpio_0/U0'
+Finished Parsing XDC File [/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_axi_gpio_0_0/system_top_axi_gpio_0_0_board.xdc] for cell 'system_top_i/hier_clkrst/axi_gpio_0/U0'
+Parsing XDC File [/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_axi_gpio_0_0/system_top_axi_gpio_0_0.xdc] for cell 'system_top_i/hier_clkrst/axi_gpio_0/U0'
+Finished Parsing XDC File [/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_axi_gpio_0_0/system_top_axi_gpio_0_0.xdc] for cell 'system_top_i/hier_clkrst/axi_gpio_0/U0'
+Parsing XDC File [/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_clk_wiz_0_0/system_top_clk_wiz_0_0_board.xdc] for cell 'system_top_i/hier_clkrst/clk_wiz_0/inst'
+Finished Parsing XDC File [/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_clk_wiz_0_0/system_top_clk_wiz_0_0_board.xdc] for cell 'system_top_i/hier_clkrst/clk_wiz_0/inst'
+Parsing XDC File [/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_clk_wiz_0_0/system_top_clk_wiz_0_0.xdc] for cell 'system_top_i/hier_clkrst/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_clk_wiz_0_0/system_top_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_clk_wiz_0_0/system_top_clk_wiz_0_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 3160.387 ; gain = 347.559 ; free physical = 419536 ; free virtual = 507839
+Finished Parsing XDC File [/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_clk_wiz_0_0/system_top_clk_wiz_0_0.xdc] for cell 'system_top_i/hier_clkrst/clk_wiz_0/inst'
+Parsing XDC File [/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_uncorerst_0/system_top_uncorerst_0_board.xdc] for cell 'system_top_i/hier_clkrst/uncorerst/U0'
+Finished Parsing XDC File [/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_uncorerst_0/system_top_uncorerst_0_board.xdc] for cell 'system_top_i/hier_clkrst/uncorerst/U0'
+Parsing XDC File [/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_uncorerst_0/system_top_uncorerst_0.xdc] for cell 'system_top_i/hier_clkrst/uncorerst/U0'
+Finished Parsing XDC File [/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_uncorerst_0/system_top_uncorerst_0.xdc] for cell 'system_top_i/hier_clkrst/uncorerst/U0'
+Parsing XDC File [/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_processing_system7_0_0/system_top_processing_system7_0_0.xdc] for cell 'system_top_i/processing_system7_0/inst'
+Finished Parsing XDC File [/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_processing_system7_0_0/system_top_processing_system7_0_0.xdc] for cell 'system_top_i/processing_system7_0/inst'
+Parsing XDC File [/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'system_top_i/rv_system/system_ila_0/inst/ila_lib/inst'
+Finished Parsing XDC File [/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'system_top_i/rv_system/system_ila_0/inst/ila_lib/inst'
+Parsing XDC File [/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'system_top_i/rv_system/system_ila_0/inst/ila_lib/inst'
+Finished Parsing XDC File [/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'system_top_i/rv_system/system_ila_0/inst/ila_lib/inst'
+Parsing XDC File [/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_cc_0/system_top_auto_cc_0_clocks.xdc] for cell 'system_top_i/axi_interconnect_0/s00_couplers/auto_cc/inst'
+Finished Parsing XDC File [/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_cc_0/system_top_auto_cc_0_clocks.xdc] for cell 'system_top_i/axi_interconnect_0/s00_couplers/auto_cc/inst'
+Parsing XDC File [/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_us_0/system_top_auto_us_0_clocks.xdc] for cell 'system_top_i/axi_interconnect_1/s00_couplers/auto_us/inst'
+Finished Parsing XDC File [/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_us_0/system_top_auto_us_0_clocks.xdc] for cell 'system_top_i/axi_interconnect_1/s00_couplers/auto_us/inst'
+Parsing XDC File [/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_ds_0/system_top_auto_ds_0_clocks.xdc] for cell 'system_top_i/axi_interconnect_1/m00_couplers/auto_ds/inst'
+Finished Parsing XDC File [/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_ds_0/system_top_auto_ds_0_clocks.xdc] for cell 'system_top_i/axi_interconnect_1/m00_couplers/auto_ds/inst'
+Parsing XDC File [/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_cc_1/system_top_auto_cc_1_clocks.xdc] for cell 'system_top_i/axi_interconnect_1/m01_couplers/auto_cc/inst'
+Finished Parsing XDC File [/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_cc_1/system_top_auto_cc_1_clocks.xdc] for cell 'system_top_i/axi_interconnect_1/m01_couplers/auto_cc/inst'
+Parsing XDC File [/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_cc_2/system_top_auto_cc_2_clocks.xdc] for cell 'system_top_i/axi_interconnect_2/s00_couplers/auto_cc/inst'
+Finished Parsing XDC File [/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_cc_2/system_top_auto_cc_2_clocks.xdc] for cell 'system_top_i/axi_interconnect_2/s00_couplers/auto_cc/inst'
+Parsing XDC File [/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_ds_1/system_top_auto_ds_1_clocks.xdc] for cell 'system_top_i/axi_interconnect_2/s00_couplers/auto_ds/inst'
+Finished Parsing XDC File [/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_ds_1/system_top_auto_ds_1_clocks.xdc] for cell 'system_top_i/axi_interconnect_2/s00_couplers/auto_ds/inst'
+INFO: [Project 1-1715] 3 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3440.520 ; gain = 0.000 ; free physical = 419541 ; free virtual = 507844
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 355 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 124 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 1 instance 
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 228 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 2 instances
+
+36 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 3440.520 ; gain = 627.691 ; free physical = 419540 ; free virtual = 507844
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3440.520 ; gain = 0.000 ; free physical = 419343 ; free virtual = 507648
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 12c97612e
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 3440.520 ; gain = 0.000 ; free physical = 419308 ; free virtual = 507613
+
+Starting Logic Optimization Task
+
+Phase 1 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3440.520 ; gain = 0.000 ; free physical = 419303 ; free virtual = 507631
+Phase 1 Generate And Synthesize Debug Cores | Checksum: 1f59a4dc0
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:02:25 . Memory (MB): peak = 3440.520 ; gain = 0.000 ; free physical = 419303 ; free virtual = 507631
+
+Phase 2 Retarget
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 102 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 2 Retarget | Checksum: 1bf47afbc
+
+Time (s): cpu = 00:01:41 ; elapsed = 00:02:28 . Memory (MB): peak = 3440.520 ; gain = 0.000 ; free physical = 419335 ; free virtual = 507664
+INFO: [Opt 31-389] Phase Retarget created 17 cells and removed 275 cells
+INFO: [Opt 31-1021] In phase Retarget, 267 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Constant propagation
+INFO: [Opt 31-138] Pushed 5 inverter(s) to 16 load pin(s).
+Phase 3 Constant propagation | Checksum: 1c436ac5d
+
+Time (s): cpu = 00:01:42 ; elapsed = 00:02:29 . Memory (MB): peak = 3440.520 ; gain = 0.000 ; free physical = 419335 ; free virtual = 507664
+INFO: [Opt 31-389] Phase Constant propagation created 199 cells and removed 478 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 249 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Sweep
+Phase 4 Sweep | Checksum: 22426d5fb
+
+Time (s): cpu = 00:01:43 ; elapsed = 00:02:30 . Memory (MB): peak = 3440.520 ; gain = 0.000 ; free physical = 419335 ; free virtual = 507664
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 790 cells
+INFO: [Opt 31-1021] In phase Sweep, 1899 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 BUFG optimization
+Phase 5 BUFG optimization | Checksum: 22426d5fb
+
+Time (s): cpu = 00:01:44 ; elapsed = 00:02:31 . Memory (MB): peak = 3440.520 ; gain = 0.000 ; free physical = 419335 ; free virtual = 507664
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 6 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 6 Shift Register Optimization | Checksum: 22426d5fb
+
+Time (s): cpu = 00:01:44 ; elapsed = 00:02:31 . Memory (MB): peak = 3440.520 ; gain = 0.000 ; free physical = 419336 ; free virtual = 507665
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 7 Post Processing Netlist
+Phase 7 Post Processing Netlist | Checksum: 214f0e8ea
+
+Time (s): cpu = 00:01:45 ; elapsed = 00:02:31 . Memory (MB): peak = 3440.520 ; gain = 0.000 ; free physical = 419336 ; free virtual = 507665
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 2 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 337 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |              17  |             275  |                                            267  |
+|  Constant propagation         |             199  |             478  |                                            249  |
+|  Sweep                        |               0  |             790  |                                           1899  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               2  |                                            337  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.14 . Memory (MB): peak = 3440.520 ; gain = 0.000 ; free physical = 419336 ; free virtual = 507665
+Ending Logic Optimization Task | Checksum: 1c63ed798
+
+Time (s): cpu = 00:01:46 ; elapsed = 00:02:32 . Memory (MB): peak = 3440.520 ; gain = 0.000 ; free physical = 419336 ; free virtual = 507665
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 77 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 1 WE to EN ports
+Number of BRAM Ports augmented: 39 newly gated: 9 Total Ports: 154
+Ending PowerOpt Patch Enables Task | Checksum: 1b8cb8479
+
+Time (s): cpu = 00:00:00.51 ; elapsed = 00:00:00.55 . Memory (MB): peak = 3879.910 ; gain = 0.000 ; free physical = 418986 ; free virtual = 507335
+Ending Power Optimization Task | Checksum: 1b8cb8479
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:19 . Memory (MB): peak = 3879.910 ; gain = 439.391 ; free physical = 419028 ; free virtual = 507376
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: 1e8de4cd7
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:04 . Memory (MB): peak = 3879.910 ; gain = 0.000 ; free physical = 419034 ; free virtual = 507384
+Ending Final Cleanup Task | Checksum: 1e8de4cd7
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 3879.910 ; gain = 0.000 ; free physical = 419033 ; free virtual = 507383
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3879.910 ; gain = 0.000 ; free physical = 419033 ; free virtual = 507383
+Ending Netlist Obfuscation Task | Checksum: 1e8de4cd7
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3879.910 ; gain = 0.000 ; free physical = 419033 ; free virtual = 507383
+INFO: [Common 17-83] Releasing license: Implementation
+68 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:02:38 ; elapsed = 00:03:04 . Memory (MB): peak = 3879.910 ; gain = 439.391 ; free physical = 419033 ; free virtual = 507383
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.30 ; elapsed = 00:00:00.07 . Memory (MB): peak = 3879.910 ; gain = 0.000 ; free physical = 418990 ; free virtual = 507342
+INFO: [Common 17-1381] The checkpoint '/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.runs/impl_1/system_top_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 3879.910 ; gain = 0.000 ; free physical = 419215 ; free virtual = 507565
+INFO: [runtcl-4] Executing : report_drc -file system_top_wrapper_drc_opted.rpt -pb system_top_wrapper_drc_opted.pb -rpx system_top_wrapper_drc_opted.rpx
+Command: report_drc -file system_top_wrapper_drc_opted.rpt -pb system_top_wrapper_drc_opted.pb -rpx system_top_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.runs/impl_1/system_top_wrapper_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:18 ; elapsed = 00:00:07 . Memory (MB): peak = 3903.082 ; gain = 23.172 ; free physical = 419143 ; free virtual = 507494
+INFO: [Chipscope 16-240] Debug cores have already been implemented
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1840 rule limit reached: 20 violations have been found.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_0 has an input control pin system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_0/ADDRARDADDR[10] (net: system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ADDRARDADDR[7]) which is driven by a register (system_top_i/axi_interconnect_0/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_0 has an input control pin system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_0/ADDRARDADDR[10] (net: system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ADDRARDADDR[7]) which is driven by a register (system_top_i/axi_interconnect_0/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_0 has an input control pin system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_0/ADDRARDADDR[11] (net: system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ADDRARDADDR[8]) which is driven by a register (system_top_i/axi_interconnect_0/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_0 has an input control pin system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_0/ADDRARDADDR[11] (net: system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ADDRARDADDR[8]) which is driven by a register (system_top_i/axi_interconnect_0/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_0 has an input control pin system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_0/ADDRARDADDR[12] (net: system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ADDRARDADDR[9]) which is driven by a register (system_top_i/axi_interconnect_0/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_0 has an input control pin system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_0/ADDRARDADDR[12] (net: system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ADDRARDADDR[9]) which is driven by a register (system_top_i/axi_interconnect_0/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_0 has an input control pin system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_0/ADDRARDADDR[13] (net: system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ADDRARDADDR[10]) which is driven by a register (system_top_i/axi_interconnect_0/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_0 has an input control pin system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_0/ADDRARDADDR[13] (net: system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ADDRARDADDR[10]) which is driven by a register (system_top_i/axi_interconnect_0/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_0 has an input control pin system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_0/ADDRARDADDR[14] (net: system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ADDRARDADDR[11]) which is driven by a register (system_top_i/axi_interconnect_0/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_0 has an input control pin system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_0/ADDRARDADDR[14] (net: system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ADDRARDADDR[11]) which is driven by a register (system_top_i/axi_interconnect_0/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_0 has an input control pin system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_0/ADDRARDADDR[5] (net: system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ADDRARDADDR[2]) which is driven by a register (system_top_i/axi_interconnect_0/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_0 has an input control pin system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_0/ADDRARDADDR[5] (net: system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ADDRARDADDR[2]) which is driven by a register (system_top_i/axi_interconnect_0/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_0 has an input control pin system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_0/ADDRARDADDR[6] (net: system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ADDRARDADDR[3]) which is driven by a register (system_top_i/axi_interconnect_0/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_0 has an input control pin system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_0/ADDRARDADDR[6] (net: system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ADDRARDADDR[3]) which is driven by a register (system_top_i/axi_interconnect_0/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_0 has an input control pin system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_0/ADDRARDADDR[7] (net: system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ADDRARDADDR[4]) which is driven by a register (system_top_i/axi_interconnect_0/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_0 has an input control pin system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_0/ADDRARDADDR[7] (net: system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ADDRARDADDR[4]) which is driven by a register (system_top_i/axi_interconnect_0/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_0 has an input control pin system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_0/ADDRARDADDR[8] (net: system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ADDRARDADDR[5]) which is driven by a register (system_top_i/axi_interconnect_0/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_0 has an input control pin system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_0/ADDRARDADDR[8] (net: system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ADDRARDADDR[5]) which is driven by a register (system_top_i/axi_interconnect_0/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_0 has an input control pin system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_0/ADDRARDADDR[9] (net: system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ADDRARDADDR[6]) which is driven by a register (system_top_i/axi_interconnect_0/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_0 has an input control pin system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_0/ADDRARDADDR[9] (net: system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ADDRARDADDR[6]) which is driven by a register (system_top_i/axi_interconnect_0/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_7 has an input control pin system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_7/ADDRARDADDR[10] (net: system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ADDRARDADDR[8]) which is driven by a register (system_top_i/axi_interconnect_0/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_7 has an input control pin system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_7/ADDRARDADDR[10] (net: system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ADDRARDADDR[8]) which is driven by a register (system_top_i/axi_interconnect_0/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_7 has an input control pin system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_7/ADDRARDADDR[11] (net: system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ADDRARDADDR[9]) which is driven by a register (system_top_i/axi_interconnect_0/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_7 has an input control pin system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_7/ADDRARDADDR[11] (net: system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ADDRARDADDR[9]) which is driven by a register (system_top_i/axi_interconnect_0/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_7 has an input control pin system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_7/ADDRARDADDR[12] (net: system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ADDRARDADDR[10]) which is driven by a register (system_top_i/axi_interconnect_0/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_7 has an input control pin system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_7/ADDRARDADDR[12] (net: system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ADDRARDADDR[10]) which is driven by a register (system_top_i/axi_interconnect_0/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_7 has an input control pin system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_7/ADDRARDADDR[13] (net: system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ADDRARDADDR[11]) which is driven by a register (system_top_i/axi_interconnect_0/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_7 has an input control pin system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_7/ADDRARDADDR[13] (net: system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ADDRARDADDR[11]) which is driven by a register (system_top_i/axi_interconnect_0/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_7 has an input control pin system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_7/ADDRARDADDR[4] (net: system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ADDRARDADDR[2]) which is driven by a register (system_top_i/axi_interconnect_0/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_7 has an input control pin system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_7/ADDRARDADDR[4] (net: system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ADDRARDADDR[2]) which is driven by a register (system_top_i/axi_interconnect_0/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_7 has an input control pin system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_7/ADDRARDADDR[5] (net: system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ADDRARDADDR[3]) which is driven by a register (system_top_i/axi_interconnect_0/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_7 has an input control pin system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_7/ADDRARDADDR[5] (net: system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ADDRARDADDR[3]) which is driven by a register (system_top_i/axi_interconnect_0/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_7 has an input control pin system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_7/ADDRARDADDR[6] (net: system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ADDRARDADDR[4]) which is driven by a register (system_top_i/axi_interconnect_0/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_7 has an input control pin system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_7/ADDRARDADDR[6] (net: system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ADDRARDADDR[4]) which is driven by a register (system_top_i/axi_interconnect_0/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_7 has an input control pin system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_7/ADDRARDADDR[7] (net: system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ADDRARDADDR[5]) which is driven by a register (system_top_i/axi_interconnect_0/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_7 has an input control pin system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_7/ADDRARDADDR[7] (net: system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ADDRARDADDR[5]) which is driven by a register (system_top_i/axi_interconnect_0/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_7 has an input control pin system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_7/ADDRARDADDR[8] (net: system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ADDRARDADDR[6]) which is driven by a register (system_top_i/axi_interconnect_0/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_7 has an input control pin system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_7/ADDRARDADDR[8] (net: system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ADDRARDADDR[6]) which is driven by a register (system_top_i/axi_interconnect_0/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_7 has an input control pin system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_7/ADDRARDADDR[9] (net: system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ADDRARDADDR[7]) which is driven by a register (system_top_i/axi_interconnect_0/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_7 has an input control pin system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_7/ADDRARDADDR[9] (net: system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ADDRARDADDR[7]) which is driven by a register (system_top_i/axi_interconnect_0/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 42 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 419134 ; free virtual = 507486
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 174a76d08
+
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.35 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 419135 ; free virtual = 507486
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 419135 ; free virtual = 507486
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: c711c77f
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 419170 ; free virtual = 507525
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1285af820
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:11 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 419120 ; free virtual = 507477
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1285af820
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:12 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 419120 ; free virtual = 507477
+Phase 1 Placer Initialization | Checksum: 1285af820
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:13 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 419117 ; free virtual = 507475
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 1d4e5cb4f
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:15 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 419080 ; free virtual = 507437
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 123976518
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:16 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 419081 ; free virtual = 507438
+
+Phase 2.3 Global Placement Core
+
+Phase 2.3.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 11 LUTNM shape to break, 1775 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 7, two critical 4, total 11, new lutff created 0
+INFO: [Physopt 32-775] End 1 Pass. Optimized 695 nets or cells. Created 11 new cells, deleted 684 existing cells and moved 0 existing cell
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-117] Net system_top_i/rv_system/NutShell_0/inst/nutcore/Cache_1/s3/_T_13_req_addr_reg[12][0] could not be optimized because driver system_top_i/rv_system/NutShell_0/inst/nutcore/Cache_1/s3/ram/ram_reg_0_0_i_11__0 could not be replicated
+INFO: [Physopt 32-117] Net system_top_i/rv_system/NutShell_0/inst/nutcore/Cache_1/s3/ram_reg_0_0_i_36[0] could not be optimized because driver system_top_i/rv_system/NutShell_0/inst/nutcore/Cache_1/s3/ram_reg_0_0_i_21__0 could not be replicated
+INFO: [Physopt 32-117] Net system_top_i/rv_system/NutShell_0/inst/nutcore/Cache_1/s3/_T_13_req_addr_reg[12][2] could not be optimized because driver system_top_i/rv_system/NutShell_0/inst/nutcore/Cache_1/s3/ram/ram_reg_0_0_i_9__0 could not be replicated
+INFO: [Physopt 32-117] Net system_top_i/rv_system/NutShell_0/inst/nutcore/Cache_1/s3/ram_reg_0_0_i_36[2] could not be optimized because driver system_top_i/rv_system/NutShell_0/inst/nutcore/Cache_1/s3/ram_reg_0_0_i_19__0 could not be replicated
+INFO: [Physopt 32-117] Net system_top_i/rv_system/NutShell_0/inst/nutcore/Cache_1/s3/_T_13_req_addr_reg[12][1] could not be optimized because driver system_top_i/rv_system/NutShell_0/inst/nutcore/Cache_1/s3/ram/ram_reg_0_0_i_10__0 could not be replicated
+INFO: [Physopt 32-117] Net system_top_i/rv_system/NutShell_0/inst/nutcore/Cache_1/s3/ram_reg_0_0_i_36[1] could not be optimized because driver system_top_i/rv_system/NutShell_0/inst/nutcore/Cache_1/s3/ram_reg_0_0_i_20__0 could not be replicated
+INFO: [Physopt 32-117] Net system_top_i/rv_system/NutShell_0/inst/nutcore/Cache_1/s3/_T_13_req_addr_reg[12][5] could not be optimized because driver system_top_i/rv_system/NutShell_0/inst/nutcore/Cache_1/s3/ram/ram_reg_0_0_i_6__0 could not be replicated
+INFO: [Physopt 32-117] Net system_top_i/rv_system/NutShell_0/inst/nutcore/Cache_1/s3/ram_reg_0_0_i_36[5] could not be optimized because driver system_top_i/rv_system/NutShell_0/inst/nutcore/Cache_1/s3/ram_reg_0_0_i_16__0 could not be replicated
+INFO: [Physopt 32-117] Net system_top_i/rv_system/NutShell_0/inst/nutcore/Cache_1/s3/_T_13_req_addr_reg[12][4] could not be optimized because driver system_top_i/rv_system/NutShell_0/inst/nutcore/Cache_1/s3/ram/ram_reg_0_0_i_7__0 could not be replicated
+INFO: [Physopt 32-117] Net system_top_i/rv_system/NutShell_0/inst/nutcore/Cache_1/s3/ram_reg_0_0_i_36[4] could not be optimized because driver system_top_i/rv_system/NutShell_0/inst/nutcore/Cache_1/s3/ram_reg_0_0_i_17__0 could not be replicated
+INFO: [Physopt 32-117] Net system_top_i/rv_system/NutShell_0/inst/nutcore/Cache_1/s3/_T_13_req_addr_reg[12][9] could not be optimized because driver system_top_i/rv_system/NutShell_0/inst/nutcore/Cache_1/s3/ram/ram_reg_0_0_i_2__0 could not be replicated
+INFO: [Physopt 32-117] Net system_top_i/rv_system/NutShell_0/inst/nutcore/Cache_1/s3/ram_reg_0_0_i_36[9] could not be optimized because driver system_top_i/rv_system/NutShell_0/inst/nutcore/Cache_1/s3/ram_reg_0_0_i_12__0 could not be replicated
+INFO: [Physopt 32-68] No nets found for critical-cell optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 419038 ; free virtual = 507398
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |           11  |            684  |                   695  |           0  |           1  |  00:00:02  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Cell                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |           11  |            684  |                   695  |           0  |           9  |  00:00:02  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.3.1 Physical Synthesis In Placer | Checksum: 249df57c
+
+Time (s): cpu = 00:01:53 ; elapsed = 00:00:46 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 419041 ; free virtual = 507400
+Phase 2.3 Global Placement Core | Checksum: 11b6a02c3
+
+Time (s): cpu = 00:02:06 ; elapsed = 00:00:50 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 418823 ; free virtual = 507184
+Phase 2 Global Placement | Checksum: 11b6a02c3
+
+Time (s): cpu = 00:02:06 ; elapsed = 00:00:50 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 418842 ; free virtual = 507203
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1c3c70e9a
+
+Time (s): cpu = 00:02:11 ; elapsed = 00:00:52 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 418838 ; free virtual = 507199
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 18ffaa919
+
+Time (s): cpu = 00:02:20 ; elapsed = 00:00:55 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 418833 ; free virtual = 507194
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1561fabe9
+
+Time (s): cpu = 00:02:21 ; elapsed = 00:00:56 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 418833 ; free virtual = 507194
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: b17a51ca
+
+Time (s): cpu = 00:02:21 ; elapsed = 00:00:56 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 418833 ; free virtual = 507195
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: df05c9e0
+
+Time (s): cpu = 00:02:30 ; elapsed = 00:00:59 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 418829 ; free virtual = 507191
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 10c3a04f3
+
+Time (s): cpu = 00:02:49 ; elapsed = 00:01:16 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 418989 ; free virtual = 507365
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 10c7ad1ec
+
+Time (s): cpu = 00:02:51 ; elapsed = 00:01:18 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 418991 ; free virtual = 507368
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 19ade632d
+
+Time (s): cpu = 00:02:52 ; elapsed = 00:01:19 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 418991 ; free virtual = 507368
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: d7be421b
+
+Time (s): cpu = 00:03:08 ; elapsed = 00:01:23 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 418976 ; free virtual = 507353
+Phase 3 Detail Placement | Checksum: d7be421b
+
+Time (s): cpu = 00:03:08 ; elapsed = 00:01:23 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 418977 ; free virtual = 507353
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 10aa089f3
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.470 | TNS=-1.811 |
+Phase 1 Physical Synthesis Initialization | Checksum: 148cca36a
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:01 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 418958 ; free virtual = 507335
+INFO: [Place 46-33] Processed net system_top_i/rv_system/util_vector_logic_0/Res[0], BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-56] BUFG insertion identified 1 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 1, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: fe5c3130
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 418958 ; free virtual = 507334
+Phase 4.1.1.1 BUFG Insertion | Checksum: 10aa089f3
+
+Time (s): cpu = 00:03:33 ; elapsed = 00:01:32 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 418958 ; free virtual = 507335
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.509. For the most accurate timing information please run report_timing.
+
+Time (s): cpu = 00:03:41 ; elapsed = 00:01:38 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 418946 ; free virtual = 507323
+Phase 4.1 Post Commit Optimization | Checksum: c213d3fe
+
+Time (s): cpu = 00:03:42 ; elapsed = 00:01:38 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 418947 ; free virtual = 507324
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: c213d3fe
+
+Time (s): cpu = 00:03:42 ; elapsed = 00:01:38 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 418949 ; free virtual = 507326
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                2x2|                4x4|
+|___________|___________________|___________________|
+|      South|                2x2|                4x4|
+|___________|___________________|___________________|
+|       East|                1x1|                2x2|
+|___________|___________________|___________________|
+|       West|                1x1|                4x4|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: c213d3fe
+
+Time (s): cpu = 00:03:43 ; elapsed = 00:01:39 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 418950 ; free virtual = 507327
+Phase 4.3 Placer Reporting | Checksum: c213d3fe
+
+Time (s): cpu = 00:03:43 ; elapsed = 00:01:39 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 418969 ; free virtual = 507345
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 418969 ; free virtual = 507345
+
+Time (s): cpu = 00:03:43 ; elapsed = 00:01:39 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 418969 ; free virtual = 507345
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: de1952ef
+
+Time (s): cpu = 00:03:43 ; elapsed = 00:01:39 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 418969 ; free virtual = 507345
+Ending Placer Task | Checksum: 8872cbbe
+
+Time (s): cpu = 00:03:43 ; elapsed = 00:01:39 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 418961 ; free virtual = 507338
+INFO: [Common 17-83] Releasing license: Implementation
+125 Infos, 44 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:03:49 ; elapsed = 00:01:43 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 419003 ; free virtual = 507379
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:07 ; elapsed = 00:00:02 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 418914 ; free virtual = 507348
+INFO: [Common 17-1381] The checkpoint '/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.runs/impl_1/system_top_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 419002 ; free virtual = 507396
+INFO: [runtcl-4] Executing : report_io -file system_top_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.22 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 418995 ; free virtual = 507388
+INFO: [runtcl-4] Executing : report_utilization -file system_top_wrapper_utilization_placed.rpt -pb system_top_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file system_top_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.33 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 419001 ; free virtual = 507394
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+134 Infos, 44 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:07 ; elapsed = 00:00:02 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 418889 ; free virtual = 507342
+INFO: [Common 17-1381] The checkpoint '/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.runs/impl_1/system_top_wrapper_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 418948 ; free virtual = 507359
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: 1852c1c4 ConstDB: 0 ShapeSum: 702009fa RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: a77f93e1
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:18 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 418596 ; free virtual = 507008
+Post Restoration Checksum: NetGraph: 47d6fdf7 NumContArr: 5fa895ea Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: a77f93e1
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:19 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 418821 ; free virtual = 507233
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: a77f93e1
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:20 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 418569 ; free virtual = 506981
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: a77f93e1
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:20 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 418569 ; free virtual = 506981
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: d863cd59
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:30 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 418544 ; free virtual = 506958
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.757  | TNS=0.000  | WHS=-0.263 | THS=-466.511|
+
+
+Phase 2.5 Update Timing for Bus Skew
+
+Phase 2.5.1 Update Timing
+Phase 2.5.1 Update Timing | Checksum: d12fce61
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:00:36 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 418755 ; free virtual = 507169
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.757  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 2.5 Update Timing for Bus Skew | Checksum: f4b1e72c
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:00:37 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 418753 ; free virtual = 507168
+Phase 2 Router Initialization | Checksum: c5ea4bd2
+
+Time (s): cpu = 00:01:18 ; elapsed = 00:00:37 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 418753 ; free virtual = 507168
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 41576
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 41576
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: c5ea4bd2
+
+Time (s): cpu = 00:01:18 ; elapsed = 00:00:38 . Memory (MB): peak = 3903.082 ; gain = 0.000 ; free physical = 418530 ; free virtual = 506945
+Phase 3 Initial Routing | Checksum: 1a9c29e8b
+
+Time (s): cpu = 00:01:46 ; elapsed = 00:00:46 . Memory (MB): peak = 3930.422 ; gain = 27.340 ; free physical = 418729 ; free virtual = 507144
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 6510
+ Number of Nodes with overlaps = 1379
+ Number of Nodes with overlaps = 453
+ Number of Nodes with overlaps = 159
+ Number of Nodes with overlaps = 76
+ Number of Nodes with overlaps = 70
+ Number of Nodes with overlaps = 32
+ Number of Nodes with overlaps = 10
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.441  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1807a8d43
+
+Time (s): cpu = 00:03:23 ; elapsed = 00:01:51 . Memory (MB): peak = 3930.422 ; gain = 27.340 ; free physical = 418520 ; free virtual = 506941
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.441  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 247fd8b3c
+
+Time (s): cpu = 00:03:27 ; elapsed = 00:01:53 . Memory (MB): peak = 3930.422 ; gain = 27.340 ; free physical = 418739 ; free virtual = 507161
+Phase 4 Rip-up And Reroute | Checksum: 247fd8b3c
+
+Time (s): cpu = 00:03:27 ; elapsed = 00:01:53 . Memory (MB): peak = 3930.422 ; gain = 27.340 ; free physical = 418739 ; free virtual = 507160
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: 247fd8b3c
+
+Time (s): cpu = 00:03:27 ; elapsed = 00:01:54 . Memory (MB): peak = 3930.422 ; gain = 27.340 ; free physical = 418739 ; free virtual = 507160
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 247fd8b3c
+
+Time (s): cpu = 00:03:27 ; elapsed = 00:01:54 . Memory (MB): peak = 3930.422 ; gain = 27.340 ; free physical = 418739 ; free virtual = 507160
+Phase 5 Delay and Skew Optimization | Checksum: 247fd8b3c
+
+Time (s): cpu = 00:03:27 ; elapsed = 00:01:54 . Memory (MB): peak = 3930.422 ; gain = 27.340 ; free physical = 418740 ; free virtual = 507161
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 235416b29
+
+Time (s): cpu = 00:03:35 ; elapsed = 00:01:57 . Memory (MB): peak = 3930.422 ; gain = 27.340 ; free physical = 418741 ; free virtual = 507162
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.441  | TNS=0.000  | WHS=0.014  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 263969f7a
+
+Time (s): cpu = 00:03:35 ; elapsed = 00:01:57 . Memory (MB): peak = 3930.422 ; gain = 27.340 ; free physical = 418740 ; free virtual = 507161
+Phase 6 Post Hold Fix | Checksum: 263969f7a
+
+Time (s): cpu = 00:03:35 ; elapsed = 00:01:57 . Memory (MB): peak = 3930.422 ; gain = 27.340 ; free physical = 418740 ; free virtual = 507161
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 11.7781 %
+  Global Horizontal Routing Utilization  = 13.1831 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 263969f7a
+
+Time (s): cpu = 00:03:36 ; elapsed = 00:01:57 . Memory (MB): peak = 3930.422 ; gain = 27.340 ; free physical = 418741 ; free virtual = 507162
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 263969f7a
+
+Time (s): cpu = 00:03:36 ; elapsed = 00:01:57 . Memory (MB): peak = 3930.422 ; gain = 27.340 ; free physical = 418738 ; free virtual = 507159
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1d02038dc
+
+Time (s): cpu = 00:03:40 ; elapsed = 00:02:00 . Memory (MB): peak = 3962.434 ; gain = 59.352 ; free physical = 418522 ; free virtual = 506944
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.441  | TNS=0.000  | WHS=0.014  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 1d02038dc
+
+Time (s): cpu = 00:03:41 ; elapsed = 00:02:01 . Memory (MB): peak = 3962.434 ; gain = 59.352 ; free physical = 418523 ; free virtual = 506945
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:03:41 ; elapsed = 00:02:01 . Memory (MB): peak = 3962.434 ; gain = 59.352 ; free physical = 418575 ; free virtual = 506998
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+150 Infos, 44 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:04:01 ; elapsed = 00:02:07 . Memory (MB): peak = 3962.434 ; gain = 59.352 ; free physical = 418575 ; free virtual = 506998
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 3962.434 ; gain = 0.000 ; free physical = 418690 ; free virtual = 507185
+INFO: [Common 17-1381] The checkpoint '/home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.runs/impl_1/system_top_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:18 ; elapsed = 00:00:11 . Memory (MB): peak = 3962.434 ; gain = 0.000 ; free physical = 418547 ; free virtual = 506991
+INFO: [runtcl-4] Executing : report_drc -file system_top_wrapper_drc_routed.rpt -pb system_top_wrapper_drc_routed.pb -rpx system_top_wrapper_drc_routed.rpx
+Command: report_drc -file system_top_wrapper_drc_routed.rpt -pb system_top_wrapper_drc_routed.pb -rpx system_top_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.runs/impl_1/system_top_wrapper_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:28 ; elapsed = 00:00:07 . Memory (MB): peak = 4063.523 ; gain = 101.090 ; free physical = 418712 ; free virtual = 507155
+INFO: [runtcl-4] Executing : report_methodology -file system_top_wrapper_methodology_drc_routed.rpt -pb system_top_wrapper_methodology_drc_routed.pb -rpx system_top_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file system_top_wrapper_methodology_drc_routed.rpt -pb system_top_wrapper_methodology_drc_routed.pb -rpx system_top_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.runs/impl_1/system_top_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:30 ; elapsed = 00:00:09 . Memory (MB): peak = 4063.523 ; gain = 0.000 ; free physical = 418715 ; free virtual = 507158
+INFO: [runtcl-4] Executing : report_power -file system_top_wrapper_power_routed.rpt -pb system_top_wrapper_power_summary_routed.pb -rpx system_top_wrapper_power_routed.rpx
+Command: report_power -file system_top_wrapper_power_routed.rpt -pb system_top_wrapper_power_summary_routed.pb -rpx system_top_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+162 Infos, 45 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:31 ; elapsed = 00:00:11 . Memory (MB): peak = 4067.328 ; gain = 3.805 ; free physical = 418673 ; free virtual = 507129
+INFO: [runtcl-4] Executing : report_route_status -file system_top_wrapper_route_status.rpt -pb system_top_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file system_top_wrapper_timing_summary_routed.rpt -pb system_top_wrapper_timing_summary_routed.pb -rpx system_top_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file system_top_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file system_top_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file system_top_wrapper_bus_skew_routed.rpt -pb system_top_wrapper_bus_skew_routed.pb -rpx system_top_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Common 17-206] Exiting Vivado at Sun May 15 02:23:22 2022...

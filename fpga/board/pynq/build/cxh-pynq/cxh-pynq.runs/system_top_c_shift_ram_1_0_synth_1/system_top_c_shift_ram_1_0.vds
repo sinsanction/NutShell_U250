@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun May 15 02:03:50 2022
+# Process ID: 84915
+# Current directory: /home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.runs/system_top_c_shift_ram_1_0_synth_1
+# Command line: vivado -log system_top_c_shift_ram_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_top_c_shift_ram_1_0.tcl
+# Log file: /home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.runs/system_top_c_shift_ram_1_0_synth_1/system_top_c_shift_ram_1_0.vds
+# Journal file: /home/chenxuhao/NutShell/fpga/board/pynq/build/cxh-pynq/cxh-pynq.runs/system_top_c_shift_ram_1_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source system_top_c_shift_ram_1_0.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP system_top_c_shift_ram_1_0, cache-ID = 1cfce36c855a3812.
+INFO: [Common 17-206] Exiting Vivado at Sun May 15 02:04:03 2022...

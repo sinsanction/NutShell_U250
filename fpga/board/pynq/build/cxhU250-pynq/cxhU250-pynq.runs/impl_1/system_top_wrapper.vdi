@@ -1,0 +1,1382 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Jul 19 12:27:42 2022
+# Process ID: 97710
+# Current directory: /home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1
+# Command line: vivado -log system_top_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source system_top_wrapper.tcl -notrace
+# Log file: /home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper.vdi
+# Journal file: /home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source system_top_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+add_files: Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2903.000 ; gain = 376.180 ; free physical = 54442 ; free virtual = 508595
+Command: link_design -top system_top_wrapper -part xcu250-figd2104-2L-e
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xcu250-figd2104-2L-e
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_axi_gpio_0_1/system_top_axi_gpio_0_1.dcp' for cell 'system_top_i/axi_gpio_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_axi_uartlite_0_0/system_top_axi_uartlite_0_0.dcp' for cell 'system_top_i/axi_uartlite_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_clk_wiz_0_1/system_top_clk_wiz_0_1.dcp' for cell 'system_top_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_ddr4_0_0/system_top_ddr4_0_0.dcp' for cell 'system_top_i/ddr4_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_jtag_axi_0_0/system_top_jtag_axi_0_0.dcp' for cell 'system_top_i/jtag_axi_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_proc_sys_reset_0_0/system_top_proc_sys_reset_0_0.dcp' for cell 'system_top_i/proc_sys_reset_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_proc_sys_reset_1_0/system_top_proc_sys_reset_1_0.dcp' for cell 'system_top_i/proc_sys_reset_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_rst_ddr4_0_333M_0/system_top_rst_ddr4_0_333M_0.dcp' for cell 'system_top_i/rst_ddr4_0_333M'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_system_ila_1_0/system_top_system_ila_1_0.dcp' for cell 'system_top_i/system_ila_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_vio_0_0/system_top_vio_0_0.dcp' for cell 'system_top_i/vio_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_xbar_1/system_top_xbar_1.dcp' for cell 'system_top_i/axi_interconnect_0/xbar'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_cc_0/system_top_auto_cc_0.dcp' for cell 'system_top_i/axi_interconnect_0/m00_couplers/auto_cc'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_ds_0/system_top_auto_ds_0.dcp' for cell 'system_top_i/axi_interconnect_0/m01_couplers/auto_ds'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_pc_0/system_top_auto_pc_0.dcp' for cell 'system_top_i/axi_interconnect_0/m01_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_ds_1/system_top_auto_ds_1.dcp' for cell 'system_top_i/axi_interconnect_0/m02_couplers/auto_ds'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_pc_1/system_top_auto_pc_1.dcp' for cell 'system_top_i/axi_interconnect_0/m02_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_cc_1/system_top_auto_cc_1.dcp' for cell 'system_top_i/axi_interconnect_0/m03_couplers/auto_cc'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_ds_2/system_top_auto_ds_2.dcp' for cell 'system_top_i/axi_interconnect_0/m03_couplers/auto_ds'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_pc_2/system_top_auto_pc_2.dcp' for cell 'system_top_i/axi_interconnect_0/m03_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_us_0/system_top_auto_us_0.dcp' for cell 'system_top_i/axi_interconnect_0/s00_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_us_1/system_top_auto_us_1.dcp' for cell 'system_top_i/axi_interconnect_0/s01_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_us_2/system_top_auto_us_2.dcp' for cell 'system_top_i/axi_interconnect_0/s02_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_NutShell_0_0/system_top_NutShell_0_0.dcp' for cell 'system_top_i/rv_system/NutShell_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_c_shift_ram_0_0/system_top_c_shift_ram_0_0.dcp' for cell 'system_top_i/rv_system/c_shift_ram_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_c_shift_ram_1_0/system_top_c_shift_ram_1_0.dcp' for cell 'system_top_i/rv_system/c_shift_ram_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_system_ila_0_0/system_top_system_ila_0_0.dcp' for cell 'system_top_i/rv_system/system_ila_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_system_ila_0_1/system_top_system_ila_0_1.dcp' for cell 'system_top_i/rv_system/system_ila_2'
+INFO: [Project 1-454] Reading design checkpoint '/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_util_vector_logic_0_0/system_top_util_vector_logic_0_0.dcp' for cell 'system_top_i/rv_system/util_vector_logic_0'
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3436.805 ; gain = 0.000 ; free physical = 53895 ; free virtual = 508048
+INFO: [Netlist 29-17] Analyzing 3595 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Chipscope 16-324] Core: system_top_i/ddr4_0 UUID: 6ce406f7-a48e-51ab-b561-91df2cd616c1 
+INFO: [Chipscope 16-324] Core: system_top_i/jtag_axi_0 UUID: b8f5087b-6062-51d3-b88d-d331a625f48a 
+INFO: [Chipscope 16-324] Core: system_top_i/rv_system/system_ila_0/inst/ila_lib UUID: dcac6ca3-a8c3-5d1b-a488-5a6cc0496662 
+INFO: [Chipscope 16-324] Core: system_top_i/rv_system/system_ila_2/inst/ila_lib UUID: 3090bcf5-b5a1-58f2-9299-cd93ef9c3a22 
+INFO: [Chipscope 16-324] Core: system_top_i/system_ila_1/inst/ila_lib UUID: 26595fe2-398f-5136-88cc-ad3dbaf5e25d 
+INFO: [Chipscope 16-324] Core: system_top_i/vio_0 UUID: fea0a9bc-e2a6-5f82-8ff4-cbbe55b0ea59 
+Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_ddr4_0_0/ip_0/system_top_ddr4_0_0_microblaze_mcs_board.xdc] for cell 'system_top_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst'
+Finished Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_ddr4_0_0/ip_0/system_top_ddr4_0_0_microblaze_mcs_board.xdc] for cell 'system_top_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst'
+Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_system_ila_1_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'system_top_i/system_ila_1/inst/ila_lib/inst'
+Finished Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_system_ila_1_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'system_top_i/system_ila_1/inst/ila_lib/inst'
+Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_system_ila_1_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'system_top_i/system_ila_1/inst/ila_lib/inst'
+Finished Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_system_ila_1_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'system_top_i/system_ila_1/inst/ila_lib/inst'
+Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_proc_sys_reset_1_0/system_top_proc_sys_reset_1_0.xdc] for cell 'system_top_i/proc_sys_reset_1/U0'
+Finished Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_proc_sys_reset_1_0/system_top_proc_sys_reset_1_0.xdc] for cell 'system_top_i/proc_sys_reset_1/U0'
+Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_proc_sys_reset_1_0/system_top_proc_sys_reset_1_0_board.xdc] for cell 'system_top_i/proc_sys_reset_1/U0'
+Finished Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_proc_sys_reset_1_0/system_top_proc_sys_reset_1_0_board.xdc] for cell 'system_top_i/proc_sys_reset_1/U0'
+Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_vio_0_0/system_top_vio_0_0.xdc] for cell 'system_top_i/vio_0'
+Finished Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_vio_0_0/system_top_vio_0_0.xdc] for cell 'system_top_i/vio_0'
+Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_jtag_axi_0_0/constraints/jtag_axi.xdc] for cell 'system_top_i/jtag_axi_0/inst'
+Finished Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_jtag_axi_0_0/constraints/jtag_axi.xdc] for cell 'system_top_i/jtag_axi_0/inst'
+Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_rst_ddr4_0_333M_0/system_top_rst_ddr4_0_333M_0.xdc] for cell 'system_top_i/rst_ddr4_0_333M/U0'
+Finished Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_rst_ddr4_0_333M_0/system_top_rst_ddr4_0_333M_0.xdc] for cell 'system_top_i/rst_ddr4_0_333M/U0'
+Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_rst_ddr4_0_333M_0/system_top_rst_ddr4_0_333M_0_board.xdc] for cell 'system_top_i/rst_ddr4_0_333M/U0'
+Finished Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_rst_ddr4_0_333M_0/system_top_rst_ddr4_0_333M_0_board.xdc] for cell 'system_top_i/rst_ddr4_0_333M/U0'
+Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_axi_uartlite_0_0/system_top_axi_uartlite_0_0.xdc] for cell 'system_top_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_axi_uartlite_0_0/system_top_axi_uartlite_0_0.xdc] for cell 'system_top_i/axi_uartlite_0/U0'
+Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_axi_uartlite_0_0/system_top_axi_uartlite_0_0_board.xdc] for cell 'system_top_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_axi_uartlite_0_0/system_top_axi_uartlite_0_0_board.xdc] for cell 'system_top_i/axi_uartlite_0/U0'
+Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_axi_gpio_0_1/system_top_axi_gpio_0_1.xdc] for cell 'system_top_i/axi_gpio_0/U0'
+Finished Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_axi_gpio_0_1/system_top_axi_gpio_0_1.xdc] for cell 'system_top_i/axi_gpio_0/U0'
+Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_axi_gpio_0_1/system_top_axi_gpio_0_1_board.xdc] for cell 'system_top_i/axi_gpio_0/U0'
+Finished Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_axi_gpio_0_1/system_top_axi_gpio_0_1_board.xdc] for cell 'system_top_i/axi_gpio_0/U0'
+Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_ddr4_0_0/par/system_top_ddr4_0_0.xdc] for cell 'system_top_i/ddr4_0/inst'
+Finished Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_ddr4_0_0/par/system_top_ddr4_0_0.xdc] for cell 'system_top_i/ddr4_0/inst'
+Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'system_top_i/rv_system/system_ila_0/inst/ila_lib/inst'
+Finished Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'system_top_i/rv_system/system_ila_0/inst/ila_lib/inst'
+Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_ddr4_0_0/bd_0/ip/ip_10/bd_c96b_iomodule_0_0_board.xdc] for cell 'system_top_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/iomodule_0/U0'
+Finished Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_ddr4_0_0/bd_0/ip/ip_10/bd_c96b_iomodule_0_0_board.xdc] for cell 'system_top_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/iomodule_0/U0'
+Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_ddr4_0_0/bd_0/ip/ip_3/bd_c96b_dlmb_0.xdc] for cell 'system_top_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/dlmb/U0'
+Finished Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_ddr4_0_0/bd_0/ip/ip_3/bd_c96b_dlmb_0.xdc] for cell 'system_top_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/dlmb/U0'
+Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_ddr4_0_0/bd_0/ip/ip_2/bd_c96b_ilmb_0.xdc] for cell 'system_top_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/ilmb/U0'
+Finished Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_ddr4_0_0/bd_0/ip/ip_2/bd_c96b_ilmb_0.xdc] for cell 'system_top_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/ilmb/U0'
+Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_ddr4_0_0/bd_0/ip/ip_1/bd_c96b_rst_0_0.xdc] for cell 'system_top_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/rst_0/U0'
+Finished Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_ddr4_0_0/bd_0/ip/ip_1/bd_c96b_rst_0_0.xdc] for cell 'system_top_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/rst_0/U0'
+Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_ddr4_0_0/bd_0/ip/ip_1/bd_c96b_rst_0_0_board.xdc] for cell 'system_top_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/rst_0/U0'
+Finished Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_ddr4_0_0/bd_0/ip/ip_1/bd_c96b_rst_0_0_board.xdc] for cell 'system_top_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/rst_0/U0'
+Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_ddr4_0_0/bd_0/ip/ip_0/bd_c96b_microblaze_I_0.xdc] for cell 'system_top_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0'
+Finished Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_ddr4_0_0/bd_0/ip/ip_0/bd_c96b_microblaze_I_0.xdc] for cell 'system_top_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0'
+Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_proc_sys_reset_0_0/system_top_proc_sys_reset_0_0.xdc] for cell 'system_top_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_proc_sys_reset_0_0/system_top_proc_sys_reset_0_0.xdc] for cell 'system_top_i/proc_sys_reset_0/U0'
+Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_proc_sys_reset_0_0/system_top_proc_sys_reset_0_0_board.xdc] for cell 'system_top_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_proc_sys_reset_0_0/system_top_proc_sys_reset_0_0_board.xdc] for cell 'system_top_i/proc_sys_reset_0/U0'
+Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_clk_wiz_0_1/system_top_clk_wiz_0_1.xdc] for cell 'system_top_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_clk_wiz_0_1/system_top_clk_wiz_0_1.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_clk_wiz_0_1/system_top_clk_wiz_0_1.xdc:57]
+get_clocks: Time (s): cpu = 00:00:31 ; elapsed = 00:00:17 . Memory (MB): peak = 4558.625 ; gain = 536.715 ; free physical = 52893 ; free virtual = 507046
+WARNING: [Vivado 12-2489] -input_jitter contains time 0.033330 which will be rounded to 0.033 to ensure it is an integer multiple of 1 picosecond [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_clk_wiz_0_1/system_top_clk_wiz_0_1.xdc:57]
+Finished Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_clk_wiz_0_1/system_top_clk_wiz_0_1.xdc] for cell 'system_top_i/clk_wiz_0/inst'
+Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_clk_wiz_0_1/system_top_clk_wiz_0_1_board.xdc] for cell 'system_top_i/clk_wiz_0/inst'
+Finished Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_clk_wiz_0_1/system_top_clk_wiz_0_1_board.xdc] for cell 'system_top_i/clk_wiz_0/inst'
+Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_system_ila_0_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'system_top_i/rv_system/system_ila_2/inst/ila_lib/inst'
+Finished Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_system_ila_0_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'system_top_i/rv_system/system_ila_2/inst/ila_lib/inst'
+Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_system_ila_0_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'system_top_i/rv_system/system_ila_2/inst/ila_lib/inst'
+Finished Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_system_ila_0_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'system_top_i/rv_system/system_ila_2/inst/ila_lib/inst'
+Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'system_top_i/rv_system/system_ila_0/inst/ila_lib/inst'
+Finished Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'system_top_i/rv_system/system_ila_0/inst/ila_lib/inst'
+Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc]
+WARNING: [Vivado 12-584] No ports matched 'SYSCLK0_300_N'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:165]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:165]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SYSCLK0_300_P'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:166]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:166]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SYSCLK1_300_N'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:167]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:167]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SYSCLK1_300_P'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:168]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:168]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SYSCLK2_300_N'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:169]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:169]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SYSCLK2_300_P'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:170]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:170]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SYSCLK3_300_N'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:171]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:171]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SYSCLK3_300_P'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:172]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:172]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USER_SI570_CLOCK_N'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:176]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:176]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USER_SI570_CLOCK_P'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:177]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:177]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PCIE_REFCLK_N'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:185]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:185]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PCIE_REFCLK_P'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:186]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:186]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MGT_SI570_CLOCK0_N'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:193]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:193]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MGT_SI570_CLOCK0_P'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:194]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:194]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_CLOCK_N'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:195]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:195]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_CLOCK_P'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:196]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:196]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_RESETL'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:205]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:205]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_MODPRSL'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:206]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:206]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_INTL'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:207]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:207]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_LPMODE'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:208]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:208]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_MODSELL'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:209]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:209]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_FS[0]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:216]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:216]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_FS[1]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:217]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:217]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_REFCLK_RESET'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:218]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:218]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MGT_SI570_CLOCK1_N'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:225]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:225]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MGT_SI570_CLOCK1_P'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:226]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:226]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_CLOCK_N'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:227]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:227]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_CLOCK_P'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:228]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:228]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_RESETL'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:237]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:237]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_MODPRSL'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:238]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:238]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_INTL'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:239]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:239]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_LPMODE'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:240]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:240]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_MODSELL'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:241]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:241]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_FS[0]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:250]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:250]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_FS[1]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:251]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:251]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_REFCLK_RESET'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:252]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:252]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PCIE_PERST'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:257]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:257]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SYSMON_SDA'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:263]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:263]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SYSMON_SCL'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:264]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:264]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'I2C_MAIN_RESETN'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:271]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:271]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'I2C_FPGA_SCL'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:272]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:272]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'I2C_FPGA_SDA'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:273]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:273]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USB_UART_RX'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:280]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:280]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USB_UART_TX'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:281]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:281]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'FPGA_TXD_MSP'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:288]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:288]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'FPGA_RXD_MSP'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:289]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:289]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR4_RESET_GATE'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:295]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:295]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO_MSP[0]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:299]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:299]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO_MSP[1]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:300]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:300]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO_MSP[2]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:301]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:301]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO_MSP[3]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:302]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:302]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW_DP[0]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:306]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:306]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW_DP[1]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:307]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:307]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW_DP[2]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:308]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:308]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW_DP[3]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:309]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:309]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MSP_RSTn'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:323]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:323]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW_SET1_FPGA'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:324]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:324]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'STATUS_LED0_FPGA'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:325]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:325]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'STATUS_LED1_FPGA'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:326]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:326]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'STATUS_LED2_FPGA'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:327]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:327]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[34]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:334]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:334]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[35]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:335]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:335]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_c[8]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:336]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:336]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_t[8]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:337]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:337]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[33]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:338]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:338]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[32]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:339]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:339]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[39]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:340]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:340]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[38]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:341]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:341]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[36]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:342]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:342]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[37]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:343]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:343]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_c[9]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:344]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:344]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_t[9]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:345]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:345]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[57]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:346]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:346]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[56]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:347]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:347]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_c[14]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:348]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:348]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_t[14]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:349]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:349]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[59]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:350]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:350]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[58]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:351]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:351]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[61]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:352]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:352]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[62]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:353]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:353]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[60]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:354]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:354]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[63]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:355]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:355]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_c[15]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:356]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:356]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_t[15]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:357]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:357]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[9]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:358]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:358]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[8]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:359]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:359]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_c[2]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:360]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:360]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_t[2]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:361]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:361]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[11]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:362]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:362]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[10]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:363]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:363]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[13]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:364]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:364]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[12]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:365]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:365]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[15]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:366]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:366]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[14]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:367]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:367]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_c[3]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:368]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:368]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_t[3]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:369]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:369]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[1]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:370]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:370]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[0]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:371]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:371]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_c[0]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:372]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:372]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_t[0]'. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:373]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:373]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:373]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+INFO: [Common 17-14] Message 'Common 17-55' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc:373]
+Finished Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/alveo-u250-xdc.xdc]
+Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_ddr4_0_0/system_top_ddr4_0_0_board.xdc] for cell 'system_top_i/ddr4_0/inst'
+Finished Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_ddr4_0_0/system_top_ddr4_0_0_board.xdc] for cell 'system_top_i/ddr4_0/inst'
+Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_us_0/system_top_auto_us_0_clocks.xdc] for cell 'system_top_i/axi_interconnect_0/s00_couplers/auto_us/inst'
+Finished Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_us_0/system_top_auto_us_0_clocks.xdc] for cell 'system_top_i/axi_interconnect_0/s00_couplers/auto_us/inst'
+Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_us_1/system_top_auto_us_1_clocks.xdc] for cell 'system_top_i/axi_interconnect_0/s01_couplers/auto_us/inst'
+Finished Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_us_1/system_top_auto_us_1_clocks.xdc] for cell 'system_top_i/axi_interconnect_0/s01_couplers/auto_us/inst'
+Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_us_2/system_top_auto_us_2_clocks.xdc] for cell 'system_top_i/axi_interconnect_0/s02_couplers/auto_us/inst'
+Finished Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_us_2/system_top_auto_us_2_clocks.xdc] for cell 'system_top_i/axi_interconnect_0/s02_couplers/auto_us/inst'
+Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_cc_0/system_top_auto_cc_0_clocks.xdc] for cell 'system_top_i/axi_interconnect_0/m00_couplers/auto_cc/inst'
+Finished Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_cc_0/system_top_auto_cc_0_clocks.xdc] for cell 'system_top_i/axi_interconnect_0/m00_couplers/auto_cc/inst'
+Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_ds_0/system_top_auto_ds_0_clocks.xdc] for cell 'system_top_i/axi_interconnect_0/m01_couplers/auto_ds/inst'
+Finished Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_ds_0/system_top_auto_ds_0_clocks.xdc] for cell 'system_top_i/axi_interconnect_0/m01_couplers/auto_ds/inst'
+Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_ds_1/system_top_auto_ds_1_clocks.xdc] for cell 'system_top_i/axi_interconnect_0/m02_couplers/auto_ds/inst'
+Finished Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_ds_1/system_top_auto_ds_1_clocks.xdc] for cell 'system_top_i/axi_interconnect_0/m02_couplers/auto_ds/inst'
+Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_cc_1/system_top_auto_cc_1_clocks.xdc] for cell 'system_top_i/axi_interconnect_0/m03_couplers/auto_cc/inst'
+Finished Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_cc_1/system_top_auto_cc_1_clocks.xdc] for cell 'system_top_i/axi_interconnect_0/m03_couplers/auto_cc/inst'
+Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_ds_2/system_top_auto_ds_2_clocks.xdc] for cell 'system_top_i/axi_interconnect_0/m03_couplers/auto_ds/inst'
+Finished Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_auto_ds_2/system_top_auto_ds_2_clocks.xdc] for cell 'system_top_i/axi_interconnect_0/m03_couplers/auto_ds/inst'
+INFO: [Project 1-1715] 3 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Generating merged BMM file for the design top 'system_top_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: /home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_ddr4_0_0/sw/calibration_0/Debug/calibration_ddr.elf 
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4982.480 ; gain = 0.000 ; free physical = 53013 ; free virtual = 507166
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1416 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 692 instances
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 3 instances
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 16 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 1 instance 
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 2 instances
+  IOBUFDS => IOBUFDS (DIFFINBUF, IBUFCTRL, INV, OBUFT(x2)): 18 instances
+  IOBUFE3 => IOBUFE3 (IBUFCTRL, INBUF, OBUFT_DCIEN): 72 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 31 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUF(x2)): 1 instance 
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 1 instance 
+  RAM256X1D => RAM256X1D (MUXF7(x4), MUXF8(x2), RAMD64E(x8)): 6 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 291 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 262 instances
+  RAM64M8 => RAM64M8 (RAMD64E(x8)): 20 instances
+
+50 Infos, 101 Warnings, 100 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:02:23 ; elapsed = 00:02:50 . Memory (MB): peak = 4982.480 ; gain = 2079.480 ; free physical = 53013 ; free virtual = 507166
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcu250'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcu250'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 4982.480 ; gain = 0.000 ; free physical = 53006 ; free virtual = 507159
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1bb5f71ee
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:08 . Memory (MB): peak = 4982.480 ; gain = 0.000 ; free physical = 52876 ; free virtual = 507029
+
+Starting Logic Optimization Task
+
+Phase 1 Generate And Synthesize MIG Cores
+INFO: [Mig 66-454] Using cached IP synthesis design for IP xilinx.com:ip:ddr4_phy:2.2, cache-ID = 73989fcf51343098.
+get_clocks: Time (s): cpu = 00:00:26 ; elapsed = 00:00:08 . Memory (MB): peak = 4982.480 ; gain = 0.000 ; free physical = 52614 ; free virtual = 506796
+read_xdc: Time (s): cpu = 00:00:33 ; elapsed = 00:00:13 . Memory (MB): peak = 4982.480 ; gain = 0.000 ; free physical = 52614 ; free virtual = 506796
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 5017.746 ; gain = 0.000 ; free physical = 52620 ; free virtual = 506773
+Phase 1 Generate And Synthesize MIG Cores | Checksum: 17cae99bb
+
+Time (s): cpu = 00:01:16 ; elapsed = 00:00:57 . Memory (MB): peak = 5017.750 ; gain = 35.270 ; free physical = 52620 ; free virtual = 506773
+
+Phase 2 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
+INFO: [Chipscope 16-469] Using cached IP synthesis design for IP xilinx.com:ip:xsdbm:3.0, cache-ID = 621cad217e073916.
+get_clocks: Time (s): cpu = 00:00:20 ; elapsed = 00:00:07 . Memory (MB): peak = 5032.625 ; gain = 0.000 ; free physical = 52622 ; free virtual = 506778
+Netlist sorting complete. Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.13 . Memory (MB): peak = 5032.625 ; gain = 0.000 ; free physical = 52620 ; free virtual = 506777
+Phase 2 Generate And Synthesize Debug Cores | Checksum: 17263de89
+
+Time (s): cpu = 00:02:10 ; elapsed = 00:02:04 . Memory (MB): peak = 5032.625 ; gain = 50.145 ; free physical = 52620 ; free virtual = 506777
+
+Phase 3 Retarget
+INFO: [Opt 31-138] Pushed 42 inverter(s) to 6442 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 26e60324d
+
+Time (s): cpu = 00:02:28 ; elapsed = 00:02:13 . Memory (MB): peak = 5080.625 ; gain = 98.145 ; free physical = 52754 ; free virtual = 506910
+INFO: [Opt 31-389] Phase Retarget created 401 cells and removed 818 cells
+INFO: [Opt 31-1021] In phase Retarget, 260 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 7 inverter(s) to 538 load pin(s).
+Phase 4 Constant propagation | Checksum: 22b594b90
+
+Time (s): cpu = 00:02:35 ; elapsed = 00:02:20 . Memory (MB): peak = 5080.625 ; gain = 98.145 ; free physical = 52754 ; free virtual = 506910
+INFO: [Opt 31-389] Phase Constant propagation created 3158 cells and removed 9838 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 209 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Sweep
+Phase 5 Sweep | Checksum: 295f79b20
+
+Time (s): cpu = 00:02:43 ; elapsed = 00:02:29 . Memory (MB): peak = 5080.625 ; gain = 98.145 ; free physical = 52754 ; free virtual = 506910
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 4771 cells
+INFO: [Opt 31-1021] In phase Sweep, 5666 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+Phase 6 BUFG optimization | Checksum: 2a6ac6ce1
+
+Time (s): cpu = 00:02:47 ; elapsed = 00:02:33 . Memory (MB): peak = 5080.625 ; gain = 98.145 ; free physical = 52756 ; free virtual = 506912
+INFO: [Opt 31-662] Phase BUFG optimization created 1 cells of which 1 are BUFGs and removed 2 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 2a6ac6ce1
+
+Time (s): cpu = 00:02:48 ; elapsed = 00:02:33 . Memory (MB): peak = 5080.625 ; gain = 98.145 ; free physical = 52756 ; free virtual = 506913
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 2195fcebe
+
+Time (s): cpu = 00:02:48 ; elapsed = 00:02:34 . Memory (MB): peak = 5080.625 ; gain = 98.145 ; free physical = 52757 ; free virtual = 506913
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 1 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 382 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             401  |             818  |                                            260  |
+|  Constant propagation         |            3158  |            9838  |                                            209  |
+|  Sweep                        |               0  |            4771  |                                           5666  |
+|  BUFG optimization            |               1  |               2  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               1  |                                            382  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.37 ; elapsed = 00:00:00.39 . Memory (MB): peak = 5080.625 ; gain = 0.000 ; free physical = 52757 ; free virtual = 506914
+Ending Logic Optimization Task | Checksum: 1375a1e3a
+
+Time (s): cpu = 00:02:53 ; elapsed = 00:02:39 . Memory (MB): peak = 5080.625 ; gain = 98.145 ; free physical = 52757 ; free virtual = 506914
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Power 33-23] Power model is not available for xiphy_riu_or
+INFO: [Power 33-23] Power model is not available for genVref.u_hpio_vref
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 26 BRAM(s) out of a total of 82 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 1 WE to EN ports
+Number of BRAM Ports augmented: 25 newly gated: 1 Total Ports: 164
+Ending PowerOpt Patch Enables Task | Checksum: 13b078705
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 5796.879 ; gain = 0.000 ; free physical = 52574 ; free virtual = 506731
+Ending Power Optimization Task | Checksum: 13b078705
+
+Time (s): cpu = 00:01:15 ; elapsed = 00:00:29 . Memory (MB): peak = 5796.879 ; gain = 716.254 ; free physical = 52701 ; free virtual = 506858
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 13b078705
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5796.879 ; gain = 0.000 ; free physical = 52702 ; free virtual = 506858
+Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_jtag_axi_0_0/constraints/system_top_jtag_axi_0_0_impl.xdc] from IP /home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/ip/system_top_jtag_axi_0_0/system_top_jtag_axi_0_0.xci
+Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_jtag_axi_0_0/constraints/system_top_jtag_axi_0_0_impl.xdc] for cell 'system_top_i/jtag_axi_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_jtag_axi_0_0/constraints/system_top_jtag_axi_0_0_impl.xdc:69]
+all_fanout: Time (s): cpu = 00:00:18 ; elapsed = 00:00:07 . Memory (MB): peak = 5796.879 ; gain = 0.000 ; free physical = 52605 ; free virtual = 506761
+Finished Parsing XDC File [/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_jtag_axi_0_0/constraints/system_top_jtag_axi_0_0_impl.xdc] for cell 'system_top_i/jtag_axi_0/inst'
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.08 . Memory (MB): peak = 5796.879 ; gain = 0.000 ; free physical = 52604 ; free virtual = 506761
+Ending Netlist Obfuscation Task | Checksum: 1af7ee77c
+
+Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.08 . Memory (MB): peak = 5796.879 ; gain = 0.000 ; free physical = 52604 ; free virtual = 506761
+INFO: [Common 17-83] Releasing license: Implementation
+94 Infos, 180 Warnings, 100 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:04:56 ; elapsed = 00:03:30 . Memory (MB): peak = 5796.879 ; gain = 814.398 ; free physical = 52604 ; free virtual = 506761
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.87 ; elapsed = 00:00:00.19 . Memory (MB): peak = 5796.879 ; gain = 0.000 ; free physical = 52562 ; free virtual = 506729
+INFO: [Common 17-1381] The checkpoint '/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:47 ; elapsed = 00:00:34 . Memory (MB): peak = 5796.879 ; gain = 0.000 ; free physical = 52540 ; free virtual = 506734
+INFO: [runtcl-4] Executing : report_drc -file system_top_wrapper_drc_opted.rpt -pb system_top_wrapper_drc_opted.pb -rpx system_top_wrapper_drc_opted.rpx
+Command: report_drc -file system_top_wrapper_drc_opted.rpt -pb system_top_wrapper_drc_opted.pb -rpx system_top_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:01:16 ; elapsed = 00:00:40 . Memory (MB): peak = 6094.387 ; gain = 297.508 ; free physical = 51853 ; free virtual = 506046
+INFO: [Chipscope 16-240] Debug cores have already been implemented
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcu250'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcu250'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 46-113] Running place_design in ultrathreads mode using maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 6094.387 ; gain = 0.000 ; free physical = 51848 ; free virtual = 506041
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: ceaa0d51
+
+Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.17 . Memory (MB): peak = 6094.387 ; gain = 0.000 ; free physical = 51848 ; free virtual = 506041
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 6094.387 ; gain = 0.000 ; free physical = 51848 ; free virtual = 506041
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 7af84cdb
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:18 . Memory (MB): peak = 6094.387 ; gain = 0.000 ; free physical = 51838 ; free virtual = 506031
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1146eaf41
+
+Time (s): cpu = 00:01:29 ; elapsed = 00:00:50 . Memory (MB): peak = 6745.109 ; gain = 650.723 ; free physical = 51490 ; free virtual = 505683
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1146eaf41
+
+Time (s): cpu = 00:01:29 ; elapsed = 00:00:51 . Memory (MB): peak = 6745.109 ; gain = 650.723 ; free physical = 51483 ; free virtual = 505676
+Phase 1 Placer Initialization | Checksum: 1146eaf41
+
+Time (s): cpu = 00:01:30 ; elapsed = 00:00:52 . Memory (MB): peak = 6745.109 ; gain = 650.723 ; free physical = 51443 ; free virtual = 505636
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+
+Phase 2.1.1 Partition Driven Placement
+
+Phase 2.1.1.1 PBP: Partition Driven Placement
+Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: 117acfab1
+
+Time (s): cpu = 00:02:35 ; elapsed = 00:01:27 . Memory (MB): peak = 6745.109 ; gain = 650.723 ; free physical = 51286 ; free virtual = 505479
+
+Phase 2.1.1.2 PBP: Clock Region Placement
+Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: 152506009
+
+Time (s): cpu = 00:02:44 ; elapsed = 00:01:35 . Memory (MB): peak = 6745.109 ; gain = 650.723 ; free physical = 51269 ; free virtual = 505462
+
+Phase 2.1.1.3 PBP: Compute Congestion
+Phase 2.1.1.3 PBP: Compute Congestion | Checksum: 152506009
+
+Time (s): cpu = 00:02:48 ; elapsed = 00:01:39 . Memory (MB): peak = 7118.000 ; gain = 1023.613 ; free physical = 51136 ; free virtual = 505329
+
+Phase 2.1.1.4 PBP: UpdateTiming
+Phase 2.1.1.4 PBP: UpdateTiming | Checksum: 18d412aa0
+
+Time (s): cpu = 00:02:58 ; elapsed = 00:01:43 . Memory (MB): peak = 7118.000 ; gain = 1023.613 ; free physical = 51124 ; free virtual = 505317
+
+Phase 2.1.1.5 PBP: Add part constraints
+Phase 2.1.1.5 PBP: Add part constraints | Checksum: 18d412aa0
+
+Time (s): cpu = 00:02:58 ; elapsed = 00:01:43 . Memory (MB): peak = 7118.000 ; gain = 1023.613 ; free physical = 51124 ; free virtual = 505317
+Phase 2.1.1 Partition Driven Placement | Checksum: 18d412aa0
+
+Time (s): cpu = 00:02:59 ; elapsed = 00:01:43 . Memory (MB): peak = 7118.000 ; gain = 1023.613 ; free physical = 51178 ; free virtual = 505371
+Phase 2.1 Floorplanning | Checksum: 1a25e40a3
+
+Time (s): cpu = 00:02:59 ; elapsed = 00:01:44 . Memory (MB): peak = 7118.000 ; gain = 1023.613 ; free physical = 51178 ; free virtual = 505371
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 1a25e40a3
+
+Time (s): cpu = 00:02:59 ; elapsed = 00:01:44 . Memory (MB): peak = 7118.000 ; gain = 1023.613 ; free physical = 51178 ; free virtual = 505371
+
+Phase 2.3 Global Placement Core
+SLR(matching) [0-1]       0     0     0     0     0     0     0     0     4     0     0     0     0     0     0     9  Total:    13
+SLR(matching) [1-2]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [2-3]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [0-1]       0     0     0     0     0     0     0     0     4     0     0     0     0     0     0     9  Total:    13
+SLR(matching) [1-2]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [2-3]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [0-1]       0     0     0     0     0     0     0     0     4     0     0     0     0     0     0     9  Total:    13
+SLR(matching) [1-2]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [2-3]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [0-1]       0     0     0     0     0     0     0     0     4     0     0     0     0     0     0     9  Total:    13
+SLR(matching) [1-2]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [2-3]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [0-1]       0     0     0     0     0     0     0     0     4     0     0     0     0     0     0     9  Total:    13
+SLR(matching) [1-2]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [2-3]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [0-1]       0     0     0     0     0     0     0     0     4     0     0     0     0     0     1     8  Total:    13
+SLR(matching) [1-2]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [2-3]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [0-1]       0     0     0     0     0     0     0     0     4     0     0     0     0     0     1     8  Total:    13
+SLR(matching) [1-2]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [2-3]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [0-1]       0     0     0     0     0     0     0     0     4     0     0     0     0     0     1     8  Total:    13
+SLR(matching) [1-2]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [2-3]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [0-1]       0     0     0     0     0     0     0     0     4     0     0     0     0     0     1     8  Total:    13
+SLR(matching) [1-2]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [2-3]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [0-1]       0     0     0     0     0     0     0     0     4     0     0     0     0     0     1     8  Total:    13
+SLR(matching) [1-2]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [2-3]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [0-1]       0     0     0     0     0     0     0     0     4     0     0     0     0     0     1     8  Total:    13
+SLR(matching) [1-2]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [2-3]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [0-1]       0     0     0     0     0     0     0     0     4     0     0     0     0     0     1     8  Total:    13
+SLR(matching) [1-2]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [2-3]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [0-1]       0     0     0     0     0     0     0     0     4     0     0     0     0     0     1     8  Total:    13
+SLR(matching) [1-2]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [2-3]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [0-1]       0     0     0     0     0     0     0     0     4     0     0     0     0     0     1     8  Total:    13
+SLR(matching) [1-2]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [2-3]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [0-1]       0     0     0     0     0     0     0     0     4     0     0     0     0     0     1     8  Total:    13
+SLR(matching) [1-2]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [2-3]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [0-1]       0     0     0     0     0     0     0     0     4     0     0     0     0     0     1     8  Total:    13
+SLR(matching) [1-2]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [2-3]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [0-1]       0     0     0     0     0     0     0     0     4     0     0     0     0     0     1     8  Total:    13
+SLR(matching) [1-2]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [2-3]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [0-1]       0     0     0     0     0     0     0     0     4     0     0     0     0     0     1     8  Total:    13
+SLR(matching) [1-2]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [2-3]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [0-1]       0     0     0     0     0     0     0     0     4     0     0     0     0     0     1     8  Total:    13
+SLR(matching) [1-2]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [2-3]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [0-1]       0     0     0     0     0     0     0     0     4     0     0     0     0     0     1     8  Total:    13
+SLR(matching) [1-2]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [2-3]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [0-1]       0     0     0     0     0     0     0     0     4     0     0     0     0     0     1     8  Total:    13
+SLR(matching) [1-2]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [2-3]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+
+Phase 2.3.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 1 LUTNM shape to break, 4444 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 1, two critical 0, total 1, new lutff created 0
+INFO: [Physopt 32-775] End 1 Pass. Optimized 1977 nets or cells. Created 1 new cell, deleted 1976 existing cells and moved 0 existing cell
+INFO: [Physopt 32-1030] Pass 1. Identified 63 candidate driver sets for equivalent driver rewiring.
+INFO: [Physopt 32-661] Optimized 33 nets.  Re-placed 143 instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 33 nets or cells. Created 0 new cell, deleted 5 existing cells and moved 143 existing cells
+Netlist sorting complete. Time (s): cpu = 00:00:00.72 ; elapsed = 00:00:00.76 . Memory (MB): peak = 9059.758 ; gain = 0.000 ; free physical = 51090 ; free virtual = 505283
+INFO: [Physopt 32-1132] Very high fanout net 'system_top_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_mc/u_ddr_mc_ecc/rd_data_addr_dly_reg[4]_0[0]' is not considered as a candidate in VHFN optimzation. Its physical fanout number is changed from 1057 to 155. To force replication, set the FORCE_MAX_FANOUT property on the net to a number less than 155.
+INFO: [Physopt 32-1132] Very high fanout net 'system_top_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_mc/u_ddr_mc_ecc/rd_data_addr_dly_reg[4]_0[1]' is not considered as a candidate in VHFN optimzation. Its physical fanout number is changed from 1061 to 159. To force replication, set the FORCE_MAX_FANOUT property on the net to a number less than 159.
+INFO: [Physopt 32-1132] Very high fanout net 'system_top_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_mc/u_ddr_mc_ecc/rd_data_addr_dly_reg[4]_0[2]' is not considered as a candidate in VHFN optimzation. Its physical fanout number is changed from 1057 to 155. To force replication, set the FORCE_MAX_FANOUT property on the net to a number less than 155.
+INFO: [Physopt 32-76] Pass 1. Identified 5 candidate nets for fanout optimization.
+INFO: [Physopt 32-81] Processed net system_top_i/ddr4_0/inst/u_ddr_axi/USE_UPSIZER.upsizer_d2/ARESET. Replicated 12 times.
+INFO: [Physopt 32-81] Processed net system_top_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_top/u_ddr_cal/u_ddr_cal_addr_decode/u_ddr_cal_cplx/cplx_cal. Replicated 10 times.
+INFO: [Physopt 32-81] Processed net system_top_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_ui/u_ddr_ui_wr_data/app_wdf_rdy_r. Replicated 7 times.
+INFO: [Physopt 32-81] Processed net system_top_i/ddr4_0/inst/u_ddr_axi/axi_w_channel_0/wready_d3. Replicated 9 times.
+INFO: [Physopt 32-81] Processed net system_top_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_ui/u_ddr_ui_wr_data/app_wdf_rdy_r_copy1. Replicated 8 times.
+INFO: [Physopt 32-232] Optimized 5 nets. Created 46 new instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 5 nets or cells. Created 46 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.26 ; elapsed = 00:00:00.29 . Memory (MB): peak = 9059.758 ; gain = 0.000 ; free physical = 51090 ; free virtual = 505283
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 9059.758 ; gain = 0.000 ; free physical = 51092 ; free virtual = 505285
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            1  |           1976  |                  1977  |           0  |           1  |  00:00:06  |
+|  Equivalent Driver Rewiring                       |            0  |              5  |                    33  |           0  |           1  |  00:00:07  |
+|  Very High Fanout                                 |           46  |              0  |                     5  |           0  |           1  |  00:00:03  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |           47  |           1981  |                  2015  |           0  |           9  |  00:00:17  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.3.1 Physical Synthesis In Placer | Checksum: 294640a53
+
+Time (s): cpu = 00:10:15 ; elapsed = 00:05:52 . Memory (MB): peak = 9059.758 ; gain = 2965.371 ; free physical = 51088 ; free virtual = 505281
+SLR(matching) [0-1]       0     0     0     0     0     0     0     0     4     0     0     0     0     0     1     8  Total:    13
+SLR(matching) [1-2]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [2-3]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+Phase 2.3 Global Placement Core | Checksum: 1b0953ad9
+
+Time (s): cpu = 00:10:52 ; elapsed = 00:06:08 . Memory (MB): peak = 9091.773 ; gain = 2997.387 ; free physical = 50859 ; free virtual = 505052
+Phase 2 Global Placement | Checksum: 1b0953ad9
+
+Time (s): cpu = 00:10:53 ; elapsed = 00:06:09 . Memory (MB): peak = 9091.773 ; gain = 2997.387 ; free physical = 51118 ; free virtual = 505311
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1621f3aee
+
+Time (s): cpu = 00:11:10 ; elapsed = 00:06:19 . Memory (MB): peak = 9091.773 ; gain = 2997.387 ; free physical = 51114 ; free virtual = 505307
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+SLR(matching) [0-1]       0     0     0     0     0     0     0     0     4     0     0     0     0     0     1     8  Total:    13
+SLR(matching) [1-2]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [2-3]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 2ae7e2850
+
+Time (s): cpu = 00:11:30 ; elapsed = 00:06:30 . Memory (MB): peak = 9091.773 ; gain = 2997.387 ; free physical = 51044 ; free virtual = 505238
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 28323d2cc
+
+Time (s): cpu = 00:11:38 ; elapsed = 00:06:37 . Memory (MB): peak = 9091.773 ; gain = 2997.387 ; free physical = 51111 ; free virtual = 505304
+
+Phase 3.4 IO Cut Optimizer
+Phase 3.4 IO Cut Optimizer | Checksum: 28323d2cc
+
+Time (s): cpu = 00:11:41 ; elapsed = 00:06:40 . Memory (MB): peak = 9091.773 ; gain = 2997.387 ; free physical = 51114 ; free virtual = 505307
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 2aab39e1d
+
+Time (s): cpu = 00:11:55 ; elapsed = 00:06:44 . Memory (MB): peak = 9091.773 ; gain = 2997.387 ; free physical = 51108 ; free virtual = 505301
+
+Phase 3.6 Small Shape DP
+
+Phase 3.6.1 splitSLRCrossingNets
+SLR(matching) [0-1]       0     0     0     0     0     0     0     0     4     0     0     0     0     0     1     8  Total:    13
+SLR(matching) [1-2]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+SLR(matching) [2-3]       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0  Total:     0
+Phase 3.6.1 splitSLRCrossingNets | Checksum: 1ff32402c
+
+Time (s): cpu = 00:12:00 ; elapsed = 00:06:48 . Memory (MB): peak = 9091.773 ; gain = 2997.387 ; free physical = 51109 ; free virtual = 505302
+Phase 3.6 Small Shape DP | Checksum: 238fd747b
+
+Time (s): cpu = 00:13:37 ; elapsed = 00:07:57 . Memory (MB): peak = 9139.801 ; gain = 3045.414 ; free physical = 50741 ; free virtual = 504934
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 23f167dd3
+
+Time (s): cpu = 00:13:44 ; elapsed = 00:08:04 . Memory (MB): peak = 9139.801 ; gain = 3045.414 ; free physical = 50749 ; free virtual = 504942
+Phase 3 Detail Placement | Checksum: 23f167dd3
+
+Time (s): cpu = 00:13:45 ; elapsed = 00:08:05 . Memory (MB): peak = 9139.801 ; gain = 3045.414 ; free physical = 50772 ; free virtual = 504965
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 10525792d
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.403 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 10785849f
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:03 . Memory (MB): peak = 9139.801 ; gain = 0.000 ; free physical = 50778 ; free virtual = 504971
+INFO: [Place 46-32] Processed net system_top_i/rv_system/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/q[0], BUFG insertion was skipped because the netlist could not be updated.
+INFO: [Place 46-35] Processed net system_top_i/proc_sys_reset_0/U0/peripheral_aresetn[0], inserted BUFG to drive 3341 loads.
+INFO: [Place 46-45] Replicated bufg driver system_top_i/proc_sys_reset_0/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N_replica
+INFO: [Place 46-56] BUFG insertion identified 2 candidate nets. Inserted BUFG: 1, Replicated BUFG Driver: 1, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 1.
+Ending Physical Synthesis Task | Checksum: e1f5002a
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:06 . Memory (MB): peak = 9139.801 ; gain = 0.000 ; free physical = 50775 ; free virtual = 504968
+Phase 4.1.1.1 BUFG Insertion | Checksum: c65d5669
+
+Time (s): cpu = 00:15:26 ; elapsed = 00:08:45 . Memory (MB): peak = 9139.801 ; gain = 3045.414 ; free physical = 50790 ; free virtual = 504983
+
+Phase 4.1.1.2 BUFG Replication
+INFO: [Place 46-63] BUFG replication identified 0 candidate nets: Replicated nets: 0, Replicated BUFGs: 0, Replicated BUFG Driver: 0, Skipped due to Placement / Routing Conflict: 0, Skipped due to Timing: 0, Skipped due to constraints: 0
+Phase 4.1.1.2 BUFG Replication | Checksum: c65d5669
+
+Time (s): cpu = 00:15:27 ; elapsed = 00:08:46 . Memory (MB): peak = 9139.801 ; gain = 3045.414 ; free physical = 50790 ; free virtual = 504983
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.544. For the most accurate timing information please run report_timing.
+
+Phase 4.1.1.3 Replication
+INFO: [Place 46-19] Post Replication Timing Summary WNS=0.544. For the most accurate timing information please run report_timing.
+Phase 4.1.1.3 Replication | Checksum: 1cc81fc4b
+
+Time (s): cpu = 00:15:34 ; elapsed = 00:08:53 . Memory (MB): peak = 9139.801 ; gain = 3045.414 ; free physical = 50792 ; free virtual = 504985
+
+Time (s): cpu = 00:15:34 ; elapsed = 00:08:53 . Memory (MB): peak = 9139.801 ; gain = 3045.414 ; free physical = 50796 ; free virtual = 504989
+Phase 4.1 Post Commit Optimization | Checksum: 1cc81fc4b
+
+Time (s): cpu = 00:15:34 ; elapsed = 00:08:54 . Memory (MB): peak = 9139.801 ; gain = 3045.414 ; free physical = 50796 ; free virtual = 504989
+Netlist sorting complete. Time (s): cpu = 00:00:00.35 ; elapsed = 00:00:00.38 . Memory (MB): peak = 9139.801 ; gain = 0.000 ; free physical = 50781 ; free virtual = 504974
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 288aaf7f2
+
+Time (s): cpu = 00:16:02 ; elapsed = 00:09:22 . Memory (MB): peak = 9139.801 ; gain = 3045.414 ; free physical = 50854 ; free virtual = 505047
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                4x4|                8x8|                4x4|
+|___________|___________________|___________________|___________________|
+|      South|                4x4|                4x4|                8x8|
+|___________|___________________|___________________|___________________|
+|       East|                4x4|                1x1|              16x16|
+|___________|___________________|___________________|___________________|
+|       West|                4x4|                1x1|              16x16|
+|___________|___________________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 288aaf7f2
+
+Time (s): cpu = 00:16:03 ; elapsed = 00:09:23 . Memory (MB): peak = 9139.801 ; gain = 3045.414 ; free physical = 50853 ; free virtual = 505046
+Phase 4.3 Placer Reporting | Checksum: 288aaf7f2
+
+Time (s): cpu = 00:16:04 ; elapsed = 00:09:24 . Memory (MB): peak = 9139.801 ; gain = 3045.414 ; free physical = 50853 ; free virtual = 505046
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 9139.801 ; gain = 0.000 ; free physical = 50853 ; free virtual = 505046
+
+Time (s): cpu = 00:16:04 ; elapsed = 00:09:24 . Memory (MB): peak = 9139.801 ; gain = 3045.414 ; free physical = 50853 ; free virtual = 505046
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 345fe7a13
+
+Time (s): cpu = 00:16:05 ; elapsed = 00:09:25 . Memory (MB): peak = 9139.801 ; gain = 3045.414 ; free physical = 50853 ; free virtual = 505046
+Ending Placer Task | Checksum: 274118136
+
+Time (s): cpu = 00:16:05 ; elapsed = 00:09:25 . Memory (MB): peak = 9139.801 ; gain = 3045.414 ; free physical = 50854 ; free virtual = 505047
+INFO: [Common 17-83] Releasing license: Implementation
+151 Infos, 180 Warnings, 100 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:16:24 ; elapsed = 00:09:35 . Memory (MB): peak = 9139.801 ; gain = 3045.414 ; free physical = 51643 ; free virtual = 505836
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:21 ; elapsed = 00:00:07 . Memory (MB): peak = 9139.801 ; gain = 0.000 ; free physical = 51424 ; free virtual = 505782
+INFO: [Common 17-1381] The checkpoint '/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:54 ; elapsed = 00:00:35 . Memory (MB): peak = 9139.801 ; gain = 0.000 ; free physical = 51591 ; free virtual = 505833
+INFO: [runtcl-4] Executing : report_io -file system_top_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.41 ; elapsed = 00:00:00.69 . Memory (MB): peak = 9139.801 ; gain = 0.000 ; free physical = 51543 ; free virtual = 505786
+INFO: [runtcl-4] Executing : report_utilization -file system_top_wrapper_utilization_placed.rpt -pb system_top_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file system_top_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.62 ; elapsed = 00:00:00.85 . Memory (MB): peak = 9139.801 ; gain = 0.000 ; free physical = 51580 ; free virtual = 505825
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcu250'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcu250'
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+160 Infos, 180 Warnings, 100 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:59 ; elapsed = 00:00:15 . Memory (MB): peak = 9139.801 ; gain = 0.000 ; free physical = 51537 ; free virtual = 505781
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:21 ; elapsed = 00:00:07 . Memory (MB): peak = 9139.801 ; gain = 0.000 ; free physical = 51299 ; free virtual = 505711
+INFO: [Common 17-1381] The checkpoint '/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:54 ; elapsed = 00:00:35 . Memory (MB): peak = 9139.801 ; gain = 0.000 ; free physical = 51470 ; free virtual = 505764
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcu250'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcu250'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: da9b6a03 ConstDB: 0 ShapeSum: dd4d1b8c RouteDB: bc28fba7
+
+Phase 1 Build RT Design
+Nodegraph reading from file.  Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 9139.801 ; gain = 0.000 ; free physical = 51049 ; free virtual = 505342
+Phase 1 Build RT Design | Checksum: 129ea9dc0
+
+Time (s): cpu = 00:01:24 ; elapsed = 00:00:38 . Memory (MB): peak = 9139.801 ; gain = 0.000 ; free physical = 51049 ; free virtual = 505342
+Post Restoration Checksum: NetGraph: d104dc91 NumContArr: 4f5f697a Constraints: d7c481d8 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 1f828c7e3
+
+Time (s): cpu = 00:01:25 ; elapsed = 00:00:40 . Memory (MB): peak = 9139.801 ; gain = 0.000 ; free physical = 50865 ; free virtual = 505159
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 1f828c7e3
+
+Time (s): cpu = 00:01:26 ; elapsed = 00:00:40 . Memory (MB): peak = 9139.801 ; gain = 0.000 ; free physical = 50865 ; free virtual = 505159
+
+Phase 2.3 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.3 Global Clock Net Routing | Checksum: 27b04b5f3
+
+Time (s): cpu = 00:01:45 ; elapsed = 00:00:52 . Memory (MB): peak = 9139.801 ; gain = 0.000 ; free physical = 50844 ; free virtual = 505138
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 22e7987ba
+
+Time (s): cpu = 00:02:36 ; elapsed = 00:01:14 . Memory (MB): peak = 9139.801 ; gain = 0.000 ; free physical = 50785 ; free virtual = 505079
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.709  | TNS=0.000  | WHS=-0.304 | THS=-21.189|
+
+
+Phase 2.5 Update Timing for Bus Skew
+
+Phase 2.5.1 Update Timing
+Phase 2.5.1 Update Timing | Checksum: 299a086ad
+
+Time (s): cpu = 00:04:32 ; elapsed = 00:01:46 . Memory (MB): peak = 9139.801 ; gain = 0.000 ; free physical = 50738 ; free virtual = 505031
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.709  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 2.5 Update Timing for Bus Skew | Checksum: 21f047176
+
+Time (s): cpu = 00:04:33 ; elapsed = 00:01:46 . Memory (MB): peak = 9139.801 ; gain = 0.000 ; free physical = 50736 ; free virtual = 505030
+Phase 2 Router Initialization | Checksum: 1f1add620
+
+Time (s): cpu = 00:04:33 ; elapsed = 00:01:46 . Memory (MB): peak = 9139.801 ; gain = 0.000 ; free physical = 50736 ; free virtual = 505030
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.000219236 %
+  Global Horizontal Routing Utilization  = 0.000227572 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 128590
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 107524
+  Number of Partially Routed Nets     = 21066
+  Number of Node Overlaps             = 0
+
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+
+Phase 3.1.1 SLL Assignment
+Number SLLs per Column: 1440
+Estimated SLL Demand Per Column: 
+  SLR [2-3]        0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)  Demand:     0 Available: 23040 Utilization(%): 0.00
+  SLR [1-2]        0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)  Demand:     0 Available: 23040 Utilization(%): 0.00
+  SLR [0-1]        0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     1 (  0%)     0 (  0%)     2 (  0%)     0 (  0%)     1 (  0%)     0 (  0%)     1 (  0%)     1 (  0%)     7 (  0%)  Demand:    13 Available: 23040 Utilization(%): 0.06
+Phase 3.1.1 SLL Assignment | Checksum: 19d79b2a8
+
+Time (s): cpu = 00:04:46 ; elapsed = 00:01:52 . Memory (MB): peak = 9139.801 ; gain = 0.000 ; free physical = 50737 ; free virtual = 505030
+Phase 3.1 Global Routing | Checksum: 19d79b2a8
+
+Time (s): cpu = 00:04:46 ; elapsed = 00:01:52 . Memory (MB): peak = 9139.801 ; gain = 0.000 ; free physical = 50737 ; free virtual = 505030
+Phase 3 Initial Routing | Checksum: 17713c61b
+
+Time (s): cpu = 00:06:06 ; elapsed = 00:02:20 . Memory (MB): peak = 9139.801 ; gain = 0.000 ; free physical = 50591 ; free virtual = 504884
+
+INFO: [Route 35-449] Initial Estimated Congestion
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+|           |___________________|___________________|___________________|
+| Direction | Size   | % Tiles  | Size   | % Tiles  | Size   | % Tiles  |
+|___________|________|__________|________|__________|________|__________|
+|      NORTH|     4x4|      0.06|     8x8|      0.14|     8x8|      0.10|
+|___________|________|__________|________|__________|________|__________|
+|      SOUTH|     8x8|      0.05|     4x4|      0.11|     4x4|      0.06|
+|___________|________|__________|________|__________|________|__________|
+|       EAST|     2x2|      0.01|     2x2|      0.01|     4x4|      0.08|
+|___________|________|__________|________|__________|________|__________|
+|       WEST|     4x4|      0.02|     2x2|      0.01|   16x16|      0.16|
+|___________|________|__________|________|__________|________|__________|
+Congestion Report
+SHORT Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+WEST
+	INT_X80Y80->INT_X87Y95 (CLEM_X80Y80->CLEL_R_X87Y95)
+	INT_X80Y80->INT_X87Y87 (CLEM_X80Y80->CLEL_R_X87Y87)
+	INT_X80Y87->INT_X87Y94 (CLEM_X80Y87->CLEL_R_X87Y94)
+	INT_X80Y79->INT_X87Y86 (CLEM_X80Y79->CLEL_R_X87Y86)
+	INT_X80Y86->INT_X87Y93 (CLEM_X80Y86->CLEL_R_X87Y93)
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 27943
+ Number of Nodes with overlaps = 2988
+ Number of Nodes with overlaps = 483
+ Number of Nodes with overlaps = 105
+ Number of Nodes with overlaps = 29
+ Number of Nodes with overlaps = 16
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.240  | TNS=0.000  | WHS=-0.025 | THS=-0.081 |
+
+Phase 4.1 Global Iteration 0 | Checksum: 303f6b360
+
+Time (s): cpu = 00:13:05 ; elapsed = 00:05:24 . Memory (MB): peak = 9139.801 ; gain = 0.000 ; free physical = 50637 ; free virtual = 504930
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 10
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.240  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 2c9468fc1
+
+Time (s): cpu = 00:13:41 ; elapsed = 00:05:40 . Memory (MB): peak = 9139.801 ; gain = 0.000 ; free physical = 50639 ; free virtual = 504933
+Phase 4 Rip-up And Reroute | Checksum: 2c9468fc1
+
+Time (s): cpu = 00:13:42 ; elapsed = 00:05:40 . Memory (MB): peak = 9139.801 ; gain = 0.000 ; free physical = 50640 ; free virtual = 504933
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 251d336a1
+
+Time (s): cpu = 00:14:22 ; elapsed = 00:05:53 . Memory (MB): peak = 9139.801 ; gain = 0.000 ; free physical = 50652 ; free virtual = 504946
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.240  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+Phase 5.1 Delay CleanUp | Checksum: 2441e9e29
+
+Time (s): cpu = 00:14:22 ; elapsed = 00:05:54 . Memory (MB): peak = 9139.801 ; gain = 0.000 ; free physical = 50660 ; free virtual = 504954
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 2441e9e29
+
+Time (s): cpu = 00:14:23 ; elapsed = 00:05:54 . Memory (MB): peak = 9139.801 ; gain = 0.000 ; free physical = 50660 ; free virtual = 504954
+Phase 5 Delay and Skew Optimization | Checksum: 2441e9e29
+
+Time (s): cpu = 00:14:23 ; elapsed = 00:05:55 . Memory (MB): peak = 9139.801 ; gain = 0.000 ; free physical = 50660 ; free virtual = 504954
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 249724a3a
+
+Time (s): cpu = 00:14:55 ; elapsed = 00:06:05 . Memory (MB): peak = 9139.801 ; gain = 0.000 ; free physical = 50659 ; free virtual = 504953
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.240  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 3121ba96d
+
+Time (s): cpu = 00:14:55 ; elapsed = 00:06:06 . Memory (MB): peak = 9139.801 ; gain = 0.000 ; free physical = 50658 ; free virtual = 504952
+Phase 6 Post Hold Fix | Checksum: 3121ba96d
+
+Time (s): cpu = 00:14:56 ; elapsed = 00:06:06 . Memory (MB): peak = 9139.801 ; gain = 0.000 ; free physical = 50659 ; free virtual = 504953
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 1.25963 %
+  Global Horizontal Routing Utilization  = 1.20538 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 291fc5993
+
+Time (s): cpu = 00:15:04 ; elapsed = 00:06:09 . Memory (MB): peak = 9139.801 ; gain = 0.000 ; free physical = 50640 ; free virtual = 504934
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 291fc5993
+
+Time (s): cpu = 00:15:04 ; elapsed = 00:06:09 . Memory (MB): peak = 9139.801 ; gain = 0.000 ; free physical = 50638 ; free virtual = 504932
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 291fc5993
+
+Time (s): cpu = 00:15:15 ; elapsed = 00:06:17 . Memory (MB): peak = 9139.801 ; gain = 0.000 ; free physical = 50636 ; free virtual = 504929
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.240  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 291fc5993
+
+Time (s): cpu = 00:15:18 ; elapsed = 00:06:19 . Memory (MB): peak = 9139.801 ; gain = 0.000 ; free physical = 50658 ; free virtual = 504952
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:15:19 ; elapsed = 00:06:19 . Memory (MB): peak = 9139.801 ; gain = 0.000 ; free physical = 50996 ; free virtual = 505289
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+178 Infos, 180 Warnings, 100 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:15:59 ; elapsed = 00:06:31 . Memory (MB): peak = 9139.801 ; gain = 0.000 ; free physical = 50997 ; free virtual = 505291
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:23 ; elapsed = 00:00:08 . Memory (MB): peak = 9139.801 ; gain = 0.000 ; free physical = 50709 ; free virtual = 505220
+INFO: [Common 17-1381] The checkpoint '/home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:55 ; elapsed = 00:00:35 . Memory (MB): peak = 9139.801 ; gain = 0.000 ; free physical = 50919 ; free virtual = 505275
+INFO: [runtcl-4] Executing : report_drc -file system_top_wrapper_drc_routed.rpt -pb system_top_wrapper_drc_routed.pb -rpx system_top_wrapper_drc_routed.rpx
+Command: report_drc -file system_top_wrapper_drc_routed.rpt -pb system_top_wrapper_drc_routed.pb -rpx system_top_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:01:33 ; elapsed = 00:00:20 . Memory (MB): peak = 9147.797 ; gain = 7.996 ; free physical = 50782 ; free virtual = 505137
+INFO: [runtcl-4] Executing : report_methodology -file system_top_wrapper_methodology_drc_routed.rpt -pb system_top_wrapper_methodology_drc_routed.pb -rpx system_top_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file system_top_wrapper_methodology_drc_routed.rpt -pb system_top_wrapper_methodology_drc_routed.pb -rpx system_top_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.runs/impl_1/system_top_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:01:43 ; elapsed = 00:00:25 . Memory (MB): peak = 9147.797 ; gain = 0.000 ; free physical = 50803 ; free virtual = 505159
+INFO: [runtcl-4] Executing : report_power -file system_top_wrapper_power_routed.rpt -pb system_top_wrapper_power_summary_routed.pb -rpx system_top_wrapper_power_routed.rpx
+Command: report_power -file system_top_wrapper_power_routed.rpt -pb system_top_wrapper_power_summary_routed.pb -rpx system_top_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+190 Infos, 181 Warnings, 100 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:01:39 ; elapsed = 00:00:38 . Memory (MB): peak = 9147.797 ; gain = 0.000 ; free physical = 50674 ; free virtual = 505043
+INFO: [runtcl-4] Executing : report_route_status -file system_top_wrapper_route_status.rpt -pb system_top_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file system_top_wrapper_timing_summary_routed.rpt -pb system_top_wrapper_timing_summary_routed.pb -rpx system_top_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2L, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+report_timing_summary: Time (s): cpu = 00:00:17 ; elapsed = 00:00:07 . Memory (MB): peak = 9147.797 ; gain = 0.000 ; free physical = 50616 ; free virtual = 504992
+INFO: [runtcl-4] Executing : report_incremental_reuse -file system_top_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file system_top_wrapper_clock_utilization_routed.rpt
+report_clock_utilization: Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 9147.797 ; gain = 0.000 ; free physical = 50558 ; free virtual = 504933
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file system_top_wrapper_bus_skew_routed.rpt -pb system_top_wrapper_bus_skew_routed.pb -rpx system_top_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2L, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+Command: write_bitstream -force system_top_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xcu250'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcu250'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP system_top_i/rv_system/NutShell_0/inst/nutcore/Backend_inorder/exu/mdu/mul/_T_4_reg multiplier stage system_top_i/rv_system/NutShell_0/inst/nutcore/Backend_inorder/exu/mdu/mul/_T_4_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP system_top_i/rv_system/NutShell_0/inst/nutcore/Backend_inorder/exu/mdu/mul/_T_4_reg__0 multiplier stage system_top_i/rv_system/NutShell_0/inst/nutcore/Backend_inorder/exu/mdu/mul/_T_4_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP system_top_i/rv_system/NutShell_0/inst/nutcore/Backend_inorder/exu/mdu/mul/_T_4_reg__3 multiplier stage system_top_i/rv_system/NutShell_0/inst/nutcore/Backend_inorder/exu/mdu/mul/_T_4_reg__3/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_ADDR_A[22:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_BWE_A[8:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_DIN_A[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_DOUT_A[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_RDACCESS_A pin should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_RDB_WR_A pin should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_ADDR_B[22:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_BWE_B[8:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_DIN_B[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_DOUT_B[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_RDACCESS_B pin should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_RDB_WR_B pin should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_1_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_ADDR_A[22:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_1_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_BWE_A[8:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_1_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_DIN_A[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_1_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_DOUT_A[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_1_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_RDACCESS_A pin should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_1_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_RDB_WR_A pin should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_1_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_ADDR_B[22:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_1_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_BWE_B[8:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_1_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_DIN_B[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_1_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_DOUT_B[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_1_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_RDACCESS_B pin should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_1_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_RDB_WR_B pin should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_2_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_ADDR_A[22:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_2_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_BWE_A[8:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_2_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_DIN_A[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_2_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_DOUT_A[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_2_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_RDACCESS_A pin should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_2_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_RDB_WR_A pin should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_2_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_ADDR_B[22:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_2_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_BWE_B[8:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_2_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_DIN_B[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_2_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_DOUT_B[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_2_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_RDACCESS_B pin should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_2_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_RDB_WR_B pin should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_3_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_ADDR_A[22:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_3_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_BWE_A[8:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_3_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_DIN_A[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_3_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_DOUT_A[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_3_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_RDACCESS_A pin should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_3_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_RDB_WR_A pin should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_3_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_ADDR_B[22:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_3_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_BWE_B[8:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_3_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_DIN_B[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_3_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_DOUT_B[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_3_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_RDACCESS_B pin should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_3_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_RDB_WR_B pin should be tied LOW.
+WARNING: [DRC RTSTAT-10] No routable loads: 350 net(s) have no routable loads. The problem bus(es) and/or net(s) are system_top_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/LMB_CE_riu, system_top_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/LMB_UE_riu, system_top_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_top/u_ddr_cal/u_xsdb_arbiter/Q[12], system_top_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_top/u_ddr_cal/u_xsdb_arbiter/Q[13], system_top_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_top/u_ddr_cal/u_xsdb_arbiter/Q[14], system_top_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_top/u_ddr_cal/u_xsdb_arbiter/Q[15], system_top_i/ddr4_0/inst/u_ddr4_mem_intfc/u_phy2clb_phy_rdy_upp/SYNC[0].sync_reg[1], system_top_i/ddr4_0/inst/u_ddr4_mem_intfc/u_phy2clb_phy_rdy_low/SYNC[0].sync_reg[1], system_top_i/ddr4_0/inst/u_ddr4_mem_intfc/u_phy2clb_fixdly_rdy_low/SYNC[0].sync_reg[1], system_top_i/ddr4_0/inst/u_ddr4_mem_intfc/u_phy2clb_fixdly_rdy_upp/SYNC[0].sync_reg[1], system_top_i/ddr4_0/inst/u_ddr4_mem_intfc/u_phy2clb_fixdly_rdy_upp/SYNC[1].sync_reg[1], system_top_i/ddr4_0/inst/u_ddr4_mem_intfc/u_phy2clb_phy_rdy_upp/SYNC[1].sync_reg[1], system_top_i/ddr4_0/inst/u_ddr4_mem_intfc/u_phy2clb_fixdly_rdy_low/SYNC[1].sync_reg[1], system_top_i/ddr4_0/inst/u_ddr4_mem_intfc/u_phy2clb_phy_rdy_low/SYNC[1].sync_reg[1], system_top_i/ddr4_0/inst/u_ddr4_mem_intfc/u_phy2clb_fixdly_rdy_low/SYNC[2].sync_reg[1]... and (the first 15 of 272 listed).
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 52 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Generating merged BMM file for the design top 'system_top_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: /home/chenxuhao/NutShell_U250_copy/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.gen/sources_1/bd/system_top/ip/system_top_ddr4_0_0/sw/calibration_0/Debug/calibration_ddr.elf 
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Bitstream compression saved 173055040 bits.
+Bitstream compression saved 173135264 bits.
+Bitstream compression saved 124275136 bits.
+Bitstream compression saved 172376992 bits.
+Writing bitstream ./system_top_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+13 Infos, 52 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:03:55 ; elapsed = 00:03:21 . Memory (MB): peak = 9147.797 ; gain = 0.000 ; free physical = 50447 ; free virtual = 504859
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 19 12:59:22 2022...

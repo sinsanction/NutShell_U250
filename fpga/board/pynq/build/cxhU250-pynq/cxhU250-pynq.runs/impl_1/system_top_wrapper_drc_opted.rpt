@@ -1,0 +1,292 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Tue Jul 19 12:35:43 2022
+| Host         : zhaodi-node32 running 64-bit CentOS Linux release 7.9.2009 (Core)
+| Command      : report_drc -file system_top_wrapper_drc_opted.rpt -pb system_top_wrapper_drc_opted.pb -rpx system_top_wrapper_drc_opted.rpx
+| Design       : system_top_wrapper
+| Device       : xcu250-figd2104-2L-e
+| Speed File   : -2L
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 51
++-----------+----------+---------------------------------------------------+------------+
+| Rule      | Severity | Description                                       | Violations |
++-----------+----------+---------------------------------------------------+------------+
+| DPOP-4    | Warning  | MREG Output pipelining                            | 3          |
+| REQP-1869 | Warning  | URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low | 48         |
++-----------+----------+---------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPOP-4#1 Warning
+MREG Output pipelining  
+DSP system_top_i/rv_system/NutShell_0/inst/nutcore/Backend_inorder/exu/mdu/mul/_T_4_reg multiplier stage system_top_i/rv_system/NutShell_0/inst/nutcore/Backend_inorder/exu/mdu/mul/_T_4_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#2 Warning
+MREG Output pipelining  
+DSP system_top_i/rv_system/NutShell_0/inst/nutcore/Backend_inorder/exu/mdu/mul/_T_4_reg__0 multiplier stage system_top_i/rv_system/NutShell_0/inst/nutcore/Backend_inorder/exu/mdu/mul/_T_4_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#3 Warning
+MREG Output pipelining  
+DSP system_top_i/rv_system/NutShell_0/inst/nutcore/Backend_inorder/exu/mdu/mul/_T_4_reg__3 multiplier stage system_top_i/rv_system/NutShell_0/inst/nutcore/Backend_inorder/exu/mdu/mul/_T_4_reg__3/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+REQP-1869#1 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_ADDR_A[22:0] bus pins should be tied LOW.
+Related violations: <none>
+
+REQP-1869#2 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_BWE_A[8:0] bus pins should be tied LOW.
+Related violations: <none>
+
+REQP-1869#3 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_DIN_A[71:0] bus pins should be tied LOW.
+Related violations: <none>
+
+REQP-1869#4 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_DOUT_A[71:0] bus pins should be tied LOW.
+Related violations: <none>
+
+REQP-1869#5 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_RDACCESS_A pin should be tied LOW.
+Related violations: <none>
+
+REQP-1869#6 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_RDB_WR_A pin should be tied LOW.
+Related violations: <none>
+
+REQP-1869#7 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_ADDR_B[22:0] bus pins should be tied LOW.
+Related violations: <none>
+
+REQP-1869#8 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_BWE_B[8:0] bus pins should be tied LOW.
+Related violations: <none>
+
+REQP-1869#9 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_DIN_B[71:0] bus pins should be tied LOW.
+Related violations: <none>
+
+REQP-1869#10 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_DOUT_B[71:0] bus pins should be tied LOW.
+Related violations: <none>
+
+REQP-1869#11 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_RDACCESS_B pin should be tied LOW.
+Related violations: <none>
+
+REQP-1869#12 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_0_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_RDB_WR_B pin should be tied LOW.
+Related violations: <none>
+
+REQP-1869#13 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_1_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_ADDR_A[22:0] bus pins should be tied LOW.
+Related violations: <none>
+
+REQP-1869#14 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_1_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_BWE_A[8:0] bus pins should be tied LOW.
+Related violations: <none>
+
+REQP-1869#15 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_1_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_DIN_A[71:0] bus pins should be tied LOW.
+Related violations: <none>
+
+REQP-1869#16 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_1_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_DOUT_A[71:0] bus pins should be tied LOW.
+Related violations: <none>
+
+REQP-1869#17 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_1_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_RDACCESS_A pin should be tied LOW.
+Related violations: <none>
+
+REQP-1869#18 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_1_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_RDB_WR_A pin should be tied LOW.
+Related violations: <none>
+
+REQP-1869#19 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_1_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_ADDR_B[22:0] bus pins should be tied LOW.
+Related violations: <none>
+
+REQP-1869#20 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_1_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_BWE_B[8:0] bus pins should be tied LOW.
+Related violations: <none>
+
+REQP-1869#21 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_1_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_DIN_B[71:0] bus pins should be tied LOW.
+Related violations: <none>
+
+REQP-1869#22 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_1_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_DOUT_B[71:0] bus pins should be tied LOW.
+Related violations: <none>
+
+REQP-1869#23 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_1_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_RDACCESS_B pin should be tied LOW.
+Related violations: <none>
+
+REQP-1869#24 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_1_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_RDB_WR_B pin should be tied LOW.
+Related violations: <none>
+
+REQP-1869#25 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_2_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_ADDR_A[22:0] bus pins should be tied LOW.
+Related violations: <none>
+
+REQP-1869#26 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_2_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_BWE_A[8:0] bus pins should be tied LOW.
+Related violations: <none>
+
+REQP-1869#27 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_2_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_DIN_A[71:0] bus pins should be tied LOW.
+Related violations: <none>
+
+REQP-1869#28 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_2_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_DOUT_A[71:0] bus pins should be tied LOW.
+Related violations: <none>
+
+REQP-1869#29 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_2_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_RDACCESS_A pin should be tied LOW.
+Related violations: <none>
+
+REQP-1869#30 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_2_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_RDB_WR_A pin should be tied LOW.
+Related violations: <none>
+
+REQP-1869#31 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_2_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_ADDR_B[22:0] bus pins should be tied LOW.
+Related violations: <none>
+
+REQP-1869#32 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_2_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_BWE_B[8:0] bus pins should be tied LOW.
+Related violations: <none>
+
+REQP-1869#33 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_2_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_DIN_B[71:0] bus pins should be tied LOW.
+Related violations: <none>
+
+REQP-1869#34 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_2_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_DOUT_B[71:0] bus pins should be tied LOW.
+Related violations: <none>
+
+REQP-1869#35 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_2_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_RDACCESS_B pin should be tied LOW.
+Related violations: <none>
+
+REQP-1869#36 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_2_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_RDB_WR_B pin should be tied LOW.
+Related violations: <none>
+
+REQP-1869#37 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_3_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_ADDR_A[22:0] bus pins should be tied LOW.
+Related violations: <none>
+
+REQP-1869#38 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_3_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_BWE_A[8:0] bus pins should be tied LOW.
+Related violations: <none>
+
+REQP-1869#39 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_3_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_DIN_A[71:0] bus pins should be tied LOW.
+Related violations: <none>
+
+REQP-1869#40 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_3_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_DOUT_A[71:0] bus pins should be tied LOW.
+Related violations: <none>
+
+REQP-1869#41 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_3_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_RDACCESS_A pin should be tied LOW.
+Related violations: <none>
+
+REQP-1869#42 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_3_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_RDB_WR_A pin should be tied LOW.
+Related violations: <none>
+
+REQP-1869#43 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_3_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_ADDR_B[22:0] bus pins should be tied LOW.
+Related violations: <none>
+
+REQP-1869#44 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_3_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_BWE_B[8:0] bus pins should be tied LOW.
+Related violations: <none>
+
+REQP-1869#45 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_3_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_DIN_B[71:0] bus pins should be tied LOW.
+Related violations: <none>
+
+REQP-1869#46 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_3_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_DOUT_B[71:0] bus pins should be tied LOW.
+Related violations: <none>
+
+REQP-1869#47 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_3_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_RDACCESS_B pin should be tied LOW.
+Related violations: <none>
+
+REQP-1869#48 Warning
+URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low  
+URAM288 system_top_i/rv_system/NutShell_0/inst/Cache/dataArray/ram/array/array_3_ext/ram_reg_3_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_RDB_WR_B pin should be tied LOW.
+Related violations: <none>
+
+

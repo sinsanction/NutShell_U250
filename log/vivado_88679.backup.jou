@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Jun 18 11:29:03 2022
+# Process ID: 88679
+# Current directory: /home/chenxuhao/NutShell_U250/fpga
+# Command line: vivado
+# Log file: /home/chenxuhao/NutShell_U250/fpga/vivado.log
+# Journal file: /home/chenxuhao/NutShell_U250/fpga/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.xpr
+update_compile_order -fileset sources_1
+open_bd_design {/home/chenxuhao/NutShell_U250/fpga/board/pynq/build/cxhU250-pynq/cxhU250-pynq.srcs/sources_1/bd/system_top/system_top.bd}
+set_property location {4 714 -90} [get_bd_cells rv_system]
+set_property location {4 696 6} [get_bd_cells rv_system]
+set_property location {4 693 171} [get_bd_cells rv_system]
+set_property location {4 693 179} [get_bd_cells rv_system]
+set_property location {4 691 192} [get_bd_cells rv_system]
