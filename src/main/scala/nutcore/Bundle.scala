@@ -33,6 +33,11 @@ class CtrlSignalIO extends NutCoreBundle {
   val isSrc2Forward = Output(Bool())
   val noSpecExec = Output(Bool())  // This inst can not be speculated
   val isBlocked = Output(Bool())   // This inst requires pipeline to be blocked
+  // for RV-CNN
+  val vtag = Output(UInt(3.W))
+  val vec_addr = Output(UInt(5.W))
+  val length_k = Output(UInt(4.W))
+  val algorithm = Output(UInt(2.W))
 }
 
 class DataSrcIO extends NutCoreBundle {
@@ -64,6 +69,8 @@ class CtrlFlowIO extends NutCoreBundle {
   val brIdx = Output(UInt(4.W))
   val isRVC = Output(Bool())
   val crossPageIPFFix = Output(Bool())
+  val runahead_checkpoint_id = Output(UInt(64.W))
+  val isBranch = Output(Bool())
 }
 
 class DecodeIO extends NutCoreBundle {

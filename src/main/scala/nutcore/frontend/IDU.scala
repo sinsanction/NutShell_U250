@@ -21,12 +21,14 @@ import chisel3.util._
 import chisel3.util.experimental.BoringUtils
 
 import utils._
+import difftest._
 
 class Decoder(implicit val p: NutCoreConfig) extends NutCoreModule with HasInstrType {
   val io = IO(new Bundle {
     val in = Flipped(Decoupled(new CtrlFlowIO))
     val out = Decoupled(new DecodeIO)
     val isWFI = Output(Bool()) // require NutCoreSim to advance mtime when wfi to reduce the idle time in Linux
+    val isBranch = Output(Bool())
   })
 
   val hasIntr = Wire(Bool())
@@ -139,6 +141,20 @@ class Decoder(implicit val p: NutCoreConfig) extends NutCoreModule with HasInstr
   io.out.bits.ctrl.src1Type := Mux(instr(6,0) === "b0110111".U, SrcType.reg, src1Type)
   io.out.bits.ctrl.src2Type := src2Type
 
+  // RV-CNN
+  when (fuType === FuType.cnn) {
+    def isLoadV(func3 : UInt): Bool = ~func3(2)
+    val func3 = instr(14,12)
+    when (isLoadV(func3)) {
+      io.out.bits.ctrl.rfWen   := false.B
+      io.out.bits.ctrl.rfDest  := 0.U
+    }
+  }
+  io.out.bits.ctrl.vtag      := instr(26,24)
+  io.out.bits.ctrl.vec_addr  := instr(11, 7)
+  io.out.bits.ctrl.length_k  := instr(23,20)
+  io.out.bits.ctrl.algorithm := instr(16,15)
+
   val NoSpecList = Seq(
     FuType.csr
   )
@@ -162,7 +178,7 @@ class Decoder(implicit val p: NutCoreConfig) extends NutCoreModule with HasInstr
   // fix c_break
 
 
-  Debug(io.out.fire(), "issue: pc %x npc %x instr %x\n", io.out.bits.cf.pc, io.out.bits.cf.pnpc, io.out.bits.cf.instr)
+  //Debug(io.out.fire(), "issue: pc %x npc %x instr %x\n", io.out.bits.cf.pc, io.out.bits.cf.pnpc, io.out.bits.cf.instr)
 
   val intrVec = WireInit(0.U(12.W))
   BoringUtils.addSink(intrVec, "intrVecIDU")
@@ -183,6 +199,7 @@ class Decoder(implicit val p: NutCoreConfig) extends NutCoreModule with HasInstr
 
   io.out.bits.ctrl.isNutCoreTrap := (instr === NutCoreTrap.TRAP) && io.in.valid
   io.isWFI := (instr === Priviledged.WFI) && io.in.valid
+  io.isBranch := VecInit(RV32I_BRUInstr.table.map(i => i._2.tail(1) === fuOpType)).asUInt.orR && fuType === FuType.bru
 
 }
 
@@ -201,6 +218,25 @@ class IDU(implicit val p: NutCoreConfig) extends NutCoreModule with HasInstrType
     io.in(1).ready := false.B
     decoder2.io.in.valid := false.B
   }
+
+  val checkpoint_id = RegInit(0.U(64.W))
+
+  // debug runahead
+  val runahead = Module(new DifftestRunaheadEvent)
+  runahead.io.clock         := clock
+  runahead.io.coreid        := 0.U
+  runahead.io.valid         := io.out(0).fire()
+  runahead.io.branch        := decoder1.io.isBranch
+  runahead.io.pc            := io.out(0).bits.cf.pc
+  runahead.io.checkpoint_id := checkpoint_id
+  when(runahead.io.valid && runahead.io.branch) {
+    checkpoint_id := checkpoint_id + 1.U // allocate a new checkpoint_id
+  }
+  io.out(0).bits.cf.isBranch := decoder1.io.isBranch
+  io.out(0).bits.cf.runahead_checkpoint_id := checkpoint_id
+  // when(runahead.io.valid) {
+  //   printf("fire pc %x branch %x inst %x\n", runahead.io.pc, runahead.io.branch, io.out(0).bits.cf.instr)
+  // }
 
   if (!p.FPGAPlatform) {
     BoringUtils.addSource(decoder1.io.isWFI | decoder2.io.isWFI, "isWFI")

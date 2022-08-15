@@ -21,6 +21,7 @@ import chisel3.util._
 import chisel3.util.experimental.BoringUtils
 
 import utils._
+import difftest._
 
 // Sequential Inst Issue Unit 
 class ISU(implicit val p: NutCoreConfig) extends NutCoreModule with HasRegFileParameter {
@@ -90,7 +91,11 @@ class ISU(implicit val p: NutCoreConfig) extends NutCoreModule with HasRegFilePa
   io.in(0).ready := !io.in(0).valid || io.out.fire()
   io.in(1).ready := false.B
 
-  Debug(io.out.fire(), "issue: pc %x npc %x instr %x src1 %x src2 %x imm %x\n", io.out.bits.cf.pc, io.out.bits.cf.pnpc, io.out.bits.cf.instr, io.out.bits.data.src1, io.out.bits.data.src2, io.out.bits.data.imm)
+  //Debug(io.out.fire(), "issue: pc %x npc %x instr %x src1 %x src2 %x imm %x\n", io.out.bits.cf.pc, io.out.bits.cf.pnpc, io.out.bits.cf.instr, io.out.bits.data.src1, io.out.bits.data.src2, io.out.bits.data.imm)
+
+  Debug("isu: pc: %x, ins: %x, in_ready: %d, in_valid: %d, out_valid: %d\n", io.in(0).bits.cf.pc, io.in(0).bits.cf.instr, io.in(0).ready, io.in(0).valid, io.out.valid)
+  //Debug("src1Ready: %d, src2Ready: %d, rfSrc1: %d, rfSrc2: %d, rfDest1: %d, rfWen: %d\n", src1Ready, src2Ready, rfSrc1, rfSrc2, rfDest1, io.in(0).bits.ctrl.rfWen)
+  //Debug("sb: %x\n", sb.busy)
 
   // read after write
   BoringUtils.addSource(io.in(0).valid && !io.out.valid, "perfCntCondMrawStall")
@@ -98,6 +103,9 @@ class ISU(implicit val p: NutCoreConfig) extends NutCoreModule with HasRegFilePa
   BoringUtils.addSource(io.out.fire(), "perfCntCondISUIssue")
 
   if (!p.FPGAPlatform) {
-    BoringUtils.addSource(VecInit((0 to NRReg-1).map(i => rf.read(i.U))), "difftestRegs")
+    val difftest = Module(new DifftestArchIntRegState)
+    difftest.io.clock  := clock
+    difftest.io.coreid := 0.U // TODO
+    difftest.io.gpr    := VecInit((0 to NRReg-1).map(i => rf.read(i.U)))
   }
 }

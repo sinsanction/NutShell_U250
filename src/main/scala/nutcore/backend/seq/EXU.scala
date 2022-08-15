@@ -23,6 +23,7 @@ import chisel3.util.experimental.BoringUtils
 import utils._
 import bus.simplebus._
 import top.Settings
+import difftest._
 
 class EXU(implicit val p: NutCoreConfig) extends NutCoreModule {
   val io = IO(new Bundle {
@@ -42,6 +43,8 @@ class EXU(implicit val p: NutCoreConfig) extends NutCoreModule {
   val fuValids = Wire(Vec(FuType.num, Bool()))
   (0 until FuType.num).map (i => fuValids(i) := (fuType === i.U) && io.in.valid && !io.flush)
 
+  //Debug("valid:%d, type:%d, alu_valid:%d lsu_valid:%d mdu_valid:%d csr_valid:%d mou_valid:%d cnn_valid:%d\n", io.in.valid, fuType, fuValids(0), fuValids(1), fuValids(2), fuValids(3), fuValids(4), fuValids(5))
+
   val alu = Module(new ALU(hasBru = true))
   val aluOut = alu.access(valid = fuValids(FuType.alu), src1 = src1, src2 = src2, func = fuOpType)
   alu.io.cfIn := io.in.bits.cf
@@ -50,14 +53,36 @@ class EXU(implicit val p: NutCoreConfig) extends NutCoreModule {
 
   def isBru(func: UInt) = func(4)
 
+  // CNN FU
+  val cnnfu = Module(new CNNFU)
+  val cnnOut = cnnfu.access(valid = fuValids(FuType.cnn), src1 = src1, src2 = src2, func = fuOpType)
+  cnnfu.io.imm := io.in.bits.data.imm
+  cnnfu.io.vtag := io.in.bits.ctrl.vtag
+  cnnfu.io.vec_addr := io.in.bits.ctrl.vec_addr
+  cnnfu.io.length_k := io.in.bits.ctrl.length_k
+  cnnfu.io.algorithm := io.in.bits.ctrl.algorithm
+  cnnfu.io.out.ready := true.B
+
+  val lsu_valid = Mux(fuValids(FuType.cnn), cnnfu.io.loadv.valid, fuValids(FuType.lsu))
+  val lsu_src1 = Mux(fuValids(FuType.cnn), cnnfu.io.loadv.src1, src1)
+  val lsu_src2 = Mux(fuValids(FuType.cnn), cnnfu.io.loadv.src2, io.in.bits.data.imm)
+  val lsu_func = Mux(fuValids(FuType.cnn), cnnfu.io.loadv.func, fuOpType)
+
   val lsu = Module(new UnpipelinedLSU)
   val lsuTlbPF = WireInit(false.B)
-  val lsuOut = lsu.access(valid = fuValids(FuType.lsu), src1 = src1, src2 = io.in.bits.data.imm, func = fuOpType, dtlbPF = lsuTlbPF)
+  //val lsuOut = lsu.access(valid = fuValids(FuType.lsu), src1 = src1, src2 = io.in.bits.data.imm, func = fuOpType, dtlbPF = lsuTlbPF)
+  val lsuOut = lsu.access(valid = lsu_valid, src1 = lsu_src1, src2 = lsu_src2, func = lsu_func, dtlbPF = lsuTlbPF)
   lsu.io.wdata := src2
   lsu.io.instr := io.in.bits.cf.instr
   io.out.bits.isMMIO := lsu.io.isMMIO || (AddressSpace.isMMIO(io.in.bits.cf.pc) && io.out.valid)
   io.dmem <> lsu.io.dmem
   lsu.io.out.ready := true.B
+
+  // CNN-LSU
+  cnnfu.io.loadv.load_valid := lsu.io.out.valid
+  cnnfu.io.loadv.load_data := lsuOut
+  cnnfu.io.loadv.load_exception := lsuTlbPF || lsu.io.loadAddrMisaligned || lsu.io.storeAddrMisaligned
+  // CNN-LSU
 
   val mdu = Module(new MDU)
   val mduOut = mdu.access(valid = fuValids(FuType.mdu), src1 = src1, src2 = src2, func = fuOpType)
@@ -92,17 +117,20 @@ class EXU(implicit val p: NutCoreConfig) extends NutCoreModule {
   }
   io.out.bits.decode.cf.pc := io.in.bits.cf.pc
   io.out.bits.decode.cf.instr := io.in.bits.cf.instr
+  io.out.bits.decode.cf.runahead_checkpoint_id := io.in.bits.cf.runahead_checkpoint_id
+  io.out.bits.decode.cf.isBranch := io.in.bits.cf.isBranch
   io.out.bits.decode.cf.redirect <>
     Mux(mou.io.redirect.valid, mou.io.redirect,
       Mux(csr.io.redirect.valid, csr.io.redirect, alu.io.redirect))
   
-  Debug(mou.io.redirect.valid || csr.io.redirect.valid || alu.io.redirect.valid, "[REDIRECT] mou %x csr %x alu %x \n", mou.io.redirect.valid, csr.io.redirect.valid, alu.io.redirect.valid)
-  Debug(mou.io.redirect.valid || csr.io.redirect.valid || alu.io.redirect.valid, "[REDIRECT] flush: %d mou %x csr %x alu %x\n", io.flush, mou.io.redirect.target, csr.io.redirect.target, alu.io.redirect.target)
+  //Debug(mou.io.redirect.valid || csr.io.redirect.valid || alu.io.redirect.valid, "[REDIRECT] mou %x csr %x alu %x \n", mou.io.redirect.valid, csr.io.redirect.valid, alu.io.redirect.valid)
+  //Debug(mou.io.redirect.valid || csr.io.redirect.valid || alu.io.redirect.valid, "[REDIRECT] flush: %d mou %x csr %x alu %x\n", io.flush, mou.io.redirect.target, csr.io.redirect.target, alu.io.redirect.target)
 
   // FIXME: should handle io.out.ready == false
   io.out.valid := io.in.valid && MuxLookup(fuType, true.B, List(
     FuType.lsu -> lsu.io.out.valid,
-    FuType.mdu -> mdu.io.out.valid
+    FuType.mdu -> mdu.io.out.valid,
+    FuType.cnn -> cnnfu.io.out.valid
   ))
 
   io.out.bits.commits(FuType.alu) := aluOut
@@ -110,6 +138,7 @@ class EXU(implicit val p: NutCoreConfig) extends NutCoreModule {
   io.out.bits.commits(FuType.csr) := csrOut
   io.out.bits.commits(FuType.mdu) := mduOut
   io.out.bits.commits(FuType.mou) := 0.U
+  io.out.bits.commits(FuType.cnn) := cnnOut
 
   io.in.ready := !io.in.valid || io.out.fire()
 
@@ -126,21 +155,24 @@ class EXU(implicit val p: NutCoreConfig) extends NutCoreModule {
   BoringUtils.addSource(mdu.io.out.fire(), "perfCntCondMmduInstr")
   BoringUtils.addSource(csr.io.out.fire(), "perfCntCondMcsrInstr")
 
+  Debug("exe: pc: %x, ins: %x, valid: %d, in_ready: %d, out_valid: %d\n", io.in.bits.cf.pc, io.in.bits.cf.instr, io.in.valid, io.in.ready, io.out.valid)
+
   if (!p.FPGAPlatform) {
-    val mon = Module(new Monitor)
     val cycleCnt = WireInit(0.U(64.W))
     val instrCnt = WireInit(0.U(64.W))
     val nutcoretrap = io.in.bits.ctrl.isNutCoreTrap && io.in.valid
-    mon.io.clk := clock
-    mon.io.reset := reset.asBool
-    mon.io.isNutCoreTrap := nutcoretrap
-    mon.io.trapCode := io.in.bits.data.src1
-    mon.io.trapPC := io.in.bits.cf.pc
-    mon.io.cycleCnt := cycleCnt
-    mon.io.instrCnt := instrCnt
 
     BoringUtils.addSink(cycleCnt, "simCycleCnt")
     BoringUtils.addSink(instrCnt, "simInstrCnt")
     BoringUtils.addSource(nutcoretrap, "nutcoretrap")
+
+    val difftest = Module(new DifftestTrapEvent)
+    difftest.io.clock    := clock
+    difftest.io.coreid   := 0.U // TODO: nutshell does not support coreid auto config
+    difftest.io.valid    := nutcoretrap
+    difftest.io.code     := io.in.bits.data.src1
+    difftest.io.pc       := io.in.bits.cf.pc
+    difftest.io.cycleCnt := cycleCnt
+    difftest.io.instrCnt := instrCnt
   }
 }
